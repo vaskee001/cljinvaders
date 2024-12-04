@@ -17524,3 +17524,200 @@ clj꞉cljinvaders.core꞉> 
 clj꞉cljinvaders.core꞉> 
 #'cljinvaders.core/cljinvaders
 clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/asteroid
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:26:3).
+; Unable to resolve symbol: falling-ellipse in this context
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-falling-ellipse
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:47:16).
+; Unable to resolve symbol: falling-ellipse in this context
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:47:16).
+; Unable to resolve symbol: falling-ellipse in this context
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/asteroid
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; nil
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/asteroid
+clj꞉cljinvaders.core꞉> 
+{:x 500, :y 5, :size 50, :speed 5}
+clj꞉cljinvaders.core꞉> 
+{:x 500, :y 10, :size 50, :speed 5}
+clj꞉cljinvaders.core꞉> 
+{:x 500, :y 15, :size 50, :speed 5}
+clj꞉cljinvaders.core꞉> 
+{:x 500, :y 20, :size 50, :speed 5}
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/asteroid
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-asteroid
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/asteroid
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/asteroid
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-asteroid
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-asteroid
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-asteroid
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/handle-key-pressed
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; #object[processing.core.PImage 0x335a90f6 processing.core.PImage@335a90f6]
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-asteroid
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-asteroid
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-asteroid
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-asteroid
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-asteroid
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-asteroid
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+; #object[processing.core.PImage 0x335a90f6 processing.core.PImage@335a90f6]
+nil
+clj꞉cljinvaders.core꞉> 
+; #object[processing.core.PImage 0x335a90f6 processing.core.PImage@335a90f6]
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-asteroid
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/handle-key-pressed
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-asteroid
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:55:1).
+; No such namespace: q
+clj꞉user꞉> 
+#'cljinvaders.core/update-asteroid
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-asteroid
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:55:1).
+; No such namespace: q
+clj꞉user꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:55:1).
+; No such namespace: q
+clj꞉user꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:55:1).
+; No such namespace: q
+clj꞉user꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:55:1).
+; No such namespace: q
+clj꞉user꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/planeImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+; Execution error (NullPointerException) at quil.core/load-image (core.cljc:2412).
+; Cannot invoke "processing.core.PApplet.requestImage(String)" because the return value of "clojure.lang.IFn.invoke()" is null
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/handle-key-pressed
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/planeImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
