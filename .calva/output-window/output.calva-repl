@@ -17292,3 +17292,180 @@ clj꞉cljinvaders.core꞉> 
 clj꞉cljinvaders.core꞉> 
 #'cljinvaders.core/cljinvaders
 clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/handle-key-pressed
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/handle-key-pressed
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/handle-key-pressed
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/handle-key-pressed
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/key-state
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:34:13).
+; Unable to resolve symbol: event in this context
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/handle-key-pressed
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/handle-key-pressed
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/img
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/planeImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/planeImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/planeImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/handle-key-pressed
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Execution error (ClassCastException) at cljinvaders.core/eval3386 (form-init1711766545809196208.clj:20).
+; class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉cljinvaders.core꞉> 
+; #object[clojure.lang.Atom 0x3baa00f2 {:status :ready, :val #object[processing.core.PImage 0x7b377e70 processing.core.PImage@7b377e70]}]
+nil
+clj꞉cljinvaders.core꞉> 
+; #object[processing.core.PImage 0x7b377e70 processing.core.PImage@7b377e70]
+nil
+clj꞉cljinvaders.core꞉> 
+; #object[processing.core.PImage 0x7b377e70 processing.core.PImage@7b377e70]
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/planeImg
+clj꞉cljinvaders.core꞉> 
+; nil
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+; nil
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+; nil
+nil
+clj꞉cljinvaders.core꞉> 
+; nil
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+; Execution error (NullPointerException) at quil.core/load-image (core.cljc:2412).
+; Cannot invoke "processing.core.PApplet.requestImage(String)" because the return value of "clojure.lang.IFn.invoke()" is null
+clj꞉cljinvaders.core꞉> 
+; Execution error (NullPointerException) at quil.core/load-image (core.cljc:2412).
+; Cannot invoke "processing.core.PApplet.requestImage(String)" because the return value of "clojure.lang.IFn.invoke()" is null
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+; Execution error (NullPointerException) at quil.core/load-image (core.cljc:2412).
+; Cannot invoke "processing.core.PApplet.requestImage(String)" because the return value of "clojure.lang.IFn.invoke()" is null
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+; nil
+nil
+clj꞉cljinvaders.core꞉> 
+; Execution error (NullPointerException) at quil.core/load-image (core.cljc:2412).
+; Cannot invoke "processing.core.PApplet.requestImage(String)" because the return value of "clojure.lang.IFn.invoke()" is null
+clj꞉cljinvaders.core꞉> 
+; Execution error (NullPointerException) at quil.core/load-image (core.cljc:2412).
+; Cannot invoke "processing.core.PApplet.requestImage(String)" because the return value of "clojure.lang.IFn.invoke()" is null
+clj꞉cljinvaders.core꞉> 
+; Execution error (NullPointerException) at quil.core/load-image (core.cljc:2412).
+; Cannot invoke "processing.core.PApplet.requestImage(String)" because the return value of "clojure.lang.IFn.invoke()" is null
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/planeImg
+clj꞉cljinvaders.core꞉> 
+; Execution error (NullPointerException) at quil.core/load-image (core.cljc:2412).
+; Cannot invoke "processing.core.PApplet.requestImage(String)" because the return value of "clojure.lang.IFn.invoke()" is null
+clj꞉cljinvaders.core꞉> 
+; nil
+nil
+clj꞉cljinvaders.core꞉> 
+; nil
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/planeImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+; nil
+nil
+clj꞉cljinvaders.core꞉> 
+; nil
+nil
+clj꞉cljinvaders.core꞉> 
+; nil
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+; Execution error (NullPointerException) at quil.core/load-image (core.cljc:2412).
+; Cannot invoke "processing.core.PApplet.requestImage(String)" because the return value of "clojure.lang.IFn.invoke()" is null
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 

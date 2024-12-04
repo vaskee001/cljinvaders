@@ -3,7 +3,7 @@
             [quil.middleware :as m]))
 
 (defn setup []
-  ; Set frame rate to 30 frames per second.
+  ; Set frame rate to 60 frames per second.
   (q/frame-rate 60)
   ; Set color mode to HSB (HSV) instead of default RGB.
   (q/color-mode :hsb)
@@ -31,10 +31,10 @@
 (defn handle-key-pressed [state event]
   (let [key (:key event)]  ; Extract the key from the event
     (cond
-      (= key :left) (update state :playerX #(max 0 (- % 50)))   ; Left arrow
-      (= key :right) (update state :playerX #(min (q/width) (+ % 50))) ; Right arrow
-      (= key :up) (update state :playerY #(max 0 (- % 50)))     ; Up arrow
-      (= key :down) (update state :playerY #(min (q/height) (+ % 50))) ; Down arrow
+      (= key :left) (update state :playerX #(max 0 (- % 10)))   ; Left arrow
+      (= key :right) (update state :playerX #(min (q/width) (+ % 10))) ; Right arrow
+      (= key :up) (update state :playerY #(max 0 (- % 10)))     ; Up arrow
+      (= key :down) (update state :playerY #(min (q/height) (+ % 10))) ; Down arrow
       :else state)))
 
 
