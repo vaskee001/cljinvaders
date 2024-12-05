@@ -17755,3 +17755,49 @@ clj꞉cljinvaders.core꞉> 
 clj꞉cljinvaders.core꞉> 
 #'cljinvaders.core/cljinvaders
 clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Connecting ...
+; Reading port file: file:///home/vaske/Documents/ClojureProject/cljinvaders/.nrepl-port ...
+; Using host:port localhost:33443 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉user꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉user꞉> 
+; Syntax error compiling at (project.clj:1:1).
+; Unable to resolve symbol: defproject in this context
+clj꞉user꞉> 
+nil
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/init-player
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/update-player
+clj꞉cljinvaders.player꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/planeImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Execution error (ClassCastException) at quil.applet/-settings (applet.clj:198).
+; class quil.core$screen_width cannot be cast to class java.lang.Character (quil.core$screen_width is in unnamed module of loader clojure.lang.DynamicClassLoader @38fef893; java.lang.Character is in module java.base of loader 'bootstrap')
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
