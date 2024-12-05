@@ -5,6 +5,7 @@
 
 (def planeImg (atom nil))
 
+
 (defn setup []
   ; Set frame rate to 60 frames per second.
   (q/frame-rate 60)
@@ -16,7 +17,9 @@
   ; circle color and position.
   (reset! planeImg (q/load-image "plane.png"))
   {:color 0
-   :player (player/init-player)})
+   :player (player/init-player)
+   :screen-width (q/screen-width)
+   :screen-height (q/screen-height)})
 
 (defn update-state [state]
   ; Update sketch state by changing circle color and position.
@@ -33,13 +36,15 @@
   (let [player (:player state)]
     ; Draw the plane at the specified coordinates based on player position.
     (q/image @planeImg (- (:x player) 76) (- (:y player) 75))
+    ; Draw testing circle
     (q/ellipse (:x player) (:y player) 10 10)))
 
 (q/defsketch cljinvaders
   :title "You move my plane right round"
-  :size [(q/screen-width) (q/screen-height)]
+  :size :fullscreen
   ; setup function called only once, during sketch initialization.
   :setup setup
+  :key-pressed player/handle-key-pressed
   ; update-state is called on each iteration before draw-state.
   :update update-state
   :draw draw-state

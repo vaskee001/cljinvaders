@@ -19240,3 +19240,138 @@ clj꞉cljinvaders.core꞉> 
 ;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
 ;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
 ; 
+#'cljinvaders.player/handle-key-pressed
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.player/handle-key-pressed
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.player/handle-key-pressed
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/handle-key-pressed
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.player/handle-key-pressed
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.Numbers add Numbers.java 3763]}]
+;  :trace
+;  [[clojure.lang.Numbers add Numbers.java 3763]
+;   [cljinvaders.core$update_state invokeStatic form-init15964537931002582796.clj 24]
+;   [cljinvaders.core$update_state invoke form-init15964537931002582796.clj 21]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2946 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.Numbers.add (Numbers.java:3763)
+;     cljinvaders.core$update_state.invokeStatic (form-init15964537931002582796.clj:24)
+;     cljinvaders.core$update_state.invoke (form-init15964537931002582796.clj:21)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2946.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.Numbers add Numbers.java 3763]}]
+;  :trace
+;  [[clojure.lang.Numbers add Numbers.java 3763]
+;   [cljinvaders.core$update_state invokeStatic form-init15964537931002582796.clj 24]
+;   [cljinvaders.core$update_state invoke form-init15964537931002582796.clj 21]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2946 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.Numbers.add (Numbers.java:3763)
+;     cljinvaders.core$update_state.invokeStatic (form-init15964537931002582796.clj:24)
+;     cljinvaders.core$update_state.invoke (form-init15964537931002582796.clj:21)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2946.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.player/handle-key-pressed
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Syntax error reading source at (REPL:23:50).
+; Nested #()s are not allowed
+clj꞉cljinvaders.player꞉> 
+; Syntax error compiling at (src/cljinvaders/player.clj:15:20).
+; No such namespace: player
+clj꞉cljinvaders.player꞉> 
+; Syntax error compiling at (src/cljinvaders/player.clj:14:18).
+; Unable to resolve symbol: shoot in this context
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/shoot
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/handle-key-pressed
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/move-projectile
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/update-projectiles
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.player/handle-key-pressed
+clj꞉cljinvaders.player꞉> 
