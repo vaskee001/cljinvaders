@@ -36,8 +36,8 @@
     (q/ellipse (:x player) (:y player) 10 10)))
 
 (q/defsketch cljinvaders
-  :title "You move my circle right round"
-  :size [1000 1000]
+  :title "You move my plane right round"
+  :size [(q/screen-width) (q/screen-height)]
   ; setup function called only once, during sketch initialization.
   :setup setup
   ; update-state is called on each iteration before draw-state.
