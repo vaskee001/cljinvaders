@@ -21518,3 +21518,3566 @@ clj꞉cljinvaders.core꞉> 
 clj꞉cljinvaders.core꞉> 
 #'cljinvaders.core/cljinvaders
 clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/spawn-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/move-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/spawn-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/move-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/planeImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 51]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:51)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 51]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:51)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 51]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:51)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 51]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:51)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 51]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:51)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 51]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:51)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 51]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:51)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 51]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:51)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 51]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:51)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 51]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:51)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 51]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:51)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 51]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:51)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 51]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:51)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 51]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:51)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 51]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:51)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:50:40).
+; Unable to resolve symbol: state in this context
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Number of asteroids: 0
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Number of asteroids: 0
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+; Number of asteroids: 5
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:48:6).
+; Unable to resolve symbol: asteroids in this context
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 49]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:49)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 49]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:49)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 49]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:49)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 49]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:49)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 49]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:49)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 49]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:49)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 49]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:49)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 49]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:49)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 49]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:49)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.asteroids/spawn-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+; Syntax error compiling at (src/cljinvaders/asteroids.clj:21:27).
+; Unable to resolve symbol: move-asteroid in this context
+clj꞉cljinvaders.asteroids꞉> 
+; Syntax error compiling at (src/cljinvaders/asteroids.clj:21:27).
+; Unable to resolve symbol: move-asteroid in this context
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/move-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+nil
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/spawn-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/move-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.core/planeImg
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 49]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:49)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 49]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:49)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 49]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:49)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 49]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:49)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 49]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:49)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 49]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:49)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 49]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:49)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 49]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:49)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Syntax error compiling at (src/cljinvaders/core.clj:51:5).
+; Unable to resolve symbol: asteroids in this context
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:51:5).
+; Unable to resolve symbol: asteroids in this context
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.asteroids/spawn-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/move-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 49]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:49)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 49]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:49)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 49]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:49)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 49]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:49)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 49]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:49)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 49]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:49)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 48]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:48)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 48]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:48)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 48]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:48)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 48]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:48)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 48]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:48)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 48]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:48)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 48]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:48)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.asteroids/spawn-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 48]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:48)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 48]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:48)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 48]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:48)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 48]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:48)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 48]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:48)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 48]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:48)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 48]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:48)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 48]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:48)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.asteroids/spawn-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:39:16).
+; Unable to resolve symbol: state in this context
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:47:16).
+; Unable to resolve symbol: asteroid in this context
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 48]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:48)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 48]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:48)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 48]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:48)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 48]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:48)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;    :at [clojure.lang.RT floatCast RT.java 1317]}]
+;  :trace
+;  [[clojure.lang.RT floatCast RT.java 1317]
+;   [quil.core$ellipse invokeStatic core.cljc 1544]
+;   [quil.core$ellipse invoke core.cljc 1532]
+;   [cljinvaders.core$draw_state invokeStatic form-init12295050007539032778.clj 48]
+;   [cljinvaders.core$draw_state invoke form-init12295050007539032778.clj 33]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "java.lang.Number.doubleValue()" because "x" is null
+;  at clojure.lang.RT.floatCast (RT.java:1317)
+;     quil.core$ellipse.invokeStatic (core.cljc:1544)
+;     quil.core$ellipse.invoke (core.cljc:1532)
+;     cljinvaders.core$draw_state.invokeStatic (form-init12295050007539032778.clj:48)
+;     cljinvaders.core$draw_state.invoke (form-init12295050007539032778.clj:33)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Syntax error compiling at (src/cljinvaders/core.clj:47:16).
+; Unable to resolve symbol: asteroid in this context
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:47:16).
+; Unable to resolve symbol: asteroid in this context
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:39:16).
+; Unable to resolve symbol: state in this context
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:47:16).
+; Unable to resolve symbol: asteroid in this context
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:48:17).
+; Unable to resolve symbol: asteroid in this context
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:48:17).
+; Unable to resolve symbol: asteroid in this context
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:48:17).
+; Unable to resolve symbol: asteroids in this context
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:48:7).
+; Unable to resolve symbol: asteroids in this context
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:48:5).
+; Unable to resolve symbol: asteroids in this context
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/planeImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/spawn-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/move-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/planeImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:1:1432).
+; Can't take value of a macro: #'clojure.core/defn
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:1:1432).
+; Can't take value of a macro: #'clojure.core/defn
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/planeImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/planeImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:1:1432).
+; Unable to resolve symbol: state in this context
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:28:34).
+; Unable to resolve symbol: state in this context
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/planeImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:28:34).
+; Unable to resolve symbol: state in this context
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:28:34).
+; Unable to resolve symbol: state in this context
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/planeImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/planeImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:1:1432).
+; Can't take value of a macro: #'clojure.core/defn
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:1:1432).
+; Can't take value of a macro: #'clojure.core/defn
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:28:34).
+; Unable to resolve symbol: state in this context
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/planeImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers multiply Numbers.java 175]
+;   [clojure.core$rand invokeStatic core.clj 4942]
+;   [clojure.core$rand invoke core.clj 4936]
+;   [cljinvaders.asteroids$create_asteroid invokeStatic form-init12295050007539032778.clj 5]
+;   [cljinvaders.asteroids$create_asteroid invoke form-init12295050007539032778.clj 3]
+;   [cljinvaders.core$update_state invokeStatic form-init12295050007539032778.clj 30]
+;   [cljinvaders.core$update_state invoke form-init12295050007539032778.clj 25]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.multiply (Numbers.java:175)
+;     clojure.core$rand.invokeStatic (core.clj:4942)
+;     clojure.core$rand.invoke (core.clj:4936)
+;     cljinvaders.asteroids$create_asteroid.invokeStatic (form-init12295050007539032778.clj:5)
+;     cljinvaders.asteroids$create_asteroid.invoke (form-init12295050007539032778.clj:3)
+;     cljinvaders.core$update_state.invokeStatic (form-init12295050007539032778.clj:30)
+;     cljinvaders.core$update_state.invoke (form-init12295050007539032778.clj:25)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers multiply Numbers.java 175]
+;   [clojure.core$rand invokeStatic core.clj 4942]
+;   [clojure.core$rand invoke core.clj 4936]
+;   [cljinvaders.asteroids$create_asteroid invokeStatic form-init12295050007539032778.clj 5]
+;   [cljinvaders.asteroids$create_asteroid invoke form-init12295050007539032778.clj 3]
+;   [cljinvaders.core$update_state invokeStatic form-init12295050007539032778.clj 30]
+;   [cljinvaders.core$update_state invoke form-init12295050007539032778.clj 25]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.multiply (Numbers.java:175)
+;     clojure.core$rand.invokeStatic (core.clj:4942)
+;     clojure.core$rand.invoke (core.clj:4936)
+;     cljinvaders.asteroids$create_asteroid.invokeStatic (form-init12295050007539032778.clj:5)
+;     cljinvaders.asteroids$create_asteroid.invoke (form-init12295050007539032778.clj:3)
+;     cljinvaders.core$update_state.invokeStatic (form-init12295050007539032778.clj:30)
+;     cljinvaders.core$update_state.invoke (form-init12295050007539032778.clj:25)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers multiply Numbers.java 175]
+;   [clojure.core$rand invokeStatic core.clj 4942]
+;   [clojure.core$rand invoke core.clj 4936]
+;   [cljinvaders.asteroids$create_asteroid invokeStatic form-init12295050007539032778.clj 5]
+;   [cljinvaders.asteroids$create_asteroid invoke form-init12295050007539032778.clj 3]
+;   [cljinvaders.core$update_state invokeStatic form-init12295050007539032778.clj 30]
+;   [cljinvaders.core$update_state invoke form-init12295050007539032778.clj 25]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.multiply (Numbers.java:175)
+;     clojure.core$rand.invokeStatic (core.clj:4942)
+;     clojure.core$rand.invoke (core.clj:4936)
+;     cljinvaders.asteroids$create_asteroid.invokeStatic (form-init12295050007539032778.clj:5)
+;     cljinvaders.asteroids$create_asteroid.invoke (form-init12295050007539032778.clj:3)
+;     cljinvaders.core$update_state.invokeStatic (form-init12295050007539032778.clj:30)
+;     cljinvaders.core$update_state.invoke (form-init12295050007539032778.clj:25)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers multiply Numbers.java 175]
+;   [clojure.core$rand invokeStatic core.clj 4942]
+;   [clojure.core$rand invoke core.clj 4936]
+;   [cljinvaders.asteroids$create_asteroid invokeStatic form-init12295050007539032778.clj 5]
+;   [cljinvaders.asteroids$create_asteroid invoke form-init12295050007539032778.clj 3]
+;   [cljinvaders.core$update_state invokeStatic form-init12295050007539032778.clj 30]
+;   [cljinvaders.core$update_state invoke form-init12295050007539032778.clj 25]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.multiply (Numbers.java:175)
+;     clojure.core$rand.invokeStatic (core.clj:4942)
+;     clojure.core$rand.invoke (core.clj:4936)
+;     cljinvaders.asteroids$create_asteroid.invokeStatic (form-init12295050007539032778.clj:5)
+;     cljinvaders.asteroids$create_asteroid.invoke (form-init12295050007539032778.clj:3)
+;     cljinvaders.core$update_state.invokeStatic (form-init12295050007539032778.clj:30)
+;     cljinvaders.core$update_state.invoke (form-init12295050007539032778.clj:25)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers multiply Numbers.java 175]
+;   [clojure.core$rand invokeStatic core.clj 4942]
+;   [clojure.core$rand invoke core.clj 4936]
+;   [cljinvaders.asteroids$create_asteroid invokeStatic form-init12295050007539032778.clj 5]
+;   [cljinvaders.asteroids$create_asteroid invoke form-init12295050007539032778.clj 3]
+;   [cljinvaders.core$update_state invokeStatic form-init12295050007539032778.clj 30]
+;   [cljinvaders.core$update_state invoke form-init12295050007539032778.clj 25]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.multiply (Numbers.java:175)
+;     clojure.core$rand.invokeStatic (core.clj:4942)
+;     clojure.core$rand.invoke (core.clj:4936)
+;     cljinvaders.asteroids$create_asteroid.invokeStatic (form-init12295050007539032778.clj:5)
+;     cljinvaders.asteroids$create_asteroid.invoke (form-init12295050007539032778.clj:3)
+;     cljinvaders.core$update_state.invokeStatic (form-init12295050007539032778.clj:30)
+;     cljinvaders.core$update_state.invoke (form-init12295050007539032778.clj:25)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers multiply Numbers.java 175]
+;   [clojure.core$rand invokeStatic core.clj 4942]
+;   [clojure.core$rand invoke core.clj 4936]
+;   [cljinvaders.asteroids$create_asteroid invokeStatic form-init12295050007539032778.clj 5]
+;   [cljinvaders.asteroids$create_asteroid invoke form-init12295050007539032778.clj 3]
+;   [cljinvaders.core$update_state invokeStatic form-init12295050007539032778.clj 30]
+;   [cljinvaders.core$update_state invoke form-init12295050007539032778.clj 25]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.multiply (Numbers.java:175)
+;     clojure.core$rand.invokeStatic (core.clj:4942)
+;     clojure.core$rand.invoke (core.clj:4936)
+;     cljinvaders.asteroids$create_asteroid.invokeStatic (form-init12295050007539032778.clj:5)
+;     cljinvaders.asteroids$create_asteroid.invoke (form-init12295050007539032778.clj:3)
+;     cljinvaders.core$update_state.invokeStatic (form-init12295050007539032778.clj:30)
+;     cljinvaders.core$update_state.invoke (form-init12295050007539032778.clj:25)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers multiply Numbers.java 175]
+;   [clojure.core$rand invokeStatic core.clj 4942]
+;   [clojure.core$rand invoke core.clj 4936]
+;   [cljinvaders.asteroids$create_asteroid invokeStatic form-init12295050007539032778.clj 5]
+;   [cljinvaders.asteroids$create_asteroid invoke form-init12295050007539032778.clj 3]
+;   [cljinvaders.core$update_state invokeStatic form-init12295050007539032778.clj 30]
+;   [cljinvaders.core$update_state invoke form-init12295050007539032778.clj 25]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.multiply (Numbers.java:175)
+;     clojure.core$rand.invokeStatic (core.clj:4942)
+;     clojure.core$rand.invoke (core.clj:4936)
+;     cljinvaders.asteroids$create_asteroid.invokeStatic (form-init12295050007539032778.clj:5)
+;     cljinvaders.asteroids$create_asteroid.invoke (form-init12295050007539032778.clj:3)
+;     cljinvaders.core$update_state.invokeStatic (form-init12295050007539032778.clj:30)
+;     cljinvaders.core$update_state.invoke (form-init12295050007539032778.clj:25)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers multiply Numbers.java 175]
+;   [clojure.core$rand invokeStatic core.clj 4942]
+;   [clojure.core$rand invoke core.clj 4936]
+;   [cljinvaders.asteroids$create_asteroid invokeStatic form-init12295050007539032778.clj 5]
+;   [cljinvaders.asteroids$create_asteroid invoke form-init12295050007539032778.clj 3]
+;   [cljinvaders.core$update_state invokeStatic form-init12295050007539032778.clj 30]
+;   [cljinvaders.core$update_state invoke form-init12295050007539032778.clj 25]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.multiply (Numbers.java:175)
+;     clojure.core$rand.invokeStatic (core.clj:4942)
+;     clojure.core$rand.invoke (core.clj:4936)
+;     cljinvaders.asteroids$create_asteroid.invokeStatic (form-init12295050007539032778.clj:5)
+;     cljinvaders.asteroids$create_asteroid.invoke (form-init12295050007539032778.clj:3)
+;     cljinvaders.core$update_state.invokeStatic (form-init12295050007539032778.clj:30)
+;     cljinvaders.core$update_state.invoke (form-init12295050007539032778.clj:25)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers multiply Numbers.java 175]
+;   [clojure.core$rand invokeStatic core.clj 4942]
+;   [clojure.core$rand invoke core.clj 4936]
+;   [cljinvaders.asteroids$create_asteroid invokeStatic form-init12295050007539032778.clj 5]
+;   [cljinvaders.asteroids$create_asteroid invoke form-init12295050007539032778.clj 3]
+;   [cljinvaders.core$update_state invokeStatic form-init12295050007539032778.clj 30]
+;   [cljinvaders.core$update_state invoke form-init12295050007539032778.clj 25]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.multiply (Numbers.java:175)
+;     clojure.core$rand.invokeStatic (core.clj:4942)
+;     clojure.core$rand.invoke (core.clj:4936)
+;     cljinvaders.asteroids$create_asteroid.invokeStatic (form-init12295050007539032778.clj:5)
+;     cljinvaders.asteroids$create_asteroid.invoke (form-init12295050007539032778.clj:3)
+;     cljinvaders.core$update_state.invokeStatic (form-init12295050007539032778.clj:30)
+;     cljinvaders.core$update_state.invoke (form-init12295050007539032778.clj:25)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__2924.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.asteroids/spawn-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/spawn-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/move-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/update-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+; Syntax error (ExceptionInfo) compiling quote at (src/cljinvaders/core.clj:30:21).
+; Wrong number of args (2) passed to quote
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/spawn-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/update-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/update-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/update-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/update-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/update-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/update-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:28:27).
+; Unable to resolve symbol: state in this context
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:41:16).
+; Unable to resolve symbol: state in this context
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:41:16).
+; Unable to resolve symbol: state in this context
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/planeImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
