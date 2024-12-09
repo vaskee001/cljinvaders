@@ -25,7 +25,7 @@
   ; Update sketch state by changing circle color and position.
   (assoc state
          :color (mod (+ (:color state) 0.7) 255)
-         :player (player/update-player (:player state))))
+         :player (-> state :player player/update-player player/update-projectiles)))
 
 (defn draw-state [state]
   ; Clear the sketch by filling it with light-grey color.
@@ -37,10 +37,13 @@
     ; Draw the plane at the specified coordinates based on player position.
     (q/image @planeImg (- (:x player) 76) (- (:y player) 75))
     ; Draw testing circle
-    (q/ellipse (:x player) (:y player) 10 10)))
+    (q/ellipse (:x player) (:y player) 10 10)
+    (q/fill 0 0 255)
+    (doseq [proj (:projectiles (:player state))]
+      (q/ellipse (:x proj) (- (:y proj) 60) 5 10))))
 
 (q/defsketch cljinvaders
-  :title "You move my plane right round"
+  :title "You shoot my plane right round"
   :size :fullscreen
   ; setup function called only once, during sketch initialization.
   :setup setup
@@ -51,3 +54,6 @@
   ;; Function for handling key press (if needed in future).
   :features [:keep-on-top]
   :middleware [m/fun-mode])
+
+
+

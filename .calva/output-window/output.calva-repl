@@ -19397,3 +19397,2124 @@ nil
 clj꞉cljinvaders.core꞉> 
 #'cljinvaders.core/cljinvaders
 clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.player/update-projectiles
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.player/update-projectiles
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Connecting ...
+; Reading port file: file:///home/vaske/Documents/ClojureProject/cljinvaders/.nrepl-port ...
+; Using host:port localhost:43199 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉user꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉user꞉> 
+nil
+clj꞉cljinvaders.player꞉> 
+nil
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/init-player
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/update-player
+clj꞉cljinvaders.player꞉> 
+; Syntax error compiling at (src/cljinvaders/player.clj:14:18).
+; Unable to resolve symbol: shoot in this context
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/shoot
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/move-projectile
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/update-projectiles
+clj꞉cljinvaders.player꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/planeImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:45:1).
+; Unable to resolve symbol: update-state in this context
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke0 NativeMethodAccessorImpl.java -2]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke NativeMethodAccessorImpl.java 77]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (NativeMethodAccessorImpl.java:-2)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke0 NativeMethodAccessorImpl.java -2]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke NativeMethodAccessorImpl.java 77]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (NativeMethodAccessorImpl.java:-2)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke0 NativeMethodAccessorImpl.java -2]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke NativeMethodAccessorImpl.java 77]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (NativeMethodAccessorImpl.java:-2)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke0 NativeMethodAccessorImpl.java -2]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke NativeMethodAccessorImpl.java 77]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (NativeMethodAccessorImpl.java:-2)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke0 NativeMethodAccessorImpl.java -2]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke NativeMethodAccessorImpl.java 77]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (NativeMethodAccessorImpl.java:-2)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke0 NativeMethodAccessorImpl.java -2]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke NativeMethodAccessorImpl.java 77]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (NativeMethodAccessorImpl.java:-2)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke0 NativeMethodAccessorImpl.java -2]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke NativeMethodAccessorImpl.java 77]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (NativeMethodAccessorImpl.java:-2)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke0 NativeMethodAccessorImpl.java -2]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke NativeMethodAccessorImpl.java 77]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (NativeMethodAccessorImpl.java:-2)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke0 NativeMethodAccessorImpl.java -2]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke NativeMethodAccessorImpl.java 77]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (NativeMethodAccessorImpl.java:-2)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke0 NativeMethodAccessorImpl.java -2]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke NativeMethodAccessorImpl.java 77]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (NativeMethodAccessorImpl.java:-2)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke0 NativeMethodAccessorImpl.java -2]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke NativeMethodAccessorImpl.java 77]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (NativeMethodAccessorImpl.java:-2)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke0 NativeMethodAccessorImpl.java -2]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke NativeMethodAccessorImpl.java 77]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (NativeMethodAccessorImpl.java:-2)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke0 NativeMethodAccessorImpl.java -2]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke NativeMethodAccessorImpl.java 77]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (NativeMethodAccessorImpl.java:-2)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke0 NativeMethodAccessorImpl.java -2]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke NativeMethodAccessorImpl.java 77]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (NativeMethodAccessorImpl.java:-2)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke0 NativeMethodAccessorImpl.java -2]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke NativeMethodAccessorImpl.java 77]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (NativeMethodAccessorImpl.java:-2)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke0 NativeMethodAccessorImpl.java -2]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke NativeMethodAccessorImpl.java 77]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (NativeMethodAccessorImpl.java:-2)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.GeneratedMethodAccessor4 invoke nil -1]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.GeneratedMethodAccessor4.invoke (:-1)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.GeneratedMethodAccessor4 invoke nil -1]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.GeneratedMethodAccessor4.invoke (:-1)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.GeneratedMethodAccessor4 invoke nil -1]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.GeneratedMethodAccessor4.invoke (:-1)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.GeneratedMethodAccessor4 invoke nil -1]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.GeneratedMethodAccessor4.invoke (:-1)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.GeneratedMethodAccessor4 invoke nil -1]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.GeneratedMethodAccessor4.invoke (:-1)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.GeneratedMethodAccessor4 invoke nil -1]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.GeneratedMethodAccessor4.invoke (:-1)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.GeneratedMethodAccessor4 invoke nil -1]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.GeneratedMethodAccessor4.invoke (:-1)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.GeneratedMethodAccessor4 invoke nil -1]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.GeneratedMethodAccessor4.invoke (:-1)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.GeneratedMethodAccessor4 invoke nil -1]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.GeneratedMethodAccessor4.invoke (:-1)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.GeneratedMethodAccessor4 invoke nil -1]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.GeneratedMethodAccessor4.invoke (:-1)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.GeneratedMethodAccessor4 invoke nil -1]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.GeneratedMethodAccessor4.invoke (:-1)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.GeneratedMethodAccessor4 invoke nil -1]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.GeneratedMethodAccessor4.invoke (:-1)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :key-pressed  function:  #error {
+;  :cause Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  :via
+;  [{:type java.lang.IllegalStateException
+;    :message Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;    :at [clojure.lang.Var$Unbound throwArity Var.java 45]}]
+;  :trace
+;  [[clojure.lang.Var$Unbound throwArity Var.java 45]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__2971 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet keyPressed PApplet.java 2772]
+;   [quil.Applet keyPressedParent nil -1]
+;   [jdk.internal.reflect.GeneratedMethodAccessor4 invoke nil -1]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_keyPressed invokeStatic applet.clj 251]
+;   [quil.applet$_keyPressed invoke applet.clj 251]
+;   [quil.Applet keyPressed nil -1]
+;   [processing.core.PApplet handleKeyEvent PApplet.java 2636]
+;   [quil.Applet handleKeyEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2262]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalStateException: Attempting to call unbound fn: #'cljinvaders.player/handle-key-pressed
+;  at clojure.lang.Var$Unbound.throwArity (Var.java:45)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__2971.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.keyPressed (PApplet.java:2772)
+;     quil.Applet.keyPressedParent (:-1)
+;     jdk.internal.reflect.GeneratedMethodAccessor4.invoke (:-1)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_keyPressed.invokeStatic (applet.clj:251)
+;     quil.applet$_keyPressed.invoke (applet.clj:251)
+;     quil.Applet.keyPressed (:-1)
+;     processing.core.PApplet.handleKeyEvent (PApplet.java:2636)
+;     quil.Applet.handleKeyEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2262)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.player/update-projectiles
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/handle-key-pressed
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/shoot
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/move-projectile
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/update-projectiles
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/handle-key-pressed
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Connecting ...
+; Reading port file: file:///home/vaske/Documents/ClojureProject/cljinvaders/.nrepl-port ...
+; Using host:port localhost:44731 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉user꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉user꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:45:1).
+; Unable to resolve symbol: setup in this context
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/init-player
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/update-player
+clj꞉cljinvaders.player꞉> 
+; Syntax error compiling at (src/cljinvaders/player.clj:14:18).
+; Unable to resolve symbol: shoot in this context
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/shoot
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/handle-key-pressed
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/move-projectile
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/update-projectiles
+clj꞉cljinvaders.player꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/planeImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
