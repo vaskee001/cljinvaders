@@ -29769,3 +29769,5 @@ clj꞉cljinvaders.core꞉> 
 clj꞉cljinvaders.core꞉> 
 #'cljinvaders.core/cljinvaders
 clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/hit?
+clj꞉cljinvaders.core꞉> 
