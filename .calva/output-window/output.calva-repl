@@ -30338,3 +30338,168 @@ clj꞉cljinvaders.core꞉> 
 clj꞉cljinvaders.core꞉> 
 #'cljinvaders.core/cljinvaders
 clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/distance
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/hit?
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/handle-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/on-hit
+clj꞉cljinvaders.hit꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.player/update-projectiles
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.asteroids/update-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/spawn-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+nil
+clj꞉cljinvaders.asteroids꞉> 
+nil
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/distance
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/hit?
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/handle-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/on-hit
+clj꞉cljinvaders.hit꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/backgroundImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; nREPL Connection was closed
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Connecting ...
+; Reading port file: file:///home/vaske/Documents/ClojureProject/cljinvaders/.nrepl-port ...
+; Using host:port localhost:35211 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉user꞉> 
+nil
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/spawn-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/update-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+; Syntax error compiling at (src/cljinvaders/player.clj:23:29).
+; Unable to resolve symbol: move-projectile in this context
+clj꞉cljinvaders.player꞉> 
+; Syntax error compiling at (src/cljinvaders/player.clj:23:29).
+; Unable to resolve symbol: move-projectile in this context
+clj꞉cljinvaders.player꞉> 
+nil
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/init-player
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/update-player
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/shoot
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/handle-key-pressed
+clj꞉cljinvaders.player꞉> 
+; Syntax error compiling at (src/cljinvaders/player.clj:23:29).
+; Unable to resolve symbol: move-projectile in this context
+clj꞉cljinvaders.player꞉> 
+; Syntax error compiling at (src/cljinvaders/player.clj:23:29).
+; Unable to resolve symbol: move-projectile in this context
+clj꞉cljinvaders.player꞉> 
+; Syntax error compiling at (src/cljinvaders/player.clj:23:29).
+; Unable to resolve symbol: move-projectile in this context
+clj꞉cljinvaders.player꞉> 
+; Syntax error compiling at (src/cljinvaders/player.clj:23:29).
+; Unable to resolve symbol: move-projectile in this context
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/move-projectile
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/move-projectile
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/update-projectiles
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/update-projectiles
+clj꞉cljinvaders.player꞉> 
+nil
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/distance
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/hit?
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/handle-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/hit?
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/handle-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/on-hit
+clj꞉cljinvaders.hit꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/backgroundImg
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:21:3).
+; Unable to resolve symbol: planeImg in this context
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:21:3).
+; Unable to resolve symbol: planeImg in this context
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:21:3).
+; Unable to resolve symbol: planeImg in this context
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:21:3).
+; Unable to resolve symbol: planeImg in this context
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:21:3).
+; Unable to resolve symbol: planeImg in this context
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/backgroundImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/planeImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
