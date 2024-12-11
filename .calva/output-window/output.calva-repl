@@ -30646,3 +30646,18 @@ nil
 clj꞉cljinvaders.core꞉> 
 #'cljinvaders.core/cljinvaders
 clj꞉cljinvaders.core꞉> 
+#'cljinvaders.player/planeImg
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/init-player
+clj꞉cljinvaders.player꞉> 
+; Syntax error compiling at (src/cljinvaders/player.clj:7:3).
+; Unable to resolve symbol: asteroidImgs in this context
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/setup-player-images
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/planeImg
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
