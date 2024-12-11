@@ -25,13 +25,42 @@
 (defn distance [x1 y1 x2 y2]
   (Math/sqrt (+ (Math/pow (- x2 x1) 2) (Math/pow (- y2 y1) 2))))
 
+(defn hit? [projectile asteroid]
+  (< (distance (:x projectile) (:y projectile) (:x asteroid) (:y asteroid))
+     (/ (:size asteroid) 2)))
 
+;; When projectile touch asteroid, both should be removed (Try 3)
+(defn handle-hit [state on-hit]
+  ;; First get their state before hit
+  (let [projectiles (:projectiles (:player state))
+        ;; Check if any is hit and return not hit. 
+        ;; Events added to allow points
+        asteroids (:asteroids state)
+        results (reduce (fn [[remaining-projectiles remaining-asteroids events] proj]
+                          (if-let [hit (some #(when (hit? proj %) %) remaining-asteroids)]
+                            [(remove #{proj} remaining-projectiles)
+                             (remove #{hit} remaining-asteroids)
+                             (conj events (on-hit proj hit))]
+                            [remaining-projectiles remaining-asteroids events]))
+                        [projectiles asteroids []]
+                        projectiles)]
+    (-> state
+        (assoc-in [:player :projectiles] (first results))
+        (assoc :asteroids (second results))
+        (assoc :events (nth results 2)))))
+
+(defn on-hit [projectile asteroid]
+  {
+   :type :add-points
+   :projectile projectile
+   :asteroid asteroid})
 
 (defn update-state [state]
   ; Update the game state.
   (let [updated-state (-> state
                           (asteroids/spawn-asteroids)  ; Spawn asteroids with a 1% chance
-                          (asteroids/update-asteroids))] ; Move asteroids
+                          (asteroids/update-asteroids) ; Move asteroids
+                          (handle-hit on-hit))] ; Hit controller
     (assoc updated-state
            :color (mod (+ (:color updated-state) 0.7) 255)  ; Update color
            :player (-> updated-state :player player/update-player player/update-projectiles))))  ; Update player and projectiles

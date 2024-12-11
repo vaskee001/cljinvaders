@@ -29771,3 +29771,496 @@ clj꞉cljinvaders.core꞉> 
 clj꞉cljinvaders.core꞉> 
 #'cljinvaders.core/hit?
 clj꞉cljinvaders.core꞉> 
+; Syntax error reading source at (REPL:51:23).
+; Unmatched delimiter: }
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:1:1431).
+; Unable to resolve symbol: results in this context
+clj꞉cljinvaders.core꞉> 
+; Syntax error reading source at (REPL:51:23).
+; Unmatched delimiter: }
+clj꞉cljinvaders.core꞉> 
+; Syntax error reading source at (REPL:51:23).
+; Unmatched delimiter: }
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/handle-hit
+clj꞉cljinvaders.core꞉> 
+; Syntax error reading source at (REPL:51:23).
+; Unmatched delimiter: }
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/on-hit
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/handle-hit
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:1:1431).
+; Unable to resolve symbol: updated-state in this context
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Syntax error reading source at (REPL:40:66).
+; Unmatched delimiter: )
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/handle-hit
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/on-hit
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause nil
+;  :via
+;  [{:type java.lang.IndexOutOfBoundsException
+;    :message nil
+;    :at [clojure.lang.PersistentVector arrayFor PersistentVector.java 158]}]
+;  :trace
+;  [[clojure.lang.PersistentVector arrayFor PersistentVector.java 158]
+;   [clojure.lang.PersistentVector nth PersistentVector.java 162]
+;   [clojure.lang.RT nth RT.java 896]
+;   [cljinvaders.core$handle_hit invokeStatic form-init3393829635897664956.clj 47]
+;   [cljinvaders.core$handle_hit invoke form-init3393829635897664956.clj 33]
+;   [cljinvaders.core$update_state invokeStatic form-init3393829635897664956.clj 59]
+;   [cljinvaders.core$update_state invoke form-init3393829635897664956.clj 54]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__3053 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IndexOutOfBoundsException: null
+;  at clojure.lang.PersistentVector.arrayFor (PersistentVector.java:158)
+;     clojure.lang.PersistentVector.nth (PersistentVector.java:162)
+;     clojure.lang.RT.nth (RT.java:896)
+;     cljinvaders.core$handle_hit.invokeStatic (form-init3393829635897664956.clj:47)
+;     cljinvaders.core$handle_hit.invoke (form-init3393829635897664956.clj:33)
+;     cljinvaders.core$update_state.invokeStatic (form-init3393829635897664956.clj:59)
+;     cljinvaders.core$update_state.invoke (form-init3393829635897664956.clj:54)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__3053.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause nil
+;  :via
+;  [{:type java.lang.IndexOutOfBoundsException
+;    :message nil
+;    :at [clojure.lang.PersistentVector arrayFor PersistentVector.java 158]}]
+;  :trace
+;  [[clojure.lang.PersistentVector arrayFor PersistentVector.java 158]
+;   [clojure.lang.PersistentVector nth PersistentVector.java 162]
+;   [clojure.lang.RT nth RT.java 896]
+;   [cljinvaders.core$handle_hit invokeStatic form-init3393829635897664956.clj 47]
+;   [cljinvaders.core$handle_hit invoke form-init3393829635897664956.clj 33]
+;   [cljinvaders.core$update_state invokeStatic form-init3393829635897664956.clj 59]
+;   [cljinvaders.core$update_state invoke form-init3393829635897664956.clj 54]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__3053 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IndexOutOfBoundsException: null
+;  at clojure.lang.PersistentVector.arrayFor (PersistentVector.java:158)
+;     clojure.lang.PersistentVector.nth (PersistentVector.java:162)
+;     clojure.lang.RT.nth (RT.java:896)
+;     cljinvaders.core$handle_hit.invokeStatic (form-init3393829635897664956.clj:47)
+;     cljinvaders.core$handle_hit.invoke (form-init3393829635897664956.clj:33)
+;     cljinvaders.core$update_state.invokeStatic (form-init3393829635897664956.clj:59)
+;     cljinvaders.core$update_state.invoke (form-init3393829635897664956.clj:54)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__3053.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause nil
+;  :via
+;  [{:type java.lang.IndexOutOfBoundsException
+;    :message nil
+;    :at [clojure.lang.PersistentVector arrayFor PersistentVector.java 158]}]
+;  :trace
+;  [[clojure.lang.PersistentVector arrayFor PersistentVector.java 158]
+;   [clojure.lang.PersistentVector nth PersistentVector.java 162]
+;   [clojure.lang.RT nth RT.java 896]
+;   [cljinvaders.core$handle_hit invokeStatic form-init3393829635897664956.clj 47]
+;   [cljinvaders.core$handle_hit invoke form-init3393829635897664956.clj 33]
+;   [cljinvaders.core$update_state invokeStatic form-init3393829635897664956.clj 59]
+;   [cljinvaders.core$update_state invoke form-init3393829635897664956.clj 54]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__3053 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IndexOutOfBoundsException: null
+;  at clojure.lang.PersistentVector.arrayFor (PersistentVector.java:158)
+;     clojure.lang.PersistentVector.nth (PersistentVector.java:162)
+;     clojure.lang.RT.nth (RT.java:896)
+;     cljinvaders.core$handle_hit.invokeStatic (form-init3393829635897664956.clj:47)
+;     cljinvaders.core$handle_hit.invoke (form-init3393829635897664956.clj:33)
+;     cljinvaders.core$update_state.invokeStatic (form-init3393829635897664956.clj:59)
+;     cljinvaders.core$update_state.invoke (form-init3393829635897664956.clj:54)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__3053.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/handle-hit
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/on-hit
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/handle-hit
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/on-hit
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:50:1).
+; Unable to resolve symbol: event in this context
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/on-hit
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/on-hit
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/handle-hit
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Wrong number of args (2) passed to: cljinvaders.core/on-hit
+;  :via
+;  [{:type clojure.lang.ArityException
+;    :message Wrong number of args (2) passed to: cljinvaders.core/on-hit
+;    :at [clojure.lang.AFn throwArity AFn.java 429]}]
+;  :trace
+;  [[clojure.lang.AFn throwArity AFn.java 429]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [cljinvaders.core$handle_hit$fn__3525 invoke form-init3393829635897664956.clj 41]
+;   [clojure.core.protocols$fn__8249 invokeStatic protocols.clj 168]
+;   [clojure.core.protocols$fn__8249 invoke protocols.clj 124]
+;   [clojure.core.protocols$fn__8204$G__8199__8213 invoke protocols.clj 19]
+;   [clojure.core.protocols$seq_reduce invokeStatic protocols.clj 31]
+;   [clojure.core.protocols$fn__8236 invokeStatic protocols.clj 75]
+;   [clojure.core.protocols$fn__8236 invoke protocols.clj 75]
+;   [clojure.core.protocols$fn__8178$G__8173__8191 invoke protocols.clj 13]
+;   [clojure.core$reduce invokeStatic core.clj 6886]
+;   [clojure.core$reduce invoke core.clj 6868]
+;   [cljinvaders.core$handle_hit invokeStatic form-init3393829635897664956.clj 37]
+;   [cljinvaders.core$handle_hit invoke form-init3393829635897664956.clj 33]
+;   [cljinvaders.core$update_state invokeStatic form-init3393829635897664956.clj 60]
+;   [cljinvaders.core$update_state invoke form-init3393829635897664956.clj 55]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__3053 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  clojure.lang.ArityException: Wrong number of args (2) passed to: cljinvaders.core/on-hit
+;  at clojure.lang.AFn.throwArity (AFn.java:429)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     cljinvaders.core$handle_hit$fn__3525.invoke (form-init3393829635897664956.clj:41)
+;     clojure.core.protocols$fn__8249.invokeStatic (protocols.clj:168)
+;     clojure.core.protocols/fn (protocols.clj:124)
+;     clojure.core.protocols$fn__8204$G__8199__8213.invoke (protocols.clj:19)
+;     clojure.core.protocols$seq_reduce.invokeStatic (protocols.clj:31)
+;     clojure.core.protocols$fn__8236.invokeStatic (protocols.clj:75)
+;     clojure.core.protocols/fn (protocols.clj:75)
+;     clojure.core.protocols$fn__8178$G__8173__8191.invoke (protocols.clj:13)
+;     clojure.core$reduce.invokeStatic (core.clj:6886)
+;     clojure.core$reduce.invoke (core.clj:6868)
+;     cljinvaders.core$handle_hit.invokeStatic (form-init3393829635897664956.clj:37)
+;     cljinvaders.core$handle_hit.invoke (form-init3393829635897664956.clj:33)
+;     cljinvaders.core$update_state.invokeStatic (form-init3393829635897664956.clj:60)
+;     cljinvaders.core$update_state.invoke (form-init3393829635897664956.clj:55)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__3053.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Wrong number of args (2) passed to: cljinvaders.core/on-hit
+;  :via
+;  [{:type clojure.lang.ArityException
+;    :message Wrong number of args (2) passed to: cljinvaders.core/on-hit
+;    :at [clojure.lang.AFn throwArity AFn.java 429]}]
+;  :trace
+;  [[clojure.lang.AFn throwArity AFn.java 429]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [cljinvaders.core$handle_hit$fn__3525 invoke form-init3393829635897664956.clj 41]
+;   [clojure.core.protocols$fn__8249 invokeStatic protocols.clj 168]
+;   [clojure.core.protocols$fn__8249 invoke protocols.clj 124]
+;   [clojure.core.protocols$fn__8204$G__8199__8213 invoke protocols.clj 19]
+;   [clojure.core.protocols$seq_reduce invokeStatic protocols.clj 31]
+;   [clojure.core.protocols$fn__8236 invokeStatic protocols.clj 75]
+;   [clojure.core.protocols$fn__8236 invoke protocols.clj 75]
+;   [clojure.core.protocols$fn__8178$G__8173__8191 invoke protocols.clj 13]
+;   [clojure.core$reduce invokeStatic core.clj 6886]
+;   [clojure.core$reduce invoke core.clj 6868]
+;   [cljinvaders.core$handle_hit invokeStatic form-init3393829635897664956.clj 37]
+;   [cljinvaders.core$handle_hit invoke form-init3393829635897664956.clj 33]
+;   [cljinvaders.core$update_state invokeStatic form-init3393829635897664956.clj 60]
+;   [cljinvaders.core$update_state invoke form-init3393829635897664956.clj 55]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__3053 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  clojure.lang.ArityException: Wrong number of args (2) passed to: cljinvaders.core/on-hit
+;  at clojure.lang.AFn.throwArity (AFn.java:429)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     cljinvaders.core$handle_hit$fn__3525.invoke (form-init3393829635897664956.clj:41)
+;     clojure.core.protocols$fn__8249.invokeStatic (protocols.clj:168)
+;     clojure.core.protocols/fn (protocols.clj:124)
+;     clojure.core.protocols$fn__8204$G__8199__8213.invoke (protocols.clj:19)
+;     clojure.core.protocols$seq_reduce.invokeStatic (protocols.clj:31)
+;     clojure.core.protocols$fn__8236.invokeStatic (protocols.clj:75)
+;     clojure.core.protocols/fn (protocols.clj:75)
+;     clojure.core.protocols$fn__8178$G__8173__8191.invoke (protocols.clj:13)
+;     clojure.core$reduce.invokeStatic (core.clj:6886)
+;     clojure.core$reduce.invoke (core.clj:6868)
+;     cljinvaders.core$handle_hit.invokeStatic (form-init3393829635897664956.clj:37)
+;     cljinvaders.core$handle_hit.invoke (form-init3393829635897664956.clj:33)
+;     cljinvaders.core$update_state.invokeStatic (form-init3393829635897664956.clj:60)
+;     cljinvaders.core$update_state.invoke (form-init3393829635897664956.clj:55)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__3053.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Wrong number of args (2) passed to: cljinvaders.core/on-hit
+;  :via
+;  [{:type clojure.lang.ArityException
+;    :message Wrong number of args (2) passed to: cljinvaders.core/on-hit
+;    :at [clojure.lang.AFn throwArity AFn.java 429]}]
+;  :trace
+;  [[clojure.lang.AFn throwArity AFn.java 429]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [cljinvaders.core$handle_hit$fn__3525 invoke form-init3393829635897664956.clj 41]
+;   [clojure.core.protocols$fn__8249 invokeStatic protocols.clj 168]
+;   [clojure.core.protocols$fn__8249 invoke protocols.clj 124]
+;   [clojure.core.protocols$fn__8204$G__8199__8213 invoke protocols.clj 19]
+;   [clojure.core.protocols$seq_reduce invokeStatic protocols.clj 31]
+;   [clojure.core.protocols$fn__8236 invokeStatic protocols.clj 75]
+;   [clojure.core.protocols$fn__8236 invoke protocols.clj 75]
+;   [clojure.core.protocols$fn__8178$G__8173__8191 invoke protocols.clj 13]
+;   [clojure.core$reduce invokeStatic core.clj 6886]
+;   [clojure.core$reduce invoke core.clj 6868]
+;   [cljinvaders.core$handle_hit invokeStatic form-init3393829635897664956.clj 37]
+;   [cljinvaders.core$handle_hit invoke form-init3393829635897664956.clj 33]
+;   [cljinvaders.core$update_state invokeStatic form-init3393829635897664956.clj 60]
+;   [cljinvaders.core$update_state invoke form-init3393829635897664956.clj 55]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__3053 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  clojure.lang.ArityException: Wrong number of args (2) passed to: cljinvaders.core/on-hit
+;  at clojure.lang.AFn.throwArity (AFn.java:429)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     cljinvaders.core$handle_hit$fn__3525.invoke (form-init3393829635897664956.clj:41)
+;     clojure.core.protocols$fn__8249.invokeStatic (protocols.clj:168)
+;     clojure.core.protocols/fn (protocols.clj:124)
+;     clojure.core.protocols$fn__8204$G__8199__8213.invoke (protocols.clj:19)
+;     clojure.core.protocols$seq_reduce.invokeStatic (protocols.clj:31)
+;     clojure.core.protocols$fn__8236.invokeStatic (protocols.clj:75)
+;     clojure.core.protocols/fn (protocols.clj:75)
+;     clojure.core.protocols$fn__8178$G__8173__8191.invoke (protocols.clj:13)
+;     clojure.core$reduce.invokeStatic (core.clj:6886)
+;     clojure.core$reduce.invoke (core.clj:6868)
+;     cljinvaders.core$handle_hit.invokeStatic (form-init3393829635897664956.clj:37)
+;     cljinvaders.core$handle_hit.invoke (form-init3393829635897664956.clj:33)
+;     cljinvaders.core$update_state.invokeStatic (form-init3393829635897664956.clj:60)
+;     cljinvaders.core$update_state.invoke (form-init3393829635897664956.clj:55)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__3053.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/handle-hit
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/on-hit
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:52:1).
+; Unable to resolve symbol: check-hit in this context
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:52:1).
+; Unable to resolve symbol: explosion in this context
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/handle-hit
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/handle-hit
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/handle-hit
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/handle-hit
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/distance
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/hit?
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/handle-hit
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:52:1).
+; Unable to resolve symbol: explosion in this context
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/on-hit
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/on-hit
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/handle-hit
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/on-hit
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
