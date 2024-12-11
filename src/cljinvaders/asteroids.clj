@@ -4,8 +4,8 @@
   ; Init asteroid on random place with random speed (between 2 and 3 for now)
   {:x (rand screen-width)
    :y -50
-   :size 10
-   :speed (+ 2 (rand 3))})
+   :size (+ 30 (rand 100))
+   :speed (+ 3 (rand 3))})
 
 (defn spawn-asteroids [state]
   ; There is 1% chance asteroid is spawned (every 100th frame)

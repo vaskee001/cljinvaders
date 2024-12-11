@@ -9,12 +9,12 @@
          :x (q/mouse-x)  ; Update the x position based on mouse's x-coordinate
          :y (q/mouse-y)))  ; Update the y position based on mouse's y-coordinate
 
-(defn handle-key-pressed [state event]
-  (let [key (:key event)]   
-      (= key :s) (update state :player shoot)))
-
 (defn shoot [player]
   (update player :projectiles conj {:x (:x player) :y (:y player) :speed 10}))
+
+(defn handle-key-pressed [state event]
+  (let [key (:key event)]
+    (= key :s) (update state :player shoot)))
 
 (defn move-projectile [projectile]
   (update projectile :y #(- % (:speed projectile))))
