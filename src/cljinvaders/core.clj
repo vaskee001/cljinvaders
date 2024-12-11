@@ -1,7 +1,8 @@
 (ns cljinvaders.core
   (:require [quil.core :as q]
             [quil.middleware :as m]
-            [cljinvaders.player :as player]))
+            [cljinvaders.player :as player]
+            [cljinvaders.asteroids :as asteroids]))
 
 (def planeImg (atom nil))
 
@@ -21,11 +22,20 @@
    :screen-width (q/screen-width)
    :screen-height (q/screen-height)})
 
+(defn distance [x1 y1 x2 y2]
+  (Math/sqrt (+ (Math/pow (- x2 x1) 2) (Math/pow (- y2 y1) 2))))
+
+
+
 (defn update-state [state]
-  ; Update sketch state by changing circle color and position.
-  (assoc state
-         :color (mod (+ (:color state) 0.7) 255)
-         :player (-> state :player player/update-player player/update-projectiles)))
+  ; Update the game state.
+  (let [updated-state (-> state
+                          (asteroids/spawn-asteroids)  ; Spawn asteroids with a 1% chance
+                          (asteroids/update-asteroids))] ; Move asteroids
+    (assoc updated-state
+           :color (mod (+ (:color updated-state) 0.7) 255)  ; Update color
+           :player (-> updated-state :player player/update-player player/update-projectiles))))  ; Update player and projectiles
+
 
 (defn draw-state [state]
   ; Clear the sketch by filling it with light-grey color.
@@ -40,10 +50,14 @@
     (q/ellipse (:x player) (:y player) 10 10)
     (q/fill 0 0 255)
     (doseq [proj (:projectiles (:player state))]
-      (q/ellipse (:x proj) (- (:y proj) 60) 5 10))))
+      (q/ellipse (:x proj) (- (:y proj) 60) 5 10))
+    ; Draw asteriuds
+    (q/fill 255 0 0)  ; Color
+    (doseq [asteroid (:asteroids state)]  
+      (q/ellipse (:x asteroid) (:y asteroid) (:size asteroid) (:size asteroid)))))  ;))
 
 (q/defsketch cljinvaders
-  :title "You shoot my plane right round"
+  :title "You shoot my asteroids right round"
   :size :fullscreen
   ; setup function called only once, during sketch initialization.
   :setup setup
@@ -54,6 +68,7 @@
   ;; Function for handling key press (if needed in future).
   :features [:keep-on-top]
   :middleware [m/fun-mode])
+
 
 
 
