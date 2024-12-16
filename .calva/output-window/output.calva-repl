@@ -32802,3 +32802,24 @@ true
 clj꞉cljinvaders.asteroids-test꞉> 
 true
 clj꞉cljinvaders.asteroids-test꞉> 
+; Syntax error compiling at (test/cljinvaders/asteroids_test.clj:19:29).
+; Unable to resolve symbol: create-asteroid in this context
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
