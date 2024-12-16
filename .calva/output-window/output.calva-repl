@@ -32778,3 +32778,27 @@ true
 clj꞉cljinvaders.asteroids-test꞉> 
 true
 clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+; Syntax error compiling at (test/cljinvaders/asteroids_test.clj:15:29).
+; No such namespace: asteriuds
+clj꞉cljinvaders.asteroids-test꞉> 
+; Syntax error compiling at (test/cljinvaders/asteroids_test.clj:15:29).
+; No such namespace: asteriuds
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
