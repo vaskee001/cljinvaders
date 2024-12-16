@@ -1,16 +1,36 @@
 (ns cljinvaders.player
   (:require [quil.core :as q]))
 
+(def planeImg (atom nil))
+
+(defn setup-player-images []
+  (reset! planeImg
+          [(q/load-image "src/cljinvaders/img/player/plane1.png")
+           (q/load-image "src/cljinvaders/img/player/plane2.png")]))
+
+(defn random-plane-img []
+  (rand-nth @planeImg))
+
+;; addedd time and cooldown
 (defn init-player []
-  {:x 500 :y 900})  ; Initial position of the player (at the center of the screen)
+  {:x 500 :y 900 :image (random-plane-img) :last-shot-time 0 :shooting-cooldown 500})  ; Initial player state with cooldown
 
 (defn update-player [player]
   (assoc player
          :x (q/mouse-x)  ; Update the x position based on mouse's x-coordinate
-         :y (q/mouse-y)))  ; Update the y position based on mouse's y-coordinate
+         :y (q/mouse-y)
+         ))  ; Update the y position based on mouse's y-coordinate
 
 (defn shoot [player]
-  (update player :projectiles conj {:x (:x player) :y (:y player) :speed 10}))
+  (let [current-time (q/millis)
+        time-diff (- current-time (:last-shot-time player))
+        shooting-cooldown (:shooting-cooldown player)]  
+    (if (>= time-diff shooting-cooldown)  ; Check if cooldown has passed
+      (let [new-player (assoc player
+                              :projectiles (conj (:projectiles player) {:x (:x player) :y (:y player) :speed 10})
+                              :last-shot-time current-time)]  
+        new-player)
+      player)))
 
 (defn handle-key-pressed [state event]
   (let [key (:key event)]

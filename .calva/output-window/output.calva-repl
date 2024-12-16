@@ -31497,3 +31497,402 @@ clj꞉cljinvaders.core꞉> 
 clj꞉cljinvaders.player꞉> 
 #'cljinvaders.player/shoot
 clj꞉cljinvaders.player꞉> 
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Connecting ...
+; Reading port file: file:///home/vaske/Documents/ClojureProject/cljinvaders/.nrepl-port ...
+; Using host:port localhost:33131 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉user꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉user꞉> 
+nil
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/planeImg
+clj꞉cljinvaders.player꞉> 
+[]
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/setup-player-images
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/random-plane-img
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/random-plane-img
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/init-player
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/update-player
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/shoot
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/handle-key-pressed
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/handle-key-pressed
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/move-projectile
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/update-projectiles
+clj꞉cljinvaders.player꞉> 
+nil
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/asteroidImgs
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/random-asteroid-img
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/setup-asteroid-images
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/spawn-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/update-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+nil
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/distance
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/hit?
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/hit?
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/handle-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/on-hit
+clj꞉cljinvaders.hit꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/backgroundImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Connecting ...
+; Reading port file: file:///home/vaske/Documents/ClojureProject/cljinvaders/.nrepl-port ...
+; Using host:port localhost:41189 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉user꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉user꞉> 
+nil
+clj꞉cljinvaders.player꞉> 
+; Syntax error compiling at (src/cljinvaders/player.clj:7:3).
+; Unable to resolve symbol: planeImg in this context
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/planeImg
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/setup-player-images
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/random-plane-img
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/init-player
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/update-player
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/shoot
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/handle-key-pressed
+clj꞉cljinvaders.player꞉> 
+; Syntax error compiling at (src/cljinvaders/player.clj:43:29).
+; Unable to resolve symbol: move-projectile in this context
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/move-projectile
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/update-projectiles
+clj꞉cljinvaders.player꞉> 
+; Syntax error compiling at (src/cljinvaders/asteroids.clj:10:3).
+; Unable to resolve symbol: asteroidImgs in this context
+clj꞉cljinvaders.asteroids꞉> 
+nil
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/asteroidImgs
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/random-asteroid-img
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/setup-asteroid-images
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/spawn-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/update-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+nil
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/distance
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/hit?
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/handle-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/on-hit
+clj꞉cljinvaders.hit꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/backgroundImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (project.clj:1:1).
+; Unable to resolve symbol: defproject in this context
+clj꞉user꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroids-test/eval3277$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroids-test꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroids-test/eval3283$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroids-test꞉> 
+; Syntax error compiling at (project.clj:1:1).
+; Unable to resolve symbol: defproject in this context
+clj꞉user꞉> 
+; Syntax error compiling at (project.clj:1:1).
+; Unable to resolve symbol: defproject in this context
+clj꞉user꞉> 
+; Syntax error compiling at (project.clj:1:1).
+; Unable to resolve symbol: defproject in this context
+clj꞉user꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroids-test/eval3297$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroids-test꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3309$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Syntax error compiling at (project.clj:1:1).
+; Unable to resolve symbol: defproject in this context
+clj꞉user꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3323$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3329$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Syntax error compiling at (project.clj:1:1).
+; Unable to resolve symbol: defproject in this context
+clj꞉user꞉> 
+; Syntax error compiling at (project.clj:1:1).
+; Unable to resolve symbol: defproject in this context
+clj꞉user꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3343$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3349$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3355$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3361$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3367$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Syntax error compiling at (project.clj:1:1).
+; Unable to resolve symbol: defproject in this context
+clj꞉user꞉> 
+; Syntax error compiling at (project.clj:1:1).
+; Unable to resolve symbol: defproject in this context
+clj꞉user꞉> 
+; Syntax error compiling at (project.clj:1:1).
+; Unable to resolve symbol: defproject in this context
+clj꞉user꞉> 
+; Syntax error compiling at (project.clj:1:1).
+; Unable to resolve symbol: defproject in this context
+clj꞉user꞉> 
+; Syntax error compiling at (project.clj:1:1).
+; Unable to resolve symbol: defproject in this context
+clj꞉user꞉> 
+; Syntax error compiling at (project.clj:1:1).
+; Unable to resolve symbol: defproject in this context
+clj꞉user꞉> 
+; Syntax error compiling at (project.clj:1:1).
+; Unable to resolve symbol: defproject in this context
+clj꞉user꞉> 
+; Syntax error compiling def at (src/cljinvaders/core.clj:69:1).
+; First argument to def must be a Symbol
+clj꞉cljinvaders.core꞉> 
+; Execution error (IllegalArgumentException) at quil.applet/applet (applet.clj:273).
+; No value supplied for key: [#object[quil.middleware$fun_mode 0x8b79991 "quil.middleware$fun_mode@8b79991"]]
+clj꞉cljinvaders.core꞉> 
+; Execution error (ArityException) at cljinvaders.core/eval3383 (form-init9544615611135106576.clj:69).
+; Wrong number of args (17) passed to: :main
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (project.clj:1:1).
+; Unable to resolve symbol: defproject in this context
+clj꞉user꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3395$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3401$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3407$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3413$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3419$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3425$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3431$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Syntax error compiling at (project.clj:1:1).
+; Unable to resolve symbol: defproject in this context
+clj꞉user꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3445$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Syntax error compiling at (project.clj:1:1).
+; Unable to resolve symbol: defproject in this context
+clj꞉user꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3459$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3465$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3471$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3477$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3483$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3489$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Syntax error compiling at (test/cljinvaders/asteroidstest.clj:4:1).
+; Unable to resolve symbol: facts in this context
+clj꞉cljinvaders.asteroidstest꞉> 
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Connecting ...
+; Reading port file: file:///home/vaske/Documents/ClojureProject/cljinvaders/.nrepl-port ...
+; Using host:port localhost:41189 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉user꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3505$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3511$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3517$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3523$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3529$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroidstest/eval3535$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroidstest꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.core/eval3547$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroids-test/eval3569$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroids-test꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroids-test/eval3575$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroids-test꞉> 
+; Syntax error compiling at (project.clj:1:1).
+; Unable to resolve symbol: defproject in this context
+clj꞉user꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroids-test/eval3589$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroids-test꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroids-test/eval3595$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroids-test꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroids-test/eval3601$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroids-test꞉> 
+; Execution error (FileNotFoundException) at cljinvaders.asteroids-test/eval3607$loading (form-init9544615611135106576.clj:1).
+; Could not locate midje/sweet__init.class, midje/sweet.clj or midje/sweet.cljc on classpath.
+clj꞉cljinvaders.asteroids-test꞉> 
+; Syntax error compiling at (test/cljinvaders/asteroids_test.clj:5:1).
+; Unable to resolve symbol: facts in this context
+clj꞉cljinvaders.asteroids-test꞉> 
+; nREPL Connection was closed
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Connecting ...
+; Reading port file: file:///home/vaske/Documents/ClojureProject/cljinvaders/.nrepl-port ...
+; Using host:port localhost:45011 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉user꞉> 
+nil
+clj꞉cljinvaders.asteroids-test꞉> 
+nil
+clj꞉cljinvaders.asteroids-test꞉> 
+nil
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 

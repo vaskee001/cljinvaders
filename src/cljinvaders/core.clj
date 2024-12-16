@@ -2,9 +2,10 @@
   (:require [quil.core :as q]
             [quil.middleware :as m]
             [cljinvaders.player :as player]
-            [cljinvaders.asteroids :as asteroids]))
+            [cljinvaders.asteroids :as asteroids]
+            [cljinvaders.hit :as hit]))
 
-(def planeImg (atom nil))
+(def backgroundImg (atom nil))
 
 
 (defn setup []
@@ -16,51 +17,27 @@
   (q/no-cursor)
   ; Setup function returns initial state. It contains
   ; circle color and position.
-  (reset! planeImg (q/load-image "plane.png"))
+  (player/setup-player-images)
+  (let [screen-width (q/screen-width)
+        screen-height (q/screen-height)
+        background-img (cond
+                         (< screen-width 1921) "src/cljinvaders/img/background/background.png"
+                         (< screen-width 2561 ) "src/cljinvaders/img/background/background2k.png"
+                         :else "src/cljinvaders/img/background/background4k.png")]
+    (reset! backgroundImg (q/load-image background-img)))
+  (asteroids/setup-asteroid-images)
   {:color 0
    :player (player/init-player)
    :screen-width (q/screen-width)
    :screen-height (q/screen-height)})
 
-(defn distance [x1 y1 x2 y2]
-  (Math/sqrt (+ (Math/pow (- x2 x1) 2) (Math/pow (- y2 y1) 2))))
-
-(defn hit? [projectile asteroid]
-  (< (distance (:x projectile) (:y projectile) (:x asteroid) (:y asteroid))
-     (/ (:size asteroid) 2)))
-
-;; When projectile touch asteroid, both should be removed (Try 3)
-(defn handle-hit [state on-hit]
-  ;; First get their state before hit
-  (let [projectiles (:projectiles (:player state))
-        ;; Check if any is hit and return not hit. 
-        ;; Events added to allow points
-        asteroids (:asteroids state)
-        results (reduce (fn [[remaining-projectiles remaining-asteroids events] proj]
-                          (if-let [hit (some #(when (hit? proj %) %) remaining-asteroids)]
-                            [(remove #{proj} remaining-projectiles)
-                             (remove #{hit} remaining-asteroids)
-                             (conj events (on-hit proj hit))]
-                            [remaining-projectiles remaining-asteroids events]))
-                        [projectiles asteroids []]
-                        projectiles)]
-    (-> state
-        (assoc-in [:player :projectiles] (first results))
-        (assoc :asteroids (second results))
-        (assoc :events (nth results 2)))))
-
-(defn on-hit [projectile asteroid]
-  {
-   :type :add-points
-   :projectile projectile
-   :asteroid asteroid})
 
 (defn update-state [state]
   ; Update the game state.
   (let [updated-state (-> state
                           (asteroids/spawn-asteroids)  ; Spawn asteroids with a 1% chance
                           (asteroids/update-asteroids) ; Move asteroids
-                          (handle-hit on-hit))] ; Hit controller
+                          (hit/handle-hit hit/on-hit))] ; Hit controller
     (assoc updated-state
            :color (mod (+ (:color updated-state) 0.7) 255)  ; Update color
            :player (-> updated-state :player player/update-player player/update-projectiles))))  ; Update player and projectiles
@@ -69,12 +46,13 @@
 (defn draw-state [state]
   ; Clear the sketch by filling it with light-grey color.
   (q/background 240)
+  (q/image @backgroundImg 0 0)
   ; Set circle color.
   (q/fill (:color state) 255 255)
   ; Get player position from the state.
   (let [player (:player state)]
     ; Draw the plane at the specified coordinates based on player position.
-    (q/image @planeImg (- (:x player) 76) (- (:y player) 75))
+    (q/image (:image player) (- (:x player) 76) (- (:y player) 75))
     ; Draw testing circle
     (q/ellipse (:x player) (:y player) 10 10)
     (q/fill 0 0 255)
@@ -83,7 +61,10 @@
     ; Draw asteriuds
     (q/fill 255 0 0)  ; Color
     (doseq [asteroid (:asteroids state)]  
-      (q/ellipse (:x asteroid) (:y asteroid) (:size asteroid) (:size asteroid)))))  ;))
+      (q/image (:image asteroid) (- (:x asteroid) (/ (:size asteroid) 2)) 
+         (- (:y asteroid) (/ (:size asteroid) 2)) 
+         (:size asteroid) 
+         (:size asteroid)))))
 
 (q/defsketch cljinvaders
   :title "You shoot my asteroids right round"
