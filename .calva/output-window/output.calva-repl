@@ -34407,3 +34407,35 @@ true
 clj꞉cljinvaders.hit-test꞉> 
 true
 clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL it removes the projectile and asteroid when they touch at (hit_test.clj:26)
+; Expected:
+; false
+; Actual:
+; java.lang.ClassCastException: class java.lang.Boolean cannot be cast to class clojure.lang.IFn (java.lang.Boolean is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+;   cljinvaders.hit_test$eval12060$fn__12061$fn__12062$fn__12063.invoke(form-init17391393721139690241.clj:31)
+;   cljinvaders.hit_test$eval12060$fn__12061$fn__12062.invoke(form-init17391393721139690241.clj:25)
+;   cljinvaders.hit_test$eval12060$fn__12061.invoke(form-init17391393721139690241.clj:25)
+;   cljinvaders.hit_test$eval12060.invokeStatic(form-init17391393721139690241.clj:25)
+;   cljinvaders.hit_test$eval12060.invoke(form-init17391393721139690241.clj:25)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL it removes the projectile and asteroid when they touch at (hit_test.clj:26)
+; Expected:
+; true
+; Actual:
+; false
+false
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
