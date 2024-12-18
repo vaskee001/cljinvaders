@@ -41318,3 +41318,1292 @@ clj꞉cljinvaders.core꞉> 
 clj꞉cljinvaders.hit꞉> 
 #'cljinvaders.core/cljinvaders
 clj꞉cljinvaders.core꞉> 
+#'cljinvaders.hit/handle-player-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+#'cljinvaders.hit/handle-player-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 0
+; Remaining lives: 0
+; Remaining lives: 0
+; Remaining lives: 0
+; Remaining lives: 0
+; Remaining lives: 0
+; Remaining lives: 0
+; Remaining lives: 0
+; Remaining lives: 0
+; Remaining lives: 0
+; Remaining lives: 0
+; Remaining lives: 0
+; Remaining lives: 0
+; Remaining lives: 0
+; Remaining lives: 0
+; Remaining lives: 0
+; Remaining lives: 0
+; Remaining lives: 0
+#'cljinvaders.hit/handle-player-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 3
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+; Remaining lives: 2
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.hit/handle-player-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/handle-player-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/handle-player-hit
+clj꞉cljinvaders.hit꞉> 
+; Syntax error compiling at (test/cljinvaders/hit_test.clj:34:1).
+; Unable to resolve symbol: handle-player-hit in this context
+clj꞉cljinvaders.hit-test꞉> 
+; Syntax error compiling at (test/cljinvaders/hit_test.clj:34:1).
+; No such namespace: player
+clj꞉cljinvaders.hit-test꞉> 
+; Syntax error compiling at (test/cljinvaders/hit_test.clj:34:1).
+; No such var: hit/handle-hit-hit
+clj꞉cljinvaders.hit-test꞉> 
+; Execution error (NullPointerException) at cljinvaders.hit/distance (form-init17391393721139690241.clj:5).
+; Cannot invoke "Object.getClass()" because "x" is null
+clj꞉cljinvaders.hit-test꞉> 
+; Execution error (NullPointerException) at cljinvaders.hit/distance (form-init17391393721139690241.clj:5).
+; Cannot invoke "Object.getClass()" because "x" is null
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; [:life :life :life]
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; [:life :life :life]
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+#'cljinvaders.hit/handle-player-hit
+clj꞉cljinvaders.hit꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+#'cljinvaders.hit/handle-player-hit
+clj꞉cljinvaders.hit꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+#'cljinvaders.hit/handle-player-hit
+clj꞉cljinvaders.hit꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:39)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:39)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:39)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:39)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:49)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:39)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:39)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; Syntax error compiling at (test/cljinvaders/hit_test.clj:39:23).
+; Unable to resolve symbol: new-state in this context
+clj꞉cljinvaders.hit-test꞉> 
+; Syntax error compiling at (test/cljinvaders/hit_test.clj:39:23).
+; Unable to resolve symbol: new-state in this context
+clj꞉cljinvaders.hit-test꞉> 
+2
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL it removes one life when the player hits an asteroid at (hit_test.clj:39)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:39)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:36)
+; Expected:
+; 2
+; Actual:
+; [:life :life :life]
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:36)
+; Expected:
+; 2
+; Actual:
+; [:life :life :life]
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:39)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:39)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 3
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 0
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:41)
+; Expected:
+; 2
+; Actual:
+; 0
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:40)
+; Expected:
+; 2
+; Actual:
+; 0
+false
+clj꞉cljinvaders.hit-test꞉> 
