@@ -39,16 +39,19 @@
 (defn handle-player-hit [state on-player-hit]
   (let [player (:player state)
         asteroids (:asteroids state)
-        results (reduce (fn [[remaining-asteroids events] asteroid]
+        results (reduce (fn [[remaining-asteroids remaining-lives events] asteroid]
                           (if (hit? player asteroid)
-                            [(remove #{asteroid} remaining-asteroids)
-                             (conj events (on-player-hit player asteroid))]
-                            [remaining-asteroids events]))
-                        [asteroids []]
-                        asteroids)]
+                            [(remove #{asteroid} remaining-asteroids)  ; Remove the hit asteroid
+                             (remove (constantly true) remaining-lives)  ; Remove one "life" from the list
+                             (conj events (on-player-hit player asteroid))]  ; Record event
+                            [remaining-asteroids remaining-lives events]))  ; Continue without changes
+                        [asteroids (:lives player) []]  ; Initial values
+                        asteroids)]  ; Iterate through asteroids
     (-> state
-        (assoc :asteroids (first results))
-        (update :events concat (second results)))))
+        (assoc :player (assoc player :lives (second results)))  ; Update player with new lives
+        (assoc :asteroids (first results))  ; Update asteroids
+        (update :events concat (nth results 2)))))  ; Concatenate events
+
 
 (defn on-player-hit [player asteroid]
   {:type :player-hit

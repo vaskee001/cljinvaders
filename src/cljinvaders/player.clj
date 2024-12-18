@@ -11,9 +11,9 @@
 (defn random-plane-img []
   (rand-nth @planeImg))
 
-;; addedd time and cooldown
 (defn init-player []
-  {:x 500 :y 900 :image (random-plane-img) :last-shot-time 0 :shooting-cooldown 500 :lives 3})  ; Initial player state with cooldown
+  {:x 500 :y 900 :image (random-plane-img) :last-shot-time 0 :shooting-cooldown 500 :lives [:life :life :life]}) 
+
 
 (defn update-player [player]
   (assoc player
@@ -43,5 +43,3 @@
   (let [updated-projectiles (map move-projectile (:projectiles player))
         visible-projectiles (filter #(> (:y %) 0) updated-projectiles)]
     (assoc player :projectiles visible-projectiles)))
-
-
