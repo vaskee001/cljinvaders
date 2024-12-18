@@ -33327,3 +33327,933 @@ clj꞉cljinvaders.core꞉> 
 clj꞉cljinvaders.core꞉> 
 #'cljinvaders.core/cljinvaders
 clj꞉cljinvaders.core꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Connecting ...
+; Reading port file: file:///home/vaske/Documents/ClojureProject/cljinvaders/.nrepl-port ...
+; Using host:port localhost:36831 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉user꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉user꞉> 
+nil
+clj꞉cljinvaders.player꞉> 
+; Syntax error compiling at (src/cljinvaders/player.clj:7:3).
+; Unable to resolve symbol: planeImg in this context
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/planeImg
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/setup-player-images
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/random-plane-img
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/init-player
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/update-player
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/shoot
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/handle-key-pressed
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/move-projectile
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/update-projectiles
+clj꞉cljinvaders.player꞉> 
+nil
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/distance
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/hit?
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/hit?
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/handle-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/on-hit
+clj꞉cljinvaders.hit꞉> 
+nil
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/asteroidImgs
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/random-asteroid-img
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/setup-asteroid-images
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/spawn-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/update-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/backgroundImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Connecting ...
+; Reading port file: file:///home/vaske/Documents/ClojureProject/cljinvaders/.nrepl-port ...
+; Using host:port localhost:34991 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉user꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉user꞉> 
+nil
+clj꞉cljinvaders.asteroids-test꞉> 
+nil
+clj꞉cljinvaders.asteroids-test꞉> 
+; 
+; FAIL Test create asteroid function - the :x value should not be bigger than screen width at (asteroids_test.clj:7)
+; Expected:
+; false
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(asteroids.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(asteroids.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(asteroids.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(asteroids.clj:15)
+;   cljinvaders.asteroids_test$eval10526$fn__10527$fn__10528$fn__10529$fn__10530$fn__10531.invoke(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids_test$eval10526$fn__10527$fn__10528$fn__10529$fn__10530.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10526$fn__10527$fn__10528$fn__10529.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10526$fn__10527$fn__10528.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10526$fn__10527.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10526.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10526.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :y value should always be -50 at (asteroids_test.clj:11)
+; Expected:
+; -50
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(asteroids.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(asteroids.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(asteroids.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(asteroids.clj:15)
+;   cljinvaders.asteroids_test$eval10526$fn__10527$fn__10528$fn__10536$fn__10537$fn__10538.invoke(form-init17391393721139690241.clj:11)
+;   cljinvaders.asteroids_test$eval10526$fn__10527$fn__10528$fn__10536$fn__10537.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10526$fn__10527$fn__10528$fn__10536.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10526$fn__10527$fn__10528.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10526$fn__10527.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10526.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10526.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :size value should be between 30 and 130 (values may change later) at (asteroids_test.clj:15)
+; Expected:
+; true
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(asteroids.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(asteroids.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(asteroids.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(asteroids.clj:15)
+;   cljinvaders.asteroids_test$eval10526$fn__10527$fn__10528$fn__10542$fn__10543$fn__10544.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval10526$fn__10527$fn__10528$fn__10542$fn__10543.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10526$fn__10527$fn__10528$fn__10542.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10526$fn__10527$fn__10528.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10526$fn__10527.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10526.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10526.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :speed value should be between 3 and 6 at (asteroids_test.clj:19)
+; Expected:
+; true
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(asteroids.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(asteroids.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(asteroids.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(asteroids.clj:15)
+;   cljinvaders.asteroids_test$eval10526$fn__10527$fn__10528$fn__10549$fn__10550$fn__10551.invoke(form-init17391393721139690241.clj:19)
+;   cljinvaders.asteroids_test$eval10526$fn__10527$fn__10528$fn__10549$fn__10550.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10526$fn__10527$fn__10528$fn__10549.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10526$fn__10527$fn__10528.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10526$fn__10527.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10526.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10526.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.asteroids-test꞉> 
+nil
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/asteroidImgs
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/random-asteroid-img
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/setup-asteroid-images
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/spawn-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/update-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+nil
+clj꞉cljinvaders.asteroids-test꞉> 
+; 
+; FAIL Test create asteroid function - the :x value should not be bigger than screen width at (asteroids_test.clj:7)
+; Expected:
+; false
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval10612$fn__10613$fn__10614$fn__10615$fn__10616$fn__10617.invoke(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids_test$eval10612$fn__10613$fn__10614$fn__10615$fn__10616.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10612$fn__10613$fn__10614$fn__10615.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10612$fn__10613$fn__10614.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10612$fn__10613.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10612.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10612.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :y value should always be -50 at (asteroids_test.clj:11)
+; Expected:
+; -50
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval10612$fn__10613$fn__10614$fn__10622$fn__10623$fn__10624.invoke(form-init17391393721139690241.clj:11)
+;   cljinvaders.asteroids_test$eval10612$fn__10613$fn__10614$fn__10622$fn__10623.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10612$fn__10613$fn__10614$fn__10622.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10612$fn__10613$fn__10614.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10612$fn__10613.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10612.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10612.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :size value should be between 30 and 130 (values may change later) at (asteroids_test.clj:15)
+; Expected:
+; true
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval10612$fn__10613$fn__10614$fn__10628$fn__10629$fn__10630.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval10612$fn__10613$fn__10614$fn__10628$fn__10629.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10612$fn__10613$fn__10614$fn__10628.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10612$fn__10613$fn__10614.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10612$fn__10613.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10612.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10612.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :speed value should be between 3 and 6 at (asteroids_test.clj:19)
+; Expected:
+; true
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval10612$fn__10613$fn__10614$fn__10635$fn__10636$fn__10637.invoke(form-init17391393721139690241.clj:19)
+;   cljinvaders.asteroids_test$eval10612$fn__10613$fn__10614$fn__10635$fn__10636.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10612$fn__10613$fn__10614$fn__10635.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10612$fn__10613$fn__10614.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10612$fn__10613.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10612.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10612.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.asteroids-test꞉> 
+; 
+; FAIL Test create asteroid function - the :x value should not be bigger than screen width at (asteroids_test.clj:7)
+; Expected:
+; false
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval10645$fn__10646$fn__10647$fn__10648$fn__10649$fn__10650.invoke(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids_test$eval10645$fn__10646$fn__10647$fn__10648$fn__10649.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10645$fn__10646$fn__10647$fn__10648.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10645$fn__10646$fn__10647.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10645$fn__10646.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10645.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10645.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :y value should always be -50 at (asteroids_test.clj:11)
+; Expected:
+; -50
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval10645$fn__10646$fn__10647$fn__10655$fn__10656$fn__10657.invoke(form-init17391393721139690241.clj:11)
+;   cljinvaders.asteroids_test$eval10645$fn__10646$fn__10647$fn__10655$fn__10656.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10645$fn__10646$fn__10647$fn__10655.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10645$fn__10646$fn__10647.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10645$fn__10646.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10645.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10645.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :size value should be between 30 and 130 (values may change later) at (asteroids_test.clj:15)
+; Expected:
+; true
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval10645$fn__10646$fn__10647$fn__10661$fn__10662$fn__10663.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval10645$fn__10646$fn__10647$fn__10661$fn__10662.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10645$fn__10646$fn__10647$fn__10661.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10645$fn__10646$fn__10647.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10645$fn__10646.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10645.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10645.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :speed value should be between 3 and 6 at (asteroids_test.clj:19)
+; Expected:
+; true
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval10645$fn__10646$fn__10647$fn__10668$fn__10669$fn__10670.invoke(form-init17391393721139690241.clj:19)
+;   cljinvaders.asteroids_test$eval10645$fn__10646$fn__10647$fn__10668$fn__10669.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10645$fn__10646$fn__10647$fn__10668.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10645$fn__10646$fn__10647.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10645$fn__10646.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10645.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval10645.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+; 
+; FAIL the :x value should not be bigger than screen width at (asteroids_test.clj:7)
+; Expected:
+; false
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval10714$fn__10715$fn__10716$fn__10717.invoke(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids_test$eval10714$fn__10715$fn__10716.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids_test$eval10714$fn__10715.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids_test$eval10714.invokeStatic(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids_test$eval10714.invoke(form-init17391393721139690241.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.asteroids-test꞉> 
+; 
+; FAIL the :y value should always be -50 at (asteroids_test.clj:11)
+; Expected:
+; -50
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval10723$fn__10724$fn__10725$fn__10726.invoke(form-init17391393721139690241.clj:11)
+;   cljinvaders.asteroids_test$eval10723$fn__10724$fn__10725.invoke(form-init17391393721139690241.clj:10)
+;   cljinvaders.asteroids_test$eval10723$fn__10724.invoke(form-init17391393721139690241.clj:10)
+;   cljinvaders.asteroids_test$eval10723.invokeStatic(form-init17391393721139690241.clj:10)
+;   cljinvaders.asteroids_test$eval10723.invoke(form-init17391393721139690241.clj:10)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.asteroids-test꞉> 
+#'cljinvaders.asteroids/setup-asteroid-images
+clj꞉cljinvaders.asteroids꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/backgroundImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/distance
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/hit?
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/hit?
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/handle-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/on-hit
+clj꞉cljinvaders.hit꞉> 
+nil
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/planeImg
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/setup-player-images
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/random-plane-img
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/init-player
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/update-player
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/shoot
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/handle-key-pressed
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/move-projectile
+clj꞉cljinvaders.player꞉> 
+#'cljinvaders.player/update-projectiles
+clj꞉cljinvaders.player꞉> 
+; 
+; FAIL Test create asteroid function - the :x value should not be bigger than screen width at (asteroids_test.clj:7)
+; Expected:
+; false
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval11141$fn__11142$fn__11143$fn__11144$fn__11145$fn__11146.invoke(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids_test$eval11141$fn__11142$fn__11143$fn__11144$fn__11145.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11141$fn__11142$fn__11143$fn__11144.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11141$fn__11142$fn__11143.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11141$fn__11142.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11141.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11141.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :y value should always be -50 at (asteroids_test.clj:11)
+; Expected:
+; -50
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval11141$fn__11142$fn__11143$fn__11151$fn__11152$fn__11153.invoke(form-init17391393721139690241.clj:11)
+;   cljinvaders.asteroids_test$eval11141$fn__11142$fn__11143$fn__11151$fn__11152.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11141$fn__11142$fn__11143$fn__11151.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11141$fn__11142$fn__11143.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11141$fn__11142.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11141.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11141.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :size value should be between 30 and 130 (values may change later) at (asteroids_test.clj:15)
+; Expected:
+; true
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval11141$fn__11142$fn__11143$fn__11157$fn__11158$fn__11159.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval11141$fn__11142$fn__11143$fn__11157$fn__11158.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11141$fn__11142$fn__11143$fn__11157.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11141$fn__11142$fn__11143.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11141$fn__11142.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11141.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11141.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :speed value should be between 3 and 6 at (asteroids_test.clj:19)
+; Expected:
+; true
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval11141$fn__11142$fn__11143$fn__11164$fn__11165$fn__11166.invoke(form-init17391393721139690241.clj:19)
+;   cljinvaders.asteroids_test$eval11141$fn__11142$fn__11143$fn__11164$fn__11165.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11141$fn__11142$fn__11143$fn__11164.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11141$fn__11142$fn__11143.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11141$fn__11142.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11141.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11141.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.asteroids-test꞉> 
+; 
+; FAIL Test create asteroid function - the :x value should not be bigger than screen width at (asteroids_test.clj:7)
+; Expected:
+; false
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval11174$fn__11175$fn__11176$fn__11177$fn__11178$fn__11179.invoke(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids_test$eval11174$fn__11175$fn__11176$fn__11177$fn__11178.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11174$fn__11175$fn__11176$fn__11177.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11174$fn__11175$fn__11176.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11174$fn__11175.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11174.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11174.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :y value should always be -50 at (asteroids_test.clj:11)
+; Expected:
+; -50
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval11174$fn__11175$fn__11176$fn__11184$fn__11185$fn__11186.invoke(form-init17391393721139690241.clj:11)
+;   cljinvaders.asteroids_test$eval11174$fn__11175$fn__11176$fn__11184$fn__11185.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11174$fn__11175$fn__11176$fn__11184.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11174$fn__11175$fn__11176.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11174$fn__11175.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11174.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11174.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :size value should be between 30 and 130 (values may change later) at (asteroids_test.clj:15)
+; Expected:
+; true
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval11174$fn__11175$fn__11176$fn__11190$fn__11191$fn__11192.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval11174$fn__11175$fn__11176$fn__11190$fn__11191.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11174$fn__11175$fn__11176$fn__11190.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11174$fn__11175$fn__11176.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11174$fn__11175.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11174.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11174.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :speed value should be between 3 and 6 at (asteroids_test.clj:19)
+; Expected:
+; true
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval11174$fn__11175$fn__11176$fn__11197$fn__11198$fn__11199.invoke(form-init17391393721139690241.clj:19)
+;   cljinvaders.asteroids_test$eval11174$fn__11175$fn__11176$fn__11197$fn__11198.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11174$fn__11175$fn__11176$fn__11197.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11174$fn__11175$fn__11176.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11174$fn__11175.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11174.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11174.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.asteroids-test꞉> 
+4.724165945548612
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+; 
+; FAIL Test create asteroid function - the :x value should not be bigger than screen width at (asteroids_test.clj:7)
+; Expected:
+; false
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval11230$fn__11231$fn__11232$fn__11233$fn__11234$fn__11235.invoke(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids_test$eval11230$fn__11231$fn__11232$fn__11233$fn__11234.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11230$fn__11231$fn__11232$fn__11233.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11230$fn__11231$fn__11232.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11230$fn__11231.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11230.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11230.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :y value should always be -50 at (asteroids_test.clj:11)
+; Expected:
+; -50
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval11230$fn__11231$fn__11232$fn__11240$fn__11241$fn__11242.invoke(form-init17391393721139690241.clj:11)
+;   cljinvaders.asteroids_test$eval11230$fn__11231$fn__11232$fn__11240$fn__11241.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11230$fn__11231$fn__11232$fn__11240.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11230$fn__11231$fn__11232.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11230$fn__11231.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11230.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11230.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :size value should be between 30 and 130 (values may change later) at (asteroids_test.clj:15)
+; Expected:
+; true
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval11230$fn__11231$fn__11232$fn__11246$fn__11247$fn__11248.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval11230$fn__11231$fn__11232$fn__11246$fn__11247.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11230$fn__11231$fn__11232$fn__11246.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11230$fn__11231$fn__11232.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11230$fn__11231.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11230.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11230.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :speed value should be between 3 and 6 at (asteroids_test.clj:19)
+; Expected:
+; true
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval11230$fn__11231$fn__11232$fn__11253$fn__11254$fn__11255.invoke(form-init17391393721139690241.clj:19)
+;   cljinvaders.asteroids_test$eval11230$fn__11231$fn__11232$fn__11253$fn__11254.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11230$fn__11231$fn__11232$fn__11253.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11230$fn__11231$fn__11232.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11230$fn__11231.invoke(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11230.invokeStatic(form-init17391393721139690241.clj:5)
+;   cljinvaders.asteroids_test$eval11230.invoke(form-init17391393721139690241.clj:5)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.asteroids-test꞉> 
+; 
+; FAIL the :x value should not be bigger than screen width at (asteroids_test.clj:7)
+; Expected:
+; false
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval11263$fn__11264$fn__11265$fn__11266.invoke(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids_test$eval11263$fn__11264$fn__11265.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids_test$eval11263$fn__11264.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids_test$eval11263.invokeStatic(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids_test$eval11263.invoke(form-init17391393721139690241.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.asteroids-test꞉> 
+nil
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/asteroidImgs
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/setup-asteroid-images
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/setup-asteroid-images
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/setup-asteroid-images
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/update-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+; 
+; FAIL the :x value should not be bigger than screen width at (asteroids_test.clj:7)
+; Expected:
+; false
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval11316$fn__11317$fn__11318$fn__11319.invoke(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids_test$eval11316$fn__11317$fn__11318.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids_test$eval11316$fn__11317.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids_test$eval11316.invokeStatic(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids_test$eval11316.invoke(form-init17391393721139690241.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.asteroids-test꞉> 
+; 
+; FAIL the :x value should not be bigger than screen width at (asteroids_test.clj:7)
+; Expected:
+; false
+; Actual:
+; java.lang.IndexOutOfBoundsException
+;   cljinvaders.asteroids$random_asteroid_img.invokeStatic(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids$random_asteroid_img.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids$create_asteroid.invokeStatic(form-init17391393721139690241.clj:21)
+;   cljinvaders.asteroids$create_asteroid.invoke(form-init17391393721139690241.clj:15)
+;   cljinvaders.asteroids_test$eval11325$fn__11326$fn__11327$fn__11328.invoke(form-init17391393721139690241.clj:7)
+;   cljinvaders.asteroids_test$eval11325$fn__11326$fn__11327.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids_test$eval11325$fn__11326.invoke(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids_test$eval11325.invokeStatic(form-init17391393721139690241.clj:6)
+;   cljinvaders.asteroids_test$eval11325.invoke(form-init17391393721139690241.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.asteroids-test꞉> 
+nil
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+; Execution error (IndexOutOfBoundsException) at cljinvaders.asteroids/random-asteroid-img (form-init17391393721139690241.clj:7).
+; null
+clj꞉cljinvaders.asteroids-test꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 

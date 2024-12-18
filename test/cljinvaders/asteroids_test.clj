@@ -2,6 +2,7 @@
   (:require [midje.sweet :refer :all]
             [cljinvaders.asteroids :as asteroids]))
 
+;; This test can work only after starting game once because of initalisation of asteroid images
 (facts "Test create asteroid function"
        (fact "the :x value should not be bigger than screen width"
              (let [asteroid (asteroids/create-asteroid 1920)]
@@ -33,7 +34,14 @@
                      :asteroids [{:x 100 :y 100 :speed 5}]}
               new-state (asteroids/update-asteroids state)]
           (let [asteroid (first (:asteroids new-state))]
-            (:y asteroid))) => 105))
+            (:y asteroid))) => 105)
+  (fact "off-screen asteroids should be removed"
+        (let [state {:screen-width 1920
+                     :screen-height 1080
+                     ; Speed added by 5 so 1081 is bigger than 1080 and asteroid is removed
+                     :asteroids [{:x 100 :y 1076 :speed 5}]}
+              new-state (asteroids/update-asteroids state)]
+          (count (:asteroids new-state))) => 0 ))
 
 
 
