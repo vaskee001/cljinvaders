@@ -32,3 +32,6 @@
                              (:asteroids state))
         visible-asteroids (filter #(<= (:y %) (:screen-height state)) moved-asteroids)]
     (assoc state :asteroids visible-asteroids)))
+
+
+
