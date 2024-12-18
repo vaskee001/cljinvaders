@@ -42607,3 +42607,29 @@ clj꞉cljinvaders.hit-test꞉> 
 ; 0
 false
 clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-player-hit function - it removes one life when the player hits an asteroid at (hit_test.clj:40)
+; Expected:
+; 2
+; Actual:
+; 0
+false
+clj꞉cljinvaders.hit-test꞉> 
+#'cljinvaders.hit/handle-player-hit
+clj꞉cljinvaders.hit꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.hit/handle-player-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.hit/handle-player-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
