@@ -34271,3 +34271,31 @@ true
 clj꞉cljinvaders.hit-test꞉> 
 true
 clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test distance function - Classic pythagoras theorem at (hit_test.clj:7)
+; Expected:
+; 4.0
+; Actual:
+; 5.0
+false
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+3
+clj꞉cljinvaders.core꞉> 
