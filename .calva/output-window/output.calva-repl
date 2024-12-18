@@ -34313,3 +34313,97 @@ true
 clj꞉cljinvaders.hit-test꞉> 
 true
 clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:17)
+; Expected:
+; true
+; Actual:
+; false
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:17)
+; Expected:
+; true
+; Actual:
+; false
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:17)
+; Expected:
+; true
+; Actual:
+; false
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:17)
+; Expected:
+; true
+; Actual:
+; false
+false
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+; Syntax error compiling at (test/cljinvaders/hit_test.clj:21:30).
+; Unable to resolve symbol: new-state in this context
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+; Syntax error reading source at (REPL:17:76).
+; Duplicate key: :x
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:17)
+; Expected:
+; true
+; Actual:
+; false
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:17)
+; Expected:
+; true
+; Actual:
+; false
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:17)
+; Expected:
+; true
+; Actual:
+; false
+false
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
