@@ -34498,3 +34498,1795 @@ true
 clj꞉cljinvaders.player-test꞉> 
 true
 clj꞉cljinvaders.player-test꞉> 
+#'cljinvaders.hit/handle-hit
+clj꞉cljinvaders.hit꞉> 
+; Syntax error reading source at (REPL:53:33).
+; Nested #()s are not allowed
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/handle-player-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/on-player-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.hit/handle-player-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/on-player-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers dec Numbers.java 147]
+;   [cljinvaders.hit$handle_player_hit$fn__12399 invoke form-init17391393721139690241.clj 46]
+;   [clojure.core.protocols$fn__8249 invokeStatic protocols.clj 168]
+;   [clojure.core.protocols$fn__8249 invoke protocols.clj 124]
+;   [clojure.core.protocols$fn__8204$G__8199__8213 invoke protocols.clj 19]
+;   [clojure.core.protocols$seq_reduce invokeStatic protocols.clj 31]
+;   [clojure.core.protocols$fn__8236 invokeStatic protocols.clj 75]
+;   [clojure.core.protocols$fn__8236 invoke protocols.clj 75]
+;   [clojure.core.protocols$fn__8178$G__8173__8191 invoke protocols.clj 13]
+;   [clojure.core$reduce invokeStatic core.clj 6886]
+;   [clojure.core$reduce invoke core.clj 6868]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 42]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.dec (Numbers.java:147)
+;     cljinvaders.hit$handle_player_hit$fn__12399.invoke (form-init17391393721139690241.clj:46)
+;     clojure.core.protocols$fn__8249.invokeStatic (protocols.clj:168)
+;     clojure.core.protocols/fn (protocols.clj:124)
+;     clojure.core.protocols$fn__8204$G__8199__8213.invoke (protocols.clj:19)
+;     clojure.core.protocols$seq_reduce.invokeStatic (protocols.clj:31)
+;     clojure.core.protocols$fn__8236.invokeStatic (protocols.clj:75)
+;     clojure.core.protocols/fn (protocols.clj:75)
+;     clojure.core.protocols$fn__8178$G__8173__8191.invoke (protocols.clj:13)
+;     clojure.core$reduce.invokeStatic (core.clj:6886)
+;     clojure.core$reduce.invoke (core.clj:6868)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:42)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers dec Numbers.java 147]
+;   [cljinvaders.hit$handle_player_hit$fn__12399 invoke form-init17391393721139690241.clj 46]
+;   [clojure.core.protocols$fn__8249 invokeStatic protocols.clj 168]
+;   [clojure.core.protocols$fn__8249 invoke protocols.clj 124]
+;   [clojure.core.protocols$fn__8204$G__8199__8213 invoke protocols.clj 19]
+;   [clojure.core.protocols$seq_reduce invokeStatic protocols.clj 31]
+;   [clojure.core.protocols$fn__8236 invokeStatic protocols.clj 75]
+;   [clojure.core.protocols$fn__8236 invoke protocols.clj 75]
+;   [clojure.core.protocols$fn__8178$G__8173__8191 invoke protocols.clj 13]
+;   [clojure.core$reduce invokeStatic core.clj 6886]
+;   [clojure.core$reduce invoke core.clj 6868]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 42]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.dec (Numbers.java:147)
+;     cljinvaders.hit$handle_player_hit$fn__12399.invoke (form-init17391393721139690241.clj:46)
+;     clojure.core.protocols$fn__8249.invokeStatic (protocols.clj:168)
+;     clojure.core.protocols/fn (protocols.clj:124)
+;     clojure.core.protocols$fn__8204$G__8199__8213.invoke (protocols.clj:19)
+;     clojure.core.protocols$seq_reduce.invokeStatic (protocols.clj:31)
+;     clojure.core.protocols$fn__8236.invokeStatic (protocols.clj:75)
+;     clojure.core.protocols/fn (protocols.clj:75)
+;     clojure.core.protocols$fn__8178$G__8173__8191.invoke (protocols.clj:13)
+;     clojure.core$reduce.invokeStatic (core.clj:6886)
+;     clojure.core$reduce.invoke (core.clj:6868)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:42)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers dec Numbers.java 147]
+;   [cljinvaders.hit$handle_player_hit$fn__12399 invoke form-init17391393721139690241.clj 46]
+;   [clojure.core.protocols$fn__8249 invokeStatic protocols.clj 168]
+;   [clojure.core.protocols$fn__8249 invoke protocols.clj 124]
+;   [clojure.core.protocols$fn__8204$G__8199__8213 invoke protocols.clj 19]
+;   [clojure.core.protocols$seq_reduce invokeStatic protocols.clj 31]
+;   [clojure.core.protocols$fn__8236 invokeStatic protocols.clj 75]
+;   [clojure.core.protocols$fn__8236 invoke protocols.clj 75]
+;   [clojure.core.protocols$fn__8178$G__8173__8191 invoke protocols.clj 13]
+;   [clojure.core$reduce invokeStatic core.clj 6886]
+;   [clojure.core$reduce invoke core.clj 6868]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 42]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.dec (Numbers.java:147)
+;     cljinvaders.hit$handle_player_hit$fn__12399.invoke (form-init17391393721139690241.clj:46)
+;     clojure.core.protocols$fn__8249.invokeStatic (protocols.clj:168)
+;     clojure.core.protocols/fn (protocols.clj:124)
+;     clojure.core.protocols$fn__8204$G__8199__8213.invoke (protocols.clj:19)
+;     clojure.core.protocols$seq_reduce.invokeStatic (protocols.clj:31)
+;     clojure.core.protocols$fn__8236.invokeStatic (protocols.clj:75)
+;     clojure.core.protocols/fn (protocols.clj:75)
+;     clojure.core.protocols$fn__8178$G__8173__8191.invoke (protocols.clj:13)
+;     clojure.core$reduce.invokeStatic (core.clj:6886)
+;     clojure.core$reduce.invoke (core.clj:6868)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:42)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers dec Numbers.java 147]
+;   [cljinvaders.hit$handle_player_hit$fn__12399 invoke form-init17391393721139690241.clj 46]
+;   [clojure.core.protocols$fn__8249 invokeStatic protocols.clj 168]
+;   [clojure.core.protocols$fn__8249 invoke protocols.clj 124]
+;   [clojure.core.protocols$fn__8204$G__8199__8213 invoke protocols.clj 19]
+;   [clojure.core.protocols$seq_reduce invokeStatic protocols.clj 31]
+;   [clojure.core.protocols$fn__8236 invokeStatic protocols.clj 75]
+;   [clojure.core.protocols$fn__8236 invoke protocols.clj 75]
+;   [clojure.core.protocols$fn__8178$G__8173__8191 invoke protocols.clj 13]
+;   [clojure.core$reduce invokeStatic core.clj 6886]
+;   [clojure.core$reduce invoke core.clj 6868]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 42]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.dec (Numbers.java:147)
+;     cljinvaders.hit$handle_player_hit$fn__12399.invoke (form-init17391393721139690241.clj:46)
+;     clojure.core.protocols$fn__8249.invokeStatic (protocols.clj:168)
+;     clojure.core.protocols/fn (protocols.clj:124)
+;     clojure.core.protocols$fn__8204$G__8199__8213.invoke (protocols.clj:19)
+;     clojure.core.protocols$seq_reduce.invokeStatic (protocols.clj:31)
+;     clojure.core.protocols$fn__8236.invokeStatic (protocols.clj:75)
+;     clojure.core.protocols/fn (protocols.clj:75)
+;     clojure.core.protocols$fn__8178$G__8173__8191.invoke (protocols.clj:13)
+;     clojure.core$reduce.invokeStatic (core.clj:6886)
+;     clojure.core$reduce.invoke (core.clj:6868)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:42)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers dec Numbers.java 147]
+;   [cljinvaders.hit$handle_player_hit$fn__12399 invoke form-init17391393721139690241.clj 46]
+;   [clojure.core.protocols$fn__8249 invokeStatic protocols.clj 168]
+;   [clojure.core.protocols$fn__8249 invoke protocols.clj 124]
+;   [clojure.core.protocols$fn__8204$G__8199__8213 invoke protocols.clj 19]
+;   [clojure.core.protocols$seq_reduce invokeStatic protocols.clj 31]
+;   [clojure.core.protocols$fn__8236 invokeStatic protocols.clj 75]
+;   [clojure.core.protocols$fn__8236 invoke protocols.clj 75]
+;   [clojure.core.protocols$fn__8178$G__8173__8191 invoke protocols.clj 13]
+;   [clojure.core$reduce invokeStatic core.clj 6886]
+;   [clojure.core$reduce invoke core.clj 6868]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 42]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.dec (Numbers.java:147)
+;     cljinvaders.hit$handle_player_hit$fn__12399.invoke (form-init17391393721139690241.clj:46)
+;     clojure.core.protocols$fn__8249.invokeStatic (protocols.clj:168)
+;     clojure.core.protocols/fn (protocols.clj:124)
+;     clojure.core.protocols$fn__8204$G__8199__8213.invoke (protocols.clj:19)
+;     clojure.core.protocols$seq_reduce.invokeStatic (protocols.clj:31)
+;     clojure.core.protocols$fn__8236.invokeStatic (protocols.clj:75)
+;     clojure.core.protocols/fn (protocols.clj:75)
+;     clojure.core.protocols$fn__8178$G__8173__8191.invoke (protocols.clj:13)
+;     clojure.core$reduce.invokeStatic (core.clj:6886)
+;     clojure.core$reduce.invoke (core.clj:6868)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:42)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers dec Numbers.java 147]
+;   [cljinvaders.hit$handle_player_hit$fn__12399 invoke form-init17391393721139690241.clj 46]
+;   [clojure.core.protocols$fn__8249 invokeStatic protocols.clj 168]
+;   [clojure.core.protocols$fn__8249 invoke protocols.clj 124]
+;   [clojure.core.protocols$fn__8204$G__8199__8213 invoke protocols.clj 19]
+;   [clojure.core.protocols$seq_reduce invokeStatic protocols.clj 31]
+;   [clojure.core.protocols$fn__8236 invokeStatic protocols.clj 75]
+;   [clojure.core.protocols$fn__8236 invoke protocols.clj 75]
+;   [clojure.core.protocols$fn__8178$G__8173__8191 invoke protocols.clj 13]
+;   [clojure.core$reduce invokeStatic core.clj 6886]
+;   [clojure.core$reduce invoke core.clj 6868]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 42]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.dec (Numbers.java:147)
+;     cljinvaders.hit$handle_player_hit$fn__12399.invoke (form-init17391393721139690241.clj:46)
+;     clojure.core.protocols$fn__8249.invokeStatic (protocols.clj:168)
+;     clojure.core.protocols/fn (protocols.clj:124)
+;     clojure.core.protocols$fn__8204$G__8199__8213.invoke (protocols.clj:19)
+;     clojure.core.protocols$seq_reduce.invokeStatic (protocols.clj:31)
+;     clojure.core.protocols$fn__8236.invokeStatic (protocols.clj:75)
+;     clojure.core.protocols/fn (protocols.clj:75)
+;     clojure.core.protocols$fn__8178$G__8173__8191.invoke (protocols.clj:13)
+;     clojure.core$reduce.invokeStatic (core.clj:6886)
+;     clojure.core$reduce.invoke (core.clj:6868)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:42)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers dec Numbers.java 147]
+;   [cljinvaders.hit$handle_player_hit$fn__12399 invoke form-init17391393721139690241.clj 46]
+;   [clojure.core.protocols$fn__8249 invokeStatic protocols.clj 168]
+;   [clojure.core.protocols$fn__8249 invoke protocols.clj 124]
+;   [clojure.core.protocols$fn__8204$G__8199__8213 invoke protocols.clj 19]
+;   [clojure.core.protocols$seq_reduce invokeStatic protocols.clj 31]
+;   [clojure.core.protocols$fn__8236 invokeStatic protocols.clj 75]
+;   [clojure.core.protocols$fn__8236 invoke protocols.clj 75]
+;   [clojure.core.protocols$fn__8178$G__8173__8191 invoke protocols.clj 13]
+;   [clojure.core$reduce invokeStatic core.clj 6886]
+;   [clojure.core$reduce invoke core.clj 6868]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 42]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.dec (Numbers.java:147)
+;     cljinvaders.hit$handle_player_hit$fn__12399.invoke (form-init17391393721139690241.clj:46)
+;     clojure.core.protocols$fn__8249.invokeStatic (protocols.clj:168)
+;     clojure.core.protocols/fn (protocols.clj:124)
+;     clojure.core.protocols$fn__8204$G__8199__8213.invoke (protocols.clj:19)
+;     clojure.core.protocols$seq_reduce.invokeStatic (protocols.clj:31)
+;     clojure.core.protocols$fn__8236.invokeStatic (protocols.clj:75)
+;     clojure.core.protocols/fn (protocols.clj:75)
+;     clojure.core.protocols$fn__8178$G__8173__8191.invoke (protocols.clj:13)
+;     clojure.core$reduce.invokeStatic (core.clj:6886)
+;     clojure.core$reduce.invoke (core.clj:6868)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:42)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers dec Numbers.java 147]
+;   [cljinvaders.hit$handle_player_hit$fn__12399 invoke form-init17391393721139690241.clj 46]
+;   [clojure.core.protocols$fn__8249 invokeStatic protocols.clj 168]
+;   [clojure.core.protocols$fn__8249 invoke protocols.clj 124]
+;   [clojure.core.protocols$fn__8204$G__8199__8213 invoke protocols.clj 19]
+;   [clojure.core.protocols$seq_reduce invokeStatic protocols.clj 31]
+;   [clojure.core.protocols$fn__8236 invokeStatic protocols.clj 75]
+;   [clojure.core.protocols$fn__8236 invoke protocols.clj 75]
+;   [clojure.core.protocols$fn__8178$G__8173__8191 invoke protocols.clj 13]
+;   [clojure.core$reduce invokeStatic core.clj 6886]
+;   [clojure.core$reduce invoke core.clj 6868]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 42]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.dec (Numbers.java:147)
+;     cljinvaders.hit$handle_player_hit$fn__12399.invoke (form-init17391393721139690241.clj:46)
+;     clojure.core.protocols$fn__8249.invokeStatic (protocols.clj:168)
+;     clojure.core.protocols/fn (protocols.clj:124)
+;     clojure.core.protocols$fn__8204$G__8199__8213.invoke (protocols.clj:19)
+;     clojure.core.protocols$seq_reduce.invokeStatic (protocols.clj:31)
+;     clojure.core.protocols$fn__8236.invokeStatic (protocols.clj:75)
+;     clojure.core.protocols/fn (protocols.clj:75)
+;     clojure.core.protocols$fn__8178$G__8173__8191.invoke (protocols.clj:13)
+;     clojure.core$reduce.invokeStatic (core.clj:6886)
+;     clojure.core$reduce.invoke (core.clj:6868)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:42)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers dec Numbers.java 147]
+;   [cljinvaders.hit$handle_player_hit$fn__12399 invoke form-init17391393721139690241.clj 46]
+;   [clojure.core.protocols$fn__8249 invokeStatic protocols.clj 168]
+;   [clojure.core.protocols$fn__8249 invoke protocols.clj 124]
+;   [clojure.core.protocols$fn__8204$G__8199__8213 invoke protocols.clj 19]
+;   [clojure.core.protocols$seq_reduce invokeStatic protocols.clj 31]
+;   [clojure.core.protocols$fn__8236 invokeStatic protocols.clj 75]
+;   [clojure.core.protocols$fn__8236 invoke protocols.clj 75]
+;   [clojure.core.protocols$fn__8178$G__8173__8191 invoke protocols.clj 13]
+;   [clojure.core$reduce invokeStatic core.clj 6886]
+;   [clojure.core$reduce invoke core.clj 6868]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 42]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.dec (Numbers.java:147)
+;     cljinvaders.hit$handle_player_hit$fn__12399.invoke (form-init17391393721139690241.clj:46)
+;     clojure.core.protocols$fn__8249.invokeStatic (protocols.clj:168)
+;     clojure.core.protocols/fn (protocols.clj:124)
+;     clojure.core.protocols$fn__8204$G__8199__8213.invoke (protocols.clj:19)
+;     clojure.core.protocols$seq_reduce.invokeStatic (protocols.clj:31)
+;     clojure.core.protocols$fn__8236.invokeStatic (protocols.clj:75)
+;     clojure.core.protocols/fn (protocols.clj:75)
+;     clojure.core.protocols$fn__8178$G__8173__8191.invoke (protocols.clj:13)
+;     clojure.core$reduce.invokeStatic (core.clj:6886)
+;     clojure.core$reduce.invoke (core.clj:6868)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:42)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers dec Numbers.java 147]
+;   [cljinvaders.hit$handle_player_hit$fn__12399 invoke form-init17391393721139690241.clj 46]
+;   [clojure.core.protocols$fn__8249 invokeStatic protocols.clj 168]
+;   [clojure.core.protocols$fn__8249 invoke protocols.clj 124]
+;   [clojure.core.protocols$fn__8204$G__8199__8213 invoke protocols.clj 19]
+;   [clojure.core.protocols$seq_reduce invokeStatic protocols.clj 31]
+;   [clojure.core.protocols$fn__8236 invokeStatic protocols.clj 75]
+;   [clojure.core.protocols$fn__8236 invoke protocols.clj 75]
+;   [clojure.core.protocols$fn__8178$G__8173__8191 invoke protocols.clj 13]
+;   [clojure.core$reduce invokeStatic core.clj 6886]
+;   [clojure.core$reduce invoke core.clj 6868]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 42]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.dec (Numbers.java:147)
+;     cljinvaders.hit$handle_player_hit$fn__12399.invoke (form-init17391393721139690241.clj:46)
+;     clojure.core.protocols$fn__8249.invokeStatic (protocols.clj:168)
+;     clojure.core.protocols/fn (protocols.clj:124)
+;     clojure.core.protocols$fn__8204$G__8199__8213.invoke (protocols.clj:19)
+;     clojure.core.protocols$seq_reduce.invokeStatic (protocols.clj:31)
+;     clojure.core.protocols$fn__8236.invokeStatic (protocols.clj:75)
+;     clojure.core.protocols/fn (protocols.clj:75)
+;     clojure.core.protocols$fn__8178$G__8173__8191.invoke (protocols.clj:13)
+;     clojure.core$reduce.invokeStatic (core.clj:6886)
+;     clojure.core$reduce.invoke (core.clj:6868)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:42)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers dec Numbers.java 147]
+;   [cljinvaders.hit$handle_player_hit$fn__12399 invoke form-init17391393721139690241.clj 46]
+;   [clojure.core.protocols$fn__8249 invokeStatic protocols.clj 168]
+;   [clojure.core.protocols$fn__8249 invoke protocols.clj 124]
+;   [clojure.core.protocols$fn__8204$G__8199__8213 invoke protocols.clj 19]
+;   [clojure.core.protocols$seq_reduce invokeStatic protocols.clj 31]
+;   [clojure.core.protocols$fn__8236 invokeStatic protocols.clj 75]
+;   [clojure.core.protocols$fn__8236 invoke protocols.clj 75]
+;   [clojure.core.protocols$fn__8178$G__8173__8191 invoke protocols.clj 13]
+;   [clojure.core$reduce invokeStatic core.clj 6886]
+;   [clojure.core$reduce invoke core.clj 6868]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 42]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.dec (Numbers.java:147)
+;     cljinvaders.hit$handle_player_hit$fn__12399.invoke (form-init17391393721139690241.clj:46)
+;     clojure.core.protocols$fn__8249.invokeStatic (protocols.clj:168)
+;     clojure.core.protocols/fn (protocols.clj:124)
+;     clojure.core.protocols$fn__8204$G__8199__8213.invoke (protocols.clj:19)
+;     clojure.core.protocols$seq_reduce.invokeStatic (protocols.clj:31)
+;     clojure.core.protocols$fn__8236.invokeStatic (protocols.clj:75)
+;     clojure.core.protocols/fn (protocols.clj:75)
+;     clojure.core.protocols$fn__8178$G__8173__8191.invoke (protocols.clj:13)
+;     clojure.core$reduce.invokeStatic (core.clj:6886)
+;     clojure.core$reduce.invoke (core.clj:6868)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:42)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers dec Numbers.java 147]
+;   [cljinvaders.hit$handle_player_hit$fn__12399 invoke form-init17391393721139690241.clj 46]
+;   [clojure.core.protocols$fn__8249 invokeStatic protocols.clj 168]
+;   [clojure.core.protocols$fn__8249 invoke protocols.clj 124]
+;   [clojure.core.protocols$fn__8204$G__8199__8213 invoke protocols.clj 19]
+;   [clojure.core.protocols$seq_reduce invokeStatic protocols.clj 31]
+;   [clojure.core.protocols$fn__8236 invokeStatic protocols.clj 75]
+;   [clojure.core.protocols$fn__8236 invoke protocols.clj 75]
+;   [clojure.core.protocols$fn__8178$G__8173__8191 invoke protocols.clj 13]
+;   [clojure.core$reduce invokeStatic core.clj 6886]
+;   [clojure.core$reduce invoke core.clj 6868]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 42]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.dec (Numbers.java:147)
+;     cljinvaders.hit$handle_player_hit$fn__12399.invoke (form-init17391393721139690241.clj:46)
+;     clojure.core.protocols$fn__8249.invokeStatic (protocols.clj:168)
+;     clojure.core.protocols/fn (protocols.clj:124)
+;     clojure.core.protocols$fn__8204$G__8199__8213.invoke (protocols.clj:19)
+;     clojure.core.protocols$seq_reduce.invokeStatic (protocols.clj:31)
+;     clojure.core.protocols$fn__8236.invokeStatic (protocols.clj:75)
+;     clojure.core.protocols/fn (protocols.clj:75)
+;     clojure.core.protocols$fn__8178$G__8173__8191.invoke (protocols.clj:13)
+;     clojure.core$reduce.invokeStatic (core.clj:6886)
+;     clojure.core$reduce.invoke (core.clj:6868)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:42)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers dec Numbers.java 147]
+;   [cljinvaders.hit$handle_player_hit$fn__12399 invoke form-init17391393721139690241.clj 46]
+;   [clojure.core.protocols$fn__8249 invokeStatic protocols.clj 168]
+;   [clojure.core.protocols$fn__8249 invoke protocols.clj 124]
+;   [clojure.core.protocols$fn__8204$G__8199__8213 invoke protocols.clj 19]
+;   [clojure.core.protocols$seq_reduce invokeStatic protocols.clj 31]
+;   [clojure.core.protocols$fn__8236 invokeStatic protocols.clj 75]
+;   [clojure.core.protocols$fn__8236 invoke protocols.clj 75]
+;   [clojure.core.protocols$fn__8178$G__8173__8191 invoke protocols.clj 13]
+;   [clojure.core$reduce invokeStatic core.clj 6886]
+;   [clojure.core$reduce invoke core.clj 6868]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 42]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.dec (Numbers.java:147)
+;     cljinvaders.hit$handle_player_hit$fn__12399.invoke (form-init17391393721139690241.clj:46)
+;     clojure.core.protocols$fn__8249.invokeStatic (protocols.clj:168)
+;     clojure.core.protocols/fn (protocols.clj:124)
+;     clojure.core.protocols$fn__8204$G__8199__8213.invoke (protocols.clj:19)
+;     clojure.core.protocols$seq_reduce.invokeStatic (protocols.clj:31)
+;     clojure.core.protocols$fn__8236.invokeStatic (protocols.clj:75)
+;     clojure.core.protocols/fn (protocols.clj:75)
+;     clojure.core.protocols$fn__8178$G__8173__8191.invoke (protocols.clj:13)
+;     clojure.core$reduce.invokeStatic (core.clj:6886)
+;     clojure.core$reduce.invoke (core.clj:6868)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:42)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers dec Numbers.java 147]
+;   [cljinvaders.hit$handle_player_hit$fn__12399 invoke form-init17391393721139690241.clj 46]
+;   [clojure.core.protocols$fn__8249 invokeStatic protocols.clj 168]
+;   [clojure.core.protocols$fn__8249 invoke protocols.clj 124]
+;   [clojure.core.protocols$fn__8204$G__8199__8213 invoke protocols.clj 19]
+;   [clojure.core.protocols$seq_reduce invokeStatic protocols.clj 31]
+;   [clojure.core.protocols$fn__8236 invokeStatic protocols.clj 75]
+;   [clojure.core.protocols$fn__8236 invoke protocols.clj 75]
+;   [clojure.core.protocols$fn__8178$G__8173__8191 invoke protocols.clj 13]
+;   [clojure.core$reduce invokeStatic core.clj 6886]
+;   [clojure.core$reduce invoke core.clj 6868]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 42]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.dec (Numbers.java:147)
+;     cljinvaders.hit$handle_player_hit$fn__12399.invoke (form-init17391393721139690241.clj:46)
+;     clojure.core.protocols$fn__8249.invokeStatic (protocols.clj:168)
+;     clojure.core.protocols/fn (protocols.clj:124)
+;     clojure.core.protocols$fn__8204$G__8199__8213.invoke (protocols.clj:19)
+;     clojure.core.protocols$seq_reduce.invokeStatic (protocols.clj:31)
+;     clojure.core.protocols$fn__8236.invokeStatic (protocols.clj:75)
+;     clojure.core.protocols/fn (protocols.clj:75)
+;     clojure.core.protocols$fn__8178$G__8173__8191.invoke (protocols.clj:13)
+;     clojure.core$reduce.invokeStatic (core.clj:6886)
+;     clojure.core$reduce.invoke (core.clj:6868)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:42)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers dec Numbers.java 147]
+;   [cljinvaders.hit$handle_player_hit$fn__12399 invoke form-init17391393721139690241.clj 46]
+;   [clojure.core.protocols$fn__8249 invokeStatic protocols.clj 168]
+;   [clojure.core.protocols$fn__8249 invoke protocols.clj 124]
+;   [clojure.core.protocols$fn__8204$G__8199__8213 invoke protocols.clj 19]
+;   [clojure.core.protocols$seq_reduce invokeStatic protocols.clj 31]
+;   [clojure.core.protocols$fn__8236 invokeStatic protocols.clj 75]
+;   [clojure.core.protocols$fn__8236 invoke protocols.clj 75]
+;   [clojure.core.protocols$fn__8178$G__8173__8191 invoke protocols.clj 13]
+;   [clojure.core$reduce invokeStatic core.clj 6886]
+;   [clojure.core$reduce invoke core.clj 6868]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 42]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 40]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.dec (Numbers.java:147)
+;     cljinvaders.hit$handle_player_hit$fn__12399.invoke (form-init17391393721139690241.clj:46)
+;     clojure.core.protocols$fn__8249.invokeStatic (protocols.clj:168)
+;     clojure.core.protocols/fn (protocols.clj:124)
+;     clojure.core.protocols$fn__8204$G__8199__8213.invoke (protocols.clj:19)
+;     clojure.core.protocols$seq_reduce.invokeStatic (protocols.clj:31)
+;     clojure.core.protocols$fn__8236.invokeStatic (protocols.clj:75)
+;     clojure.core.protocols/fn (protocols.clj:75)
+;     clojure.core.protocols$fn__8178$G__8173__8191.invoke (protocols.clj:13)
+;     clojure.core$reduce.invokeStatic (core.clj:6886)
+;     clojure.core$reduce.invoke (core.clj:6868)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:42)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:40)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers dec Numbers.java 147]
+;   [cljinvaders.hit$handle_player_hit$fn__12399 invoke form-init17391393721139690241.clj 46]
+;   [clojure.core.protocols$fn__8249 invokeStatic protocols.clj 168]
+;   [clojure.core.protocols$fn__8249 invoke protocols.clj 124]
+;   [clojure.core.protocols$fn__8204$G__8199__8213 invoke protocols.clj 19]
+;   [clojure.core.protocols$seq_reduce invokeStatic protocols.clj 31]
+;   [clojure.core.protocols$fn__8236 invokeStatic protocols.clj 75]
+;   [clojure.core.protocols$fn__8236 invoke protocols.clj 75]
+;   [clojure.core.protocols$fn__8178$G__8173__8191 invoke protocols.clj 13]
+;   [clojure.core$reduce invokeStatic core.clj 6886]
+;   [clojure.core$reduce invoke core.clj 6868]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 42]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 40]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.dec (Numbers.java:147)
+;     cljinvaders.hit$handle_player_hit$fn__12399.invoke (form-init17391393721139690241.clj:46)
+;     clojure.core.protocols$fn__8249.invokeStatic (protocols.clj:168)
+;     clojure.core.protocols/fn (protocols.clj:124)
+;     clojure.core.protocols$fn__8204$G__8199__8213.invoke (protocols.clj:19)
+;     clojure.core.protocols$seq_reduce.invokeStatic (protocols.clj:31)
+;     clojure.core.protocols$fn__8236.invokeStatic (protocols.clj:75)
+;     clojure.core.protocols/fn (protocols.clj:75)
+;     clojure.core.protocols$fn__8178$G__8173__8191.invoke (protocols.clj:13)
+;     clojure.core$reduce.invokeStatic (core.clj:6886)
+;     clojure.core$reduce.invoke (core.clj:6868)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:42)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:40)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.hit/handle-player-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/on-player-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers dec Numbers.java 147]
+;   [cljinvaders.hit$handle_player_hit$fn__12438 invoke form-init17391393721139690241.clj 46]
+;   [clojure.core.protocols$fn__8249 invokeStatic protocols.clj 168]
+;   [clojure.core.protocols$fn__8249 invoke protocols.clj 124]
+;   [clojure.core.protocols$fn__8204$G__8199__8213 invoke protocols.clj 19]
+;   [clojure.core.protocols$seq_reduce invokeStatic protocols.clj 31]
+;   [clojure.core.protocols$fn__8236 invokeStatic protocols.clj 75]
+;   [clojure.core.protocols$fn__8236 invoke protocols.clj 75]
+;   [clojure.core.protocols$fn__8178$G__8173__8191 invoke protocols.clj 13]
+;   [clojure.core$reduce invokeStatic core.clj 6886]
+;   [clojure.core$reduce invoke core.clj 6868]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 42]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.dec (Numbers.java:147)
+;     cljinvaders.hit$handle_player_hit$fn__12438.invoke (form-init17391393721139690241.clj:46)
+;     clojure.core.protocols$fn__8249.invokeStatic (protocols.clj:168)
+;     clojure.core.protocols/fn (protocols.clj:124)
+;     clojure.core.protocols$fn__8204$G__8199__8213.invoke (protocols.clj:19)
+;     clojure.core.protocols$seq_reduce.invokeStatic (protocols.clj:31)
+;     clojure.core.protocols$fn__8236.invokeStatic (protocols.clj:75)
+;     clojure.core.protocols/fn (protocols.clj:75)
+;     clojure.core.protocols$fn__8178$G__8173__8191.invoke (protocols.clj:13)
+;     clojure.core$reduce.invokeStatic (core.clj:6886)
+;     clojure.core$reduce.invoke (core.clj:6868)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:42)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers dec Numbers.java 147]
+;   [cljinvaders.hit$handle_player_hit$fn__12438 invoke form-init17391393721139690241.clj 46]
+;   [clojure.core.protocols$fn__8249 invokeStatic protocols.clj 168]
+;   [clojure.core.protocols$fn__8249 invoke protocols.clj 124]
+;   [clojure.core.protocols$fn__8204$G__8199__8213 invoke protocols.clj 19]
+;   [clojure.core.protocols$seq_reduce invokeStatic protocols.clj 31]
+;   [clojure.core.protocols$fn__8236 invokeStatic protocols.clj 75]
+;   [clojure.core.protocols$fn__8236 invoke protocols.clj 75]
+;   [clojure.core.protocols$fn__8178$G__8173__8191 invoke protocols.clj 13]
+;   [clojure.core$reduce invokeStatic core.clj 6886]
+;   [clojure.core$reduce invoke core.clj 6868]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 42]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.dec (Numbers.java:147)
+;     cljinvaders.hit$handle_player_hit$fn__12438.invoke (form-init17391393721139690241.clj:46)
+;     clojure.core.protocols$fn__8249.invokeStatic (protocols.clj:168)
+;     clojure.core.protocols/fn (protocols.clj:124)
+;     clojure.core.protocols$fn__8204$G__8199__8213.invoke (protocols.clj:19)
+;     clojure.core.protocols$seq_reduce.invokeStatic (protocols.clj:31)
+;     clojure.core.protocols$fn__8236.invokeStatic (protocols.clj:75)
+;     clojure.core.protocols/fn (protocols.clj:75)
+;     clojure.core.protocols$fn__8178$G__8173__8191.invoke (protocols.clj:13)
+;     clojure.core$reduce.invokeStatic (core.clj:6886)
+;     clojure.core$reduce.invoke (core.clj:6868)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:42)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.hit/handle-player-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/on-player-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers dec Numbers.java 147]
+;   [cljinvaders.hit$handle_player_hit$fn__12471 invoke form-init17391393721139690241.clj 46]
+;   [clojure.core.protocols$fn__8249 invokeStatic protocols.clj 168]
+;   [clojure.core.protocols$fn__8249 invoke protocols.clj 124]
+;   [clojure.core.protocols$fn__8204$G__8199__8213 invoke protocols.clj 19]
+;   [clojure.core.protocols$seq_reduce invokeStatic protocols.clj 31]
+;   [clojure.core.protocols$fn__8236 invokeStatic protocols.clj 75]
+;   [clojure.core.protocols$fn__8236 invoke protocols.clj 75]
+;   [clojure.core.protocols$fn__8178$G__8173__8191 invoke protocols.clj 13]
+;   [clojure.core$reduce invokeStatic core.clj 6886]
+;   [clojure.core$reduce invoke core.clj 6868]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 42]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.dec (Numbers.java:147)
+;     cljinvaders.hit$handle_player_hit$fn__12471.invoke (form-init17391393721139690241.clj:46)
+;     clojure.core.protocols$fn__8249.invokeStatic (protocols.clj:168)
+;     clojure.core.protocols/fn (protocols.clj:124)
+;     clojure.core.protocols$fn__8204$G__8199__8213.invoke (protocols.clj:19)
+;     clojure.core.protocols$seq_reduce.invokeStatic (protocols.clj:31)
+;     clojure.core.protocols$fn__8236.invokeStatic (protocols.clj:75)
+;     clojure.core.protocols/fn (protocols.clj:75)
+;     clojure.core.protocols$fn__8178$G__8173__8191.invoke (protocols.clj:13)
+;     clojure.core$reduce.invokeStatic (core.clj:6886)
+;     clojure.core$reduce.invoke (core.clj:6868)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:42)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers dec Numbers.java 147]
+;   [cljinvaders.hit$handle_player_hit$fn__12471 invoke form-init17391393721139690241.clj 46]
+;   [clojure.core.protocols$fn__8249 invokeStatic protocols.clj 168]
+;   [clojure.core.protocols$fn__8249 invoke protocols.clj 124]
+;   [clojure.core.protocols$fn__8204$G__8199__8213 invoke protocols.clj 19]
+;   [clojure.core.protocols$seq_reduce invokeStatic protocols.clj 31]
+;   [clojure.core.protocols$fn__8236 invokeStatic protocols.clj 75]
+;   [clojure.core.protocols$fn__8236 invoke protocols.clj 75]
+;   [clojure.core.protocols$fn__8178$G__8173__8191 invoke protocols.clj 13]
+;   [clojure.core$reduce invokeStatic core.clj 6886]
+;   [clojure.core$reduce invoke core.clj 6868]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 42]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.dec (Numbers.java:147)
+;     cljinvaders.hit$handle_player_hit$fn__12471.invoke (form-init17391393721139690241.clj:46)
+;     clojure.core.protocols$fn__8249.invokeStatic (protocols.clj:168)
+;     clojure.core.protocols/fn (protocols.clj:124)
+;     clojure.core.protocols$fn__8204$G__8199__8213.invoke (protocols.clj:19)
+;     clojure.core.protocols$seq_reduce.invokeStatic (protocols.clj:31)
+;     clojure.core.protocols$fn__8236.invokeStatic (protocols.clj:75)
+;     clojure.core.protocols/fn (protocols.clj:75)
+;     clojure.core.protocols$fn__8178$G__8173__8191.invoke (protocols.clj:13)
+;     clojure.core$reduce.invokeStatic (core.clj:6886)
+;     clojure.core$reduce.invoke (core.clj:6868)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:42)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Syntax error reading source at (REPL:44:96).
+; Unmatched delimiter: )
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.hit/handle-player-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/on-player-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers lte Numbers.java 257]
+;   [clojure.lang.Numbers lte Numbers.java 3943]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 50]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.lte (Numbers.java:257)
+;     clojure.lang.Numbers.lte (Numbers.java:3943)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:50)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers lte Numbers.java 257]
+;   [clojure.lang.Numbers lte Numbers.java 3943]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 50]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.lte (Numbers.java:257)
+;     clojure.lang.Numbers.lte (Numbers.java:3943)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:50)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers lte Numbers.java 257]
+;   [clojure.lang.Numbers lte Numbers.java 3943]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 50]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.lte (Numbers.java:257)
+;     clojure.lang.Numbers.lte (Numbers.java:3943)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:50)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers lte Numbers.java 257]
+;   [clojure.lang.Numbers lte Numbers.java 3943]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 50]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.lte (Numbers.java:257)
+;     clojure.lang.Numbers.lte (Numbers.java:3943)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:50)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers lte Numbers.java 257]
+;   [clojure.lang.Numbers lte Numbers.java 3943]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 50]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.lte (Numbers.java:257)
+;     clojure.lang.Numbers.lte (Numbers.java:3943)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:50)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.hit/on-player-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.hit/handle-player-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Cannot invoke "Object.getClass()" because "x" is null
+;  :via
+;  [{:type java.lang.NullPointerException
+;    :message Cannot invoke "Object.getClass()" because "x" is null
+;    :at [clojure.lang.Numbers ops Numbers.java 1095]}]
+;  :trace
+;  [[clojure.lang.Numbers ops Numbers.java 1095]
+;   [clojure.lang.Numbers lte Numbers.java 257]
+;   [clojure.lang.Numbers lte Numbers.java 3943]
+;   [cljinvaders.hit$handle_player_hit invokeStatic form-init17391393721139690241.clj 50]
+;   [cljinvaders.hit$handle_player_hit invoke form-init17391393721139690241.clj 39]
+;   [cljinvaders.core$update_state invokeStatic form-init17391393721139690241.clj 41]
+;   [cljinvaders.core$update_state invoke form-init17391393721139690241.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+;  at clojure.lang.Numbers.ops (Numbers.java:1095)
+;     clojure.lang.Numbers.lte (Numbers.java:257)
+;     clojure.lang.Numbers.lte (Numbers.java:3943)
+;     cljinvaders.hit$handle_player_hit.invokeStatic (form-init17391393721139690241.clj:50)
+;     cljinvaders.hit$handle_player_hit.invoke (form-init17391393721139690241.clj:39)
+;     cljinvaders.core$update_state.invokeStatic (form-init17391393721139690241.clj:41)
+;     cljinvaders.core$update_state.invoke (form-init17391393721139690241.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10773.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 

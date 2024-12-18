@@ -4,8 +4,8 @@
 (defn distance [x1 y1 x2 y2]
   (Math/sqrt (+ (Math/pow (- x2 x1) 2) (Math/pow (- y2 y1) 2))))
 
-(defn hit? [projectile asteroid]
-  (< (distance (:x projectile) (:y projectile) (:x asteroid) (:y asteroid))
+(defn hit? [projectile-or-player asteroid]
+  (< (distance (:x projectile-or-player) (:y projectile-or-player) (:x asteroid) (:y asteroid))
      (/ (:size asteroid) 2)))
 
 ;; When projectile touch asteroid, both should be removed 
@@ -32,3 +32,29 @@
   {:type :add-points
    :projectile projectile
    :asteroid asteroid})
+
+
+;; I SHOULD MERGE THIS FUNCTIONS WITH LOGIC OF ASTEROID-PROJECTILE HIT
+
+(defn handle-player-hit [state on-player-hit]
+  (let [player (:player state)
+        asteroids (:asteroids state)
+        results (reduce (fn [[remaining-asteroids events lives] asteroid]
+                          (if (hit? player asteroid)
+                            [(remove #(= asteroid %) remaining-asteroids)
+                             (conj events (on-player-hit player asteroid))
+                             (dec lives)]
+                            [remaining-asteroids events lives]))
+                        [asteroids [] (:lives player)]
+                        asteroids)]
+    (-> state
+        (assoc :asteroids (first results))
+        (assoc :events (concat (:events state) (second results)))
+        (assoc-in [:player :lives] (nth results 2)))))
+
+
+(defn on-player-hit [player asteroid]
+  {:type :player-hit
+   :player player
+   :asteroid asteroid})
+

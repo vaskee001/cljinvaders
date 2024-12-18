@@ -13,7 +13,7 @@
 
 ;; addedd time and cooldown
 (defn init-player []
-  {:x 500 :y 900 :image (random-plane-img) :last-shot-time 0 :shooting-cooldown 500})  ; Initial player state with cooldown
+  {:x 500 :y 900 :image (random-plane-img) :last-shot-time 0 :shooting-cooldown 500 :lives 3})  ; Initial player state with cooldown
 
 (defn update-player [player]
   (assoc player
