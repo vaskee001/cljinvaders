@@ -34439,3 +34439,52 @@ true
 clj꞉cljinvaders.hit-test꞉> 
 true
 clj꞉cljinvaders.hit-test꞉> 
+; Syntax error compiling at (test/cljinvaders/hit_test.clj:36:39).
+; No such namespace: player
+clj꞉cljinvaders.hit-test꞉> 
+nil
+clj꞉cljinvaders.player-test꞉> 
+; Syntax error compiling var at (test/cljinvaders/player_test.clj:8:35).
+; Unable to resolve var: q/millis in this context
+clj꞉cljinvaders.player-test꞉> 
+; Syntax error compiling at (test/cljinvaders/player_test.clj:8:39).
+; No such namespace: player
+clj꞉cljinvaders.player-test꞉> 
+; Syntax error compiling at (test/cljinvaders/player_test.clj:8:39).
+; No such namespace: player
+clj꞉cljinvaders.player-test꞉> 
+nil
+clj꞉cljinvaders.player-test꞉> 
+#'cljinvaders.player/update-projectiles
+clj꞉cljinvaders.player꞉> 
+; Syntax error compiling at (test/cljinvaders/player_test.clj:8:39).
+; No such namespace: player
+clj꞉cljinvaders.player-test꞉> 
+nil
+clj꞉cljinvaders.player-test꞉> 
+nil
+clj꞉cljinvaders.player-test꞉> 
+true
+clj꞉cljinvaders.player-test꞉> 
+true
+clj꞉cljinvaders.player-test꞉> 
+; 
+; FAIL Test move-projectile function - projectile moves upwards by its speed at (player_test.clj:7)
+; Expected:
+; 90
+; Actual:
+; 80
+false
+clj꞉cljinvaders.player-test꞉> 
+; 
+; FAIL Test move-projectile function - projectile moves upwards by its speed at (player_test.clj:7)
+; Expected:
+; 90
+; Actual:
+; 50
+false
+clj꞉cljinvaders.player-test꞉> 
+true
+clj꞉cljinvaders.player-test꞉> 
+true
+clj꞉cljinvaders.player-test꞉> 
