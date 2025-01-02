@@ -48442,3 +48442,188 @@ true
 clj꞉cljinvaders.asteroids-test꞉> 
 true
 clj꞉cljinvaders.asteroids-test꞉> 
+nil
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:17)
+; Expected:
+; true
+; Actual:
+; java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;   cljinvaders.hit$handle_hit$fn__11458.invoke(form-init13992679578890490492.clj:27)
+;   cljinvaders.hit$handle_hit.invokeStatic(form-init13992679578890490492.clj:22)
+;   cljinvaders.hit$handle_hit.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12285$fn__12286$fn__12287$fn__12288$fn__12289$fn__12290.invoke(form-init13992679578890490492.clj:20)
+;   cljinvaders.hit_test$eval12285$fn__12286$fn__12287$fn__12288$fn__12289.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12285$fn__12286$fn__12287$fn__12288.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12285$fn__12286$fn__12287.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12285$fn__12286.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12285.invokeStatic(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12285.invoke(form-init13992679578890490492.clj:15)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:26)
+; Expected:
+; false
+; Actual:
+; java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;   cljinvaders.hit$handle_hit$fn__11458.invoke(form-init13992679578890490492.clj:27)
+;   cljinvaders.hit$handle_hit.invokeStatic(form-init13992679578890490492.clj:22)
+;   cljinvaders.hit$handle_hit.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12285$fn__12286$fn__12287$fn__12295$fn__12296$fn__12297.invoke(form-init13992679578890490492.clj:29)
+;   cljinvaders.hit_test$eval12285$fn__12286$fn__12287$fn__12295$fn__12296.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12285$fn__12286$fn__12287$fn__12295.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12285$fn__12286$fn__12287.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12285$fn__12286.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12285.invokeStatic(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12285.invoke(form-init13992679578890490492.clj:15)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL it removes the projectile and asteroid when they touch at (hit_test.clj:17)
+; Expected:
+; true
+; Actual:
+; java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;   cljinvaders.hit$handle_hit$fn__11458.invoke(form-init13992679578890490492.clj:27)
+;   cljinvaders.hit$handle_hit.invokeStatic(form-init13992679578890490492.clj:22)
+;   cljinvaders.hit$handle_hit.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12304$fn__12305$fn__12306$fn__12307.invoke(form-init13992679578890490492.clj:20)
+;   cljinvaders.hit_test$eval12304$fn__12305$fn__12306.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12304$fn__12305.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12304.invokeStatic(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12304.invoke(form-init13992679578890490492.clj:16)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:17)
+; Expected:
+; true
+; Actual:
+; java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;   cljinvaders.hit$handle_hit$fn__11458.invoke(form-init13992679578890490492.clj:27)
+;   cljinvaders.hit$handle_hit.invokeStatic(form-init13992679578890490492.clj:22)
+;   cljinvaders.hit$handle_hit.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12349$fn__12350$fn__12351$fn__12352$fn__12353$fn__12354.invoke(form-init13992679578890490492.clj:20)
+;   cljinvaders.hit_test$eval12349$fn__12350$fn__12351$fn__12352$fn__12353.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12349$fn__12350$fn__12351$fn__12352.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12349$fn__12350$fn__12351.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12349$fn__12350.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12349.invokeStatic(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12349.invoke(form-init13992679578890490492.clj:15)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:26)
+; Expected:
+; false
+; Actual:
+; java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;   cljinvaders.hit$handle_hit$fn__11458.invoke(form-init13992679578890490492.clj:27)
+;   cljinvaders.hit$handle_hit.invokeStatic(form-init13992679578890490492.clj:22)
+;   cljinvaders.hit$handle_hit.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12349$fn__12350$fn__12351$fn__12359$fn__12360$fn__12361.invoke(form-init13992679578890490492.clj:29)
+;   cljinvaders.hit_test$eval12349$fn__12350$fn__12351$fn__12359$fn__12360.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12349$fn__12350$fn__12351$fn__12359.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12349$fn__12350$fn__12351.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12349$fn__12350.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12349.invokeStatic(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12349.invoke(form-init13992679578890490492.clj:15)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+true
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:17)
+; Expected:
+; true
+; Actual:
+; java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;   cljinvaders.hit$handle_hit$fn__11458.invoke(form-init13992679578890490492.clj:27)
+;   cljinvaders.hit$handle_hit.invokeStatic(form-init13992679578890490492.clj:22)
+;   cljinvaders.hit$handle_hit.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12410$fn__12411$fn__12412$fn__12413$fn__12414$fn__12415.invoke(form-init13992679578890490492.clj:20)
+;   cljinvaders.hit_test$eval12410$fn__12411$fn__12412$fn__12413$fn__12414.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12410$fn__12411$fn__12412$fn__12413.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12410$fn__12411$fn__12412.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12410$fn__12411.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12410.invokeStatic(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12410.invoke(form-init13992679578890490492.clj:15)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:26)
+; Expected:
+; false
+; Actual:
+; java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;   cljinvaders.hit$handle_hit$fn__11458.invoke(form-init13992679578890490492.clj:27)
+;   cljinvaders.hit$handle_hit.invokeStatic(form-init13992679578890490492.clj:22)
+;   cljinvaders.hit$handle_hit.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12410$fn__12411$fn__12412$fn__12420$fn__12421$fn__12422.invoke(form-init13992679578890490492.clj:29)
+;   cljinvaders.hit_test$eval12410$fn__12411$fn__12412$fn__12420$fn__12421.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12410$fn__12411$fn__12412$fn__12420.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12410$fn__12411$fn__12412.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12410$fn__12411.invoke(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12410.invokeStatic(form-init13992679578890490492.clj:15)
+;   cljinvaders.hit_test$eval12410.invoke(form-init13992679578890490492.clj:15)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.hit-test꞉> 
+nil
+clj꞉cljinvaders.player-test꞉> 
+true
+clj꞉cljinvaders.player-test꞉> 
+true
+clj꞉cljinvaders.player-test꞉> 
