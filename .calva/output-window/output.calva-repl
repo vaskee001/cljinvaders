@@ -47531,3 +47531,914 @@ clj꞉cljinvaders.asteroids꞉> 
 clj꞉cljinvaders.core꞉> 
 #'cljinvaders.asteroids/create-asteroid
 clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause No matching method round found taking 1 args
+;  :via
+;  [{:type java.lang.IllegalArgumentException
+;    :message No matching method round found taking 1 args
+;    :at [clojure.lang.Reflector invokeMatchingMethod Reflector.java 154]}]
+;  :trace
+;  [[clojure.lang.Reflector invokeMatchingMethod Reflector.java 154]
+;   [clojure.lang.Reflector invokeStaticMethod Reflector.java 332]
+;   [cljinvaders.asteroids$create_asteroid invokeStatic form-init13992679578890490492.clj 20]
+;   [cljinvaders.asteroids$create_asteroid invoke form-init13992679578890490492.clj 15]
+;   [cljinvaders.asteroids$spawn_asteroids invokeStatic form-init13992679578890490492.clj 26]
+;   [cljinvaders.asteroids$spawn_asteroids invoke form-init13992679578890490492.clj 23]
+;   [cljinvaders.core$update_state invokeStatic form-init13992679578890490492.clj 38]
+;   [cljinvaders.core$update_state invoke form-init13992679578890490492.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;  at clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:154)
+;     clojure.lang.Reflector.invokeStaticMethod (Reflector.java:332)
+;     cljinvaders.asteroids$create_asteroid.invokeStatic (form-init13992679578890490492.clj:20)
+;     cljinvaders.asteroids$create_asteroid.invoke (form-init13992679578890490492.clj:15)
+;     cljinvaders.asteroids$spawn_asteroids.invokeStatic (form-init13992679578890490492.clj:26)
+;     cljinvaders.asteroids$spawn_asteroids.invoke (form-init13992679578890490492.clj:23)
+;     cljinvaders.core$update_state.invokeStatic (form-init13992679578890490492.clj:38)
+;     cljinvaders.core$update_state.invoke (form-init13992679578890490492.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause No matching method round found taking 1 args
+;  :via
+;  [{:type java.lang.IllegalArgumentException
+;    :message No matching method round found taking 1 args
+;    :at [clojure.lang.Reflector invokeMatchingMethod Reflector.java 154]}]
+;  :trace
+;  [[clojure.lang.Reflector invokeMatchingMethod Reflector.java 154]
+;   [clojure.lang.Reflector invokeStaticMethod Reflector.java 332]
+;   [cljinvaders.asteroids$create_asteroid invokeStatic form-init13992679578890490492.clj 20]
+;   [cljinvaders.asteroids$create_asteroid invoke form-init13992679578890490492.clj 15]
+;   [cljinvaders.asteroids$spawn_asteroids invokeStatic form-init13992679578890490492.clj 26]
+;   [cljinvaders.asteroids$spawn_asteroids invoke form-init13992679578890490492.clj 23]
+;   [cljinvaders.core$update_state invokeStatic form-init13992679578890490492.clj 38]
+;   [cljinvaders.core$update_state invoke form-init13992679578890490492.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;  at clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:154)
+;     clojure.lang.Reflector.invokeStaticMethod (Reflector.java:332)
+;     cljinvaders.asteroids$create_asteroid.invokeStatic (form-init13992679578890490492.clj:20)
+;     cljinvaders.asteroids$create_asteroid.invoke (form-init13992679578890490492.clj:15)
+;     cljinvaders.asteroids$spawn_asteroids.invokeStatic (form-init13992679578890490492.clj:26)
+;     cljinvaders.asteroids$spawn_asteroids.invoke (form-init13992679578890490492.clj:23)
+;     cljinvaders.core$update_state.invokeStatic (form-init13992679578890490492.clj:38)
+;     cljinvaders.core$update_state.invoke (form-init13992679578890490492.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause No matching method round found taking 1 args
+;  :via
+;  [{:type java.lang.IllegalArgumentException
+;    :message No matching method round found taking 1 args
+;    :at [clojure.lang.Reflector invokeMatchingMethod Reflector.java 154]}]
+;  :trace
+;  [[clojure.lang.Reflector invokeMatchingMethod Reflector.java 154]
+;   [clojure.lang.Reflector invokeStaticMethod Reflector.java 332]
+;   [cljinvaders.asteroids$create_asteroid invokeStatic form-init13992679578890490492.clj 20]
+;   [cljinvaders.asteroids$create_asteroid invoke form-init13992679578890490492.clj 15]
+;   [cljinvaders.asteroids$spawn_asteroids invokeStatic form-init13992679578890490492.clj 26]
+;   [cljinvaders.asteroids$spawn_asteroids invoke form-init13992679578890490492.clj 23]
+;   [cljinvaders.core$update_state invokeStatic form-init13992679578890490492.clj 38]
+;   [cljinvaders.core$update_state invoke form-init13992679578890490492.clj 35]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [clojure.lang.Atom swap Atom.java 37]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2369]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664 invoke fun_mode.cljc 13]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;  at clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:154)
+;     clojure.lang.Reflector.invokeStaticMethod (Reflector.java:332)
+;     cljinvaders.asteroids$create_asteroid.invokeStatic (form-init13992679578890490492.clj:20)
+;     cljinvaders.asteroids$create_asteroid.invoke (form-init13992679578890490492.clj:15)
+;     cljinvaders.asteroids$spawn_asteroids.invokeStatic (form-init13992679578890490492.clj:26)
+;     cljinvaders.asteroids$spawn_asteroids.invoke (form-init13992679578890490492.clj:23)
+;     cljinvaders.core$update_state.invokeStatic (form-init13992679578890490492.clj:38)
+;     cljinvaders.core$update_state.invoke (form-init13992679578890490492.clj:35)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     clojure.lang.Atom.swap (Atom.java:37)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2369)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664.invoke (fun_mode.cljc:13)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.asteroids-test꞉> 
+; 
+; FAIL Test create asteroid function - the :x value should not be bigger than screen width at (asteroids_test.clj:8)
+; Expected:
+; false
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11817$fn__11818$fn__11819$fn__11820$fn__11821$fn__11822.invoke(form-init13992679578890490492.clj:8)
+;   cljinvaders.asteroids_test$eval11817$fn__11818$fn__11819$fn__11820$fn__11821.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11817$fn__11818$fn__11819$fn__11820.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11817$fn__11818$fn__11819.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11817$fn__11818.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11817.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11817.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :y value should always be -50 at (asteroids_test.clj:12)
+; Expected:
+; -50
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11817$fn__11818$fn__11819$fn__11827$fn__11828$fn__11829.invoke(form-init13992679578890490492.clj:12)
+;   cljinvaders.asteroids_test$eval11817$fn__11818$fn__11819$fn__11827$fn__11828.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11817$fn__11818$fn__11819$fn__11827.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11817$fn__11818$fn__11819.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11817$fn__11818.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11817.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11817.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :size value should be between 30 and 130 (values may change later) at (asteroids_test.clj:16)
+; Expected:
+; true
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11817$fn__11818$fn__11819$fn__11833$fn__11834$fn__11835.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.asteroids_test$eval11817$fn__11818$fn__11819$fn__11833$fn__11834.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11817$fn__11818$fn__11819$fn__11833.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11817$fn__11818$fn__11819.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11817$fn__11818.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11817.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11817.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :speed value should be between 3 and 6 at (asteroids_test.clj:20)
+; Expected:
+; true
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11817$fn__11818$fn__11819$fn__11840$fn__11841$fn__11842.invoke(form-init13992679578890490492.clj:20)
+;   cljinvaders.asteroids_test$eval11817$fn__11818$fn__11819$fn__11840$fn__11841.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11817$fn__11818$fn__11819$fn__11840.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11817$fn__11818$fn__11819.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11817$fn__11818.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11817.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11817.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.asteroids-test꞉> 
+; 
+; FAIL Test create asteroid function - the :x value should not be bigger than screen width at (asteroids_test.clj:8)
+; Expected:
+; false
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11850$fn__11851$fn__11852$fn__11853$fn__11854$fn__11855.invoke(form-init13992679578890490492.clj:8)
+;   cljinvaders.asteroids_test$eval11850$fn__11851$fn__11852$fn__11853$fn__11854.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11850$fn__11851$fn__11852$fn__11853.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11850$fn__11851$fn__11852.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11850$fn__11851.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11850.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11850.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :y value should always be -50 at (asteroids_test.clj:12)
+; Expected:
+; -50
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11850$fn__11851$fn__11852$fn__11860$fn__11861$fn__11862.invoke(form-init13992679578890490492.clj:12)
+;   cljinvaders.asteroids_test$eval11850$fn__11851$fn__11852$fn__11860$fn__11861.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11850$fn__11851$fn__11852$fn__11860.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11850$fn__11851$fn__11852.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11850$fn__11851.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11850.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11850.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :size value should be between 30 and 130 (values may change later) at (asteroids_test.clj:16)
+; Expected:
+; true
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11850$fn__11851$fn__11852$fn__11866$fn__11867$fn__11868.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.asteroids_test$eval11850$fn__11851$fn__11852$fn__11866$fn__11867.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11850$fn__11851$fn__11852$fn__11866.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11850$fn__11851$fn__11852.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11850$fn__11851.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11850.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11850.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :speed value should be between 3 and 6 at (asteroids_test.clj:20)
+; Expected:
+; true
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11850$fn__11851$fn__11852$fn__11873$fn__11874$fn__11875.invoke(form-init13992679578890490492.clj:20)
+;   cljinvaders.asteroids_test$eval11850$fn__11851$fn__11852$fn__11873$fn__11874.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11850$fn__11851$fn__11852$fn__11873.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11850$fn__11851$fn__11852.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11850$fn__11851.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11850.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11850.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.asteroids-test꞉> 
+; 
+; FAIL Test create asteroid function - the :x value should not be bigger than screen width at (asteroids_test.clj:8)
+; Expected:
+; false
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11883$fn__11884$fn__11885$fn__11886$fn__11887$fn__11888.invoke(form-init13992679578890490492.clj:8)
+;   cljinvaders.asteroids_test$eval11883$fn__11884$fn__11885$fn__11886$fn__11887.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11883$fn__11884$fn__11885$fn__11886.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11883$fn__11884$fn__11885.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11883$fn__11884.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11883.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11883.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :y value should always be -50 at (asteroids_test.clj:12)
+; Expected:
+; -50
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11883$fn__11884$fn__11885$fn__11893$fn__11894$fn__11895.invoke(form-init13992679578890490492.clj:12)
+;   cljinvaders.asteroids_test$eval11883$fn__11884$fn__11885$fn__11893$fn__11894.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11883$fn__11884$fn__11885$fn__11893.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11883$fn__11884$fn__11885.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11883$fn__11884.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11883.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11883.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :size value should be between 30 and 130 (values may change later) at (asteroids_test.clj:16)
+; Expected:
+; true
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11883$fn__11884$fn__11885$fn__11899$fn__11900$fn__11901.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.asteroids_test$eval11883$fn__11884$fn__11885$fn__11899$fn__11900.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11883$fn__11884$fn__11885$fn__11899.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11883$fn__11884$fn__11885.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11883$fn__11884.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11883.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11883.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :speed value should be between 3 and 6 at (asteroids_test.clj:20)
+; Expected:
+; true
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11883$fn__11884$fn__11885$fn__11906$fn__11907$fn__11908.invoke(form-init13992679578890490492.clj:20)
+;   cljinvaders.asteroids_test$eval11883$fn__11884$fn__11885$fn__11906$fn__11907.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11883$fn__11884$fn__11885$fn__11906.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11883$fn__11884$fn__11885.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11883$fn__11884.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11883.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11883.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.asteroids-test꞉> 
+; 
+; FAIL Test create asteroid function - the :x value should not be bigger than screen width at (asteroids_test.clj:8)
+; Expected:
+; false
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11916$fn__11917$fn__11918$fn__11919$fn__11920$fn__11921.invoke(form-init13992679578890490492.clj:8)
+;   cljinvaders.asteroids_test$eval11916$fn__11917$fn__11918$fn__11919$fn__11920.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11916$fn__11917$fn__11918$fn__11919.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11916$fn__11917$fn__11918.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11916$fn__11917.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11916.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11916.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :y value should always be -50 at (asteroids_test.clj:12)
+; Expected:
+; -50
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11916$fn__11917$fn__11918$fn__11926$fn__11927$fn__11928.invoke(form-init13992679578890490492.clj:12)
+;   cljinvaders.asteroids_test$eval11916$fn__11917$fn__11918$fn__11926$fn__11927.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11916$fn__11917$fn__11918$fn__11926.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11916$fn__11917$fn__11918.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11916$fn__11917.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11916.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11916.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :size value should be between 30 and 130 (values may change later) at (asteroids_test.clj:16)
+; Expected:
+; true
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11916$fn__11917$fn__11918$fn__11932$fn__11933$fn__11934.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.asteroids_test$eval11916$fn__11917$fn__11918$fn__11932$fn__11933.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11916$fn__11917$fn__11918$fn__11932.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11916$fn__11917$fn__11918.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11916$fn__11917.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11916.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11916.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :speed value should be between 3 and 6 at (asteroids_test.clj:20)
+; Expected:
+; true
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11916$fn__11917$fn__11918$fn__11939$fn__11940$fn__11941.invoke(form-init13992679578890490492.clj:20)
+;   cljinvaders.asteroids_test$eval11916$fn__11917$fn__11918$fn__11939$fn__11940.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11916$fn__11917$fn__11918$fn__11939.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11916$fn__11917$fn__11918.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11916$fn__11917.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11916.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11916.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.asteroids-test꞉> 
+; 
+; FAIL Test create asteroid function - the :x value should not be bigger than screen width at (asteroids_test.clj:8)
+; Expected:
+; false
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11949$fn__11950$fn__11951$fn__11952$fn__11953$fn__11954.invoke(form-init13992679578890490492.clj:8)
+;   cljinvaders.asteroids_test$eval11949$fn__11950$fn__11951$fn__11952$fn__11953.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11949$fn__11950$fn__11951$fn__11952.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11949$fn__11950$fn__11951.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11949$fn__11950.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11949.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11949.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :y value should always be -50 at (asteroids_test.clj:12)
+; Expected:
+; -50
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11949$fn__11950$fn__11951$fn__11959$fn__11960$fn__11961.invoke(form-init13992679578890490492.clj:12)
+;   cljinvaders.asteroids_test$eval11949$fn__11950$fn__11951$fn__11959$fn__11960.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11949$fn__11950$fn__11951$fn__11959.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11949$fn__11950$fn__11951.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11949$fn__11950.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11949.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11949.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :size value should be between 30 and 130 (values may change later) at (asteroids_test.clj:16)
+; Expected:
+; true
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11949$fn__11950$fn__11951$fn__11965$fn__11966$fn__11967.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.asteroids_test$eval11949$fn__11950$fn__11951$fn__11965$fn__11966.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11949$fn__11950$fn__11951$fn__11965.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11949$fn__11950$fn__11951.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11949$fn__11950.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11949.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11949.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :speed value should be bigger than 3 at (asteroids_test.clj:20)
+; Expected:
+; true
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11949$fn__11950$fn__11951$fn__11972$fn__11973$fn__11974.invoke(form-init13992679578890490492.clj:20)
+;   cljinvaders.asteroids_test$eval11949$fn__11950$fn__11951$fn__11972$fn__11973.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11949$fn__11950$fn__11951$fn__11972.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11949$fn__11950$fn__11951.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11949$fn__11950.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11949.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11949.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.asteroids-test꞉> 
+; 
+; FAIL the :speed value should be bigger than 3 at (asteroids_test.clj:20)
+; Expected:
+; true
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11981$fn__11982$fn__11983$fn__11984.invoke(form-init13992679578890490492.clj:20)
+;   cljinvaders.asteroids_test$eval11981$fn__11982$fn__11983.invoke(form-init13992679578890490492.clj:19)
+;   cljinvaders.asteroids_test$eval11981$fn__11982.invoke(form-init13992679578890490492.clj:19)
+;   cljinvaders.asteroids_test$eval11981.invokeStatic(form-init13992679578890490492.clj:19)
+;   cljinvaders.asteroids_test$eval11981.invoke(form-init13992679578890490492.clj:19)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.asteroids-test꞉> 
+nil
+clj꞉cljinvaders.asteroids-test꞉> 
+; 
+; FAIL Test create asteroid function - the :x value should not be bigger than screen width at (asteroids_test.clj:8)
+; Expected:
+; false
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11999$fn__12000$fn__12001$fn__12002$fn__12003$fn__12004.invoke(form-init13992679578890490492.clj:8)
+;   cljinvaders.asteroids_test$eval11999$fn__12000$fn__12001$fn__12002$fn__12003.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11999$fn__12000$fn__12001$fn__12002.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11999$fn__12000$fn__12001.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11999$fn__12000.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11999.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11999.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :y value should always be -50 at (asteroids_test.clj:12)
+; Expected:
+; -50
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11999$fn__12000$fn__12001$fn__12009$fn__12010$fn__12011.invoke(form-init13992679578890490492.clj:12)
+;   cljinvaders.asteroids_test$eval11999$fn__12000$fn__12001$fn__12009$fn__12010.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11999$fn__12000$fn__12001$fn__12009.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11999$fn__12000$fn__12001.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11999$fn__12000.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11999.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11999.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :size value should be between 30 and 130 (values may change later) at (asteroids_test.clj:16)
+; Expected:
+; true
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11999$fn__12000$fn__12001$fn__12015$fn__12016$fn__12017.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.asteroids_test$eval11999$fn__12000$fn__12001$fn__12015$fn__12016.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11999$fn__12000$fn__12001$fn__12015.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11999$fn__12000$fn__12001.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11999$fn__12000.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11999.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11999.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :speed value should be bigger than 3 at (asteroids_test.clj:20)
+; Expected:
+; true
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval11999$fn__12000$fn__12001$fn__12022$fn__12023$fn__12024.invoke(form-init13992679578890490492.clj:20)
+;   cljinvaders.asteroids_test$eval11999$fn__12000$fn__12001$fn__12022$fn__12023.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11999$fn__12000$fn__12001$fn__12022.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11999$fn__12000$fn__12001.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11999$fn__12000.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11999.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval11999.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.asteroids-test꞉> 
+; Syntax error compiling at (test/cljinvaders/asteroids_test.clj:9:24).
+; Unable to resolve symbol: asteroid in this context
+clj꞉cljinvaders.asteroids-test꞉> 
+; Execution error (ArityException) at cljinvaders.asteroids-test/eval12032 (form-init13992679578890490492.clj:8).
+; Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids-test꞉> 
+#'cljinvaders.asteroids/update-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/update-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/setup-asteroid-images
+clj꞉cljinvaders.asteroids꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+; 
+; FAIL Test create asteroid function - the :x value should not be bigger than screen width at (asteroids_test.clj:8)
+; Expected:
+; false
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval12104$fn__12105$fn__12106$fn__12107$fn__12108$fn__12109.invoke(form-init13992679578890490492.clj:8)
+;   cljinvaders.asteroids_test$eval12104$fn__12105$fn__12106$fn__12107$fn__12108.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12104$fn__12105$fn__12106$fn__12107.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12104$fn__12105$fn__12106.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12104$fn__12105.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12104.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12104.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :y value should always be -50 at (asteroids_test.clj:12)
+; Expected:
+; -50
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval12104$fn__12105$fn__12106$fn__12114$fn__12115$fn__12116.invoke(form-init13992679578890490492.clj:12)
+;   cljinvaders.asteroids_test$eval12104$fn__12105$fn__12106$fn__12114$fn__12115.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12104$fn__12105$fn__12106$fn__12114.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12104$fn__12105$fn__12106.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12104$fn__12105.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12104.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12104.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :size value should be between 30 and 130 (values may change later) at (asteroids_test.clj:16)
+; Expected:
+; true
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval12104$fn__12105$fn__12106$fn__12120$fn__12121$fn__12122.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.asteroids_test$eval12104$fn__12105$fn__12106$fn__12120$fn__12121.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12104$fn__12105$fn__12106$fn__12120.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12104$fn__12105$fn__12106.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12104$fn__12105.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12104.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12104.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :speed value should be bigger than 3 at (asteroids_test.clj:20)
+; Expected:
+; true
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval12104$fn__12105$fn__12106$fn__12127$fn__12128$fn__12129.invoke(form-init13992679578890490492.clj:20)
+;   cljinvaders.asteroids_test$eval12104$fn__12105$fn__12106$fn__12127$fn__12128.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12104$fn__12105$fn__12106$fn__12127.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12104$fn__12105$fn__12106.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12104$fn__12105.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12104.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12104.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.asteroids-test꞉> 
+; 
+; FAIL Test create asteroid function - the :x value should not be bigger than screen width at (asteroids_test.clj:8)
+; Expected:
+; false
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval12136$fn__12137$fn__12138$fn__12139$fn__12140$fn__12141.invoke(form-init13992679578890490492.clj:8)
+;   cljinvaders.asteroids_test$eval12136$fn__12137$fn__12138$fn__12139$fn__12140.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12136$fn__12137$fn__12138$fn__12139.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12136$fn__12137$fn__12138.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12136$fn__12137.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12136.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12136.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :y value should always be -50 at (asteroids_test.clj:12)
+; Expected:
+; -50
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval12136$fn__12137$fn__12138$fn__12146$fn__12147$fn__12148.invoke(form-init13992679578890490492.clj:12)
+;   cljinvaders.asteroids_test$eval12136$fn__12137$fn__12138$fn__12146$fn__12147.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12136$fn__12137$fn__12138$fn__12146.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12136$fn__12137$fn__12138.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12136$fn__12137.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12136.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12136.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :size value should be between 30 and 130 (values may change later) at (asteroids_test.clj:16)
+; Expected:
+; true
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval12136$fn__12137$fn__12138$fn__12152$fn__12153$fn__12154.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.asteroids_test$eval12136$fn__12137$fn__12138$fn__12152$fn__12153.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12136$fn__12137$fn__12138$fn__12152.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12136$fn__12137$fn__12138.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12136$fn__12137.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12136.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12136.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.asteroids-test꞉> 
+; 
+; FAIL Test create asteroid function - the :x value should not be bigger than screen width at (asteroids_test.clj:8)
+; Expected:
+; false
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval12168$fn__12169$fn__12170$fn__12171$fn__12172$fn__12173.invoke(form-init13992679578890490492.clj:8)
+;   cljinvaders.asteroids_test$eval12168$fn__12169$fn__12170$fn__12171$fn__12172.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12168$fn__12169$fn__12170$fn__12171.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12168$fn__12169$fn__12170.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12168$fn__12169.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12168.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12168.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :y value should always be -50 at (asteroids_test.clj:12)
+; Expected:
+; -50
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval12168$fn__12169$fn__12170$fn__12178$fn__12179$fn__12180.invoke(form-init13992679578890490492.clj:12)
+;   cljinvaders.asteroids_test$eval12168$fn__12169$fn__12170$fn__12178$fn__12179.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12168$fn__12169$fn__12170$fn__12178.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12168$fn__12169$fn__12170.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12168$fn__12169.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12168.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12168.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test create asteroid function - the :size value should be between 30 and 130 (values may change later) at (asteroids_test.clj:16)
+; Expected:
+; true
+; Actual:
+; clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.asteroids/create-asteroid
+;   cljinvaders.asteroids_test$eval12168$fn__12169$fn__12170$fn__12184$fn__12185$fn__12186.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.asteroids_test$eval12168$fn__12169$fn__12170$fn__12184$fn__12185.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12168$fn__12169$fn__12170$fn__12184.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12168$fn__12169$fn__12170.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12168$fn__12169.invoke(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12168.invokeStatic(form-init13992679578890490492.clj:6)
+;   cljinvaders.asteroids_test$eval12168.invoke(form-init13992679578890490492.clj:6)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
+true
+clj꞉cljinvaders.asteroids-test꞉> 
