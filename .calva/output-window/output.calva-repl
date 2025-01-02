@@ -48627,3 +48627,1568 @@ true
 clj꞉cljinvaders.player-test꞉> 
 true
 clj꞉cljinvaders.player-test꞉> 
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:18)
+; Expected:
+; true
+; Actual:
+; java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;   cljinvaders.hit$handle_hit$fn__11458.invoke(form-init13992679578890490492.clj:27)
+;   cljinvaders.hit$handle_hit.invokeStatic(form-init13992679578890490492.clj:22)
+;   cljinvaders.hit$handle_hit.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12483$fn__12484$fn__12485$fn__12486$fn__12487$fn__12488.invoke(form-init13992679578890490492.clj:21)
+;   cljinvaders.hit_test$eval12483$fn__12484$fn__12485$fn__12486$fn__12487.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12483$fn__12484$fn__12485$fn__12486.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12483$fn__12484$fn__12485.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12483$fn__12484.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12483.invokeStatic(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12483.invoke(form-init13992679578890490492.clj:16)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:27)
+; Expected:
+; false
+; Actual:
+; java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;   cljinvaders.hit$handle_hit$fn__11458.invoke(form-init13992679578890490492.clj:27)
+;   cljinvaders.hit$handle_hit.invokeStatic(form-init13992679578890490492.clj:22)
+;   cljinvaders.hit$handle_hit.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12483$fn__12484$fn__12485$fn__12493$fn__12494$fn__12495.invoke(form-init13992679578890490492.clj:30)
+;   cljinvaders.hit_test$eval12483$fn__12484$fn__12485$fn__12493$fn__12494.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12483$fn__12484$fn__12485$fn__12493.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12483$fn__12484$fn__12485.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12483$fn__12484.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12483.invokeStatic(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12483.invoke(form-init13992679578890490492.clj:16)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:18)
+; Expected:
+; true
+; Actual:
+; java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;   cljinvaders.hit$handle_hit$fn__11458.invoke(form-init13992679578890490492.clj:27)
+;   cljinvaders.hit$handle_hit.invokeStatic(form-init13992679578890490492.clj:22)
+;   cljinvaders.hit$handle_hit.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12502$fn__12503$fn__12504$fn__12505$fn__12506$fn__12507.invoke(form-init13992679578890490492.clj:21)
+;   cljinvaders.hit_test$eval12502$fn__12503$fn__12504$fn__12505$fn__12506.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12502$fn__12503$fn__12504$fn__12505.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12502$fn__12503$fn__12504.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12502$fn__12503.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12502.invokeStatic(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12502.invoke(form-init13992679578890490492.clj:16)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:27)
+; Expected:
+; false
+; Actual:
+; java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;   cljinvaders.hit$handle_hit$fn__11458.invoke(form-init13992679578890490492.clj:27)
+;   cljinvaders.hit$handle_hit.invokeStatic(form-init13992679578890490492.clj:22)
+;   cljinvaders.hit$handle_hit.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12502$fn__12503$fn__12504$fn__12512$fn__12513$fn__12514.invoke(form-init13992679578890490492.clj:30)
+;   cljinvaders.hit_test$eval12502$fn__12503$fn__12504$fn__12512$fn__12513.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12502$fn__12503$fn__12504$fn__12512.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12502$fn__12503$fn__12504.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12502$fn__12503.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12502.invokeStatic(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12502.invoke(form-init13992679578890490492.clj:16)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:36)
+; Expected:
+; true
+; Actual:
+; java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;   cljinvaders.hit$handle_hit$fn__11458.invoke(form-init13992679578890490492.clj:27)
+;   cljinvaders.hit$handle_hit.invokeStatic(form-init13992679578890490492.clj:22)
+;   cljinvaders.hit$handle_hit.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12521$fn__12522$fn__12523$fn__12524$fn__12525$fn__12526.invoke(form-init13992679578890490492.clj:39)
+;   cljinvaders.hit_test$eval12521$fn__12522$fn__12523$fn__12524$fn__12525.invoke(form-init13992679578890490492.clj:34)
+;   cljinvaders.hit_test$eval12521$fn__12522$fn__12523$fn__12524.invoke(form-init13992679578890490492.clj:34)
+;   cljinvaders.hit_test$eval12521$fn__12522$fn__12523.invoke(form-init13992679578890490492.clj:34)
+;   cljinvaders.hit_test$eval12521$fn__12522.invoke(form-init13992679578890490492.clj:34)
+;   cljinvaders.hit_test$eval12521.invokeStatic(form-init13992679578890490492.clj:34)
+;   cljinvaders.hit_test$eval12521.invoke(form-init13992679578890490492.clj:34)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:45)
+; Expected:
+; false
+; Actual:
+; java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;   cljinvaders.hit$handle_hit$fn__11458.invoke(form-init13992679578890490492.clj:27)
+;   cljinvaders.hit$handle_hit.invokeStatic(form-init13992679578890490492.clj:22)
+;   cljinvaders.hit$handle_hit.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12521$fn__12522$fn__12523$fn__12531$fn__12532$fn__12533.invoke(form-init13992679578890490492.clj:48)
+;   cljinvaders.hit_test$eval12521$fn__12522$fn__12523$fn__12531$fn__12532.invoke(form-init13992679578890490492.clj:34)
+;   cljinvaders.hit_test$eval12521$fn__12522$fn__12523$fn__12531.invoke(form-init13992679578890490492.clj:34)
+;   cljinvaders.hit_test$eval12521$fn__12522$fn__12523.invoke(form-init13992679578890490492.clj:34)
+;   cljinvaders.hit_test$eval12521$fn__12522.invoke(form-init13992679578890490492.clj:34)
+;   cljinvaders.hit_test$eval12521.invokeStatic(form-init13992679578890490492.clj:34)
+;   cljinvaders.hit_test$eval12521.invoke(form-init13992679578890490492.clj:34)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.hit-test꞉> 
+#'cljinvaders.hit/handle-hit
+clj꞉cljinvaders.hit꞉> 
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:18)
+; Expected:
+; true
+; Actual:
+; java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;   cljinvaders.hit$handle_hit$fn__12552.invoke(form-init13992679578890490492.clj:27)
+;   cljinvaders.hit$handle_hit.invokeStatic(form-init13992679578890490492.clj:22)
+;   cljinvaders.hit$handle_hit.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12571$fn__12572$fn__12573$fn__12574$fn__12575$fn__12576.invoke(form-init13992679578890490492.clj:21)
+;   cljinvaders.hit_test$eval12571$fn__12572$fn__12573$fn__12574$fn__12575.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12571$fn__12572$fn__12573$fn__12574.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12571$fn__12572$fn__12573.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12571$fn__12572.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12571.invokeStatic(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12571.invoke(form-init13992679578890490492.clj:16)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:27)
+; Expected:
+; false
+; Actual:
+; java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;   cljinvaders.hit$handle_hit$fn__12552.invoke(form-init13992679578890490492.clj:27)
+;   cljinvaders.hit$handle_hit.invokeStatic(form-init13992679578890490492.clj:22)
+;   cljinvaders.hit$handle_hit.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12571$fn__12572$fn__12573$fn__12581$fn__12582$fn__12583.invoke(form-init13992679578890490492.clj:30)
+;   cljinvaders.hit_test$eval12571$fn__12572$fn__12573$fn__12581$fn__12582.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12571$fn__12572$fn__12573$fn__12581.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12571$fn__12572$fn__12573.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12571$fn__12572.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12571.invokeStatic(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12571.invoke(form-init13992679578890490492.clj:16)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:18)
+; Expected:
+; true
+; Actual:
+; java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;   cljinvaders.hit$handle_hit$fn__12552.invoke(form-init13992679578890490492.clj:27)
+;   cljinvaders.hit$handle_hit.invokeStatic(form-init13992679578890490492.clj:22)
+;   cljinvaders.hit$handle_hit.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12590$fn__12591$fn__12592$fn__12593$fn__12594$fn__12595.invoke(form-init13992679578890490492.clj:21)
+;   cljinvaders.hit_test$eval12590$fn__12591$fn__12592$fn__12593$fn__12594.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12590$fn__12591$fn__12592$fn__12593.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12590$fn__12591$fn__12592.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12590$fn__12591.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12590.invokeStatic(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12590.invoke(form-init13992679578890490492.clj:16)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:27)
+; Expected:
+; false
+; Actual:
+; java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;   cljinvaders.hit$handle_hit$fn__12552.invoke(form-init13992679578890490492.clj:27)
+;   cljinvaders.hit$handle_hit.invokeStatic(form-init13992679578890490492.clj:22)
+;   cljinvaders.hit$handle_hit.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12590$fn__12591$fn__12592$fn__12600$fn__12601$fn__12602.invoke(form-init13992679578890490492.clj:30)
+;   cljinvaders.hit_test$eval12590$fn__12591$fn__12592$fn__12600$fn__12601.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12590$fn__12591$fn__12592$fn__12600.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12590$fn__12591$fn__12592.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12590$fn__12591.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12590.invokeStatic(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12590.invoke(form-init13992679578890490492.clj:16)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.hit-test꞉> 
+#'cljinvaders.hit/handle-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:36)
+; Expected:
+; true
+; Actual:
+; java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;   cljinvaders.hit$handle_hit$fn__12621.invoke(form-init13992679578890490492.clj:27)
+;   cljinvaders.hit$handle_hit.invokeStatic(form-init13992679578890490492.clj:22)
+;   cljinvaders.hit$handle_hit.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12650$fn__12651$fn__12652$fn__12653$fn__12654$fn__12655.invoke(form-init13992679578890490492.clj:39)
+;   cljinvaders.hit_test$eval12650$fn__12651$fn__12652$fn__12653$fn__12654.invoke(form-init13992679578890490492.clj:34)
+;   cljinvaders.hit_test$eval12650$fn__12651$fn__12652$fn__12653.invoke(form-init13992679578890490492.clj:34)
+;   cljinvaders.hit_test$eval12650$fn__12651$fn__12652.invoke(form-init13992679578890490492.clj:34)
+;   cljinvaders.hit_test$eval12650$fn__12651.invoke(form-init13992679578890490492.clj:34)
+;   cljinvaders.hit_test$eval12650.invokeStatic(form-init13992679578890490492.clj:34)
+;   cljinvaders.hit_test$eval12650.invoke(form-init13992679578890490492.clj:34)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:45)
+; Expected:
+; false
+; Actual:
+; java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;   cljinvaders.hit$handle_hit$fn__12621.invoke(form-init13992679578890490492.clj:27)
+;   cljinvaders.hit$handle_hit.invokeStatic(form-init13992679578890490492.clj:22)
+;   cljinvaders.hit$handle_hit.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12650$fn__12651$fn__12652$fn__12660$fn__12661$fn__12662.invoke(form-init13992679578890490492.clj:48)
+;   cljinvaders.hit_test$eval12650$fn__12651$fn__12652$fn__12660$fn__12661.invoke(form-init13992679578890490492.clj:34)
+;   cljinvaders.hit_test$eval12650$fn__12651$fn__12652$fn__12660.invoke(form-init13992679578890490492.clj:34)
+;   cljinvaders.hit_test$eval12650$fn__12651$fn__12652.invoke(form-init13992679578890490492.clj:34)
+;   cljinvaders.hit_test$eval12650$fn__12651.invoke(form-init13992679578890490492.clj:34)
+;   cljinvaders.hit_test$eval12650.invokeStatic(form-init13992679578890490492.clj:34)
+;   cljinvaders.hit_test$eval12650.invoke(form-init13992679578890490492.clj:34)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; Execution error (IllegalArgumentException) at cljinvaders.hit/handle-hit$fn (form-init13992679578890490492.clj:27).
+; No matching method round found taking 1 args
+clj꞉cljinvaders.hit-test꞉> 
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:18)
+; Expected:
+; true
+; Actual:
+; java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;   cljinvaders.hit$handle_hit$fn__12621.invoke(form-init13992679578890490492.clj:27)
+;   cljinvaders.hit$handle_hit.invokeStatic(form-init13992679578890490492.clj:22)
+;   cljinvaders.hit$handle_hit.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12673$fn__12674$fn__12675$fn__12676$fn__12677$fn__12678.invoke(form-init13992679578890490492.clj:21)
+;   cljinvaders.hit_test$eval12673$fn__12674$fn__12675$fn__12676$fn__12677.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12673$fn__12674$fn__12675$fn__12676.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12673$fn__12674$fn__12675.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12673$fn__12674.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12673.invokeStatic(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12673.invoke(form-init13992679578890490492.clj:16)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+; 
+; FAIL Test handle-hit function - it removes the projectile and asteroid when they touch at (hit_test.clj:27)
+; Expected:
+; false
+; Actual:
+; java.lang.IllegalArgumentException: No matching method round found taking 1 args
+;   cljinvaders.hit$handle_hit$fn__12621.invoke(form-init13992679578890490492.clj:27)
+;   cljinvaders.hit$handle_hit.invokeStatic(form-init13992679578890490492.clj:22)
+;   cljinvaders.hit$handle_hit.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12673$fn__12674$fn__12675$fn__12683$fn__12684$fn__12685.invoke(form-init13992679578890490492.clj:30)
+;   cljinvaders.hit_test$eval12673$fn__12674$fn__12675$fn__12683$fn__12684.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12673$fn__12674$fn__12675$fn__12683.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12673$fn__12674$fn__12675.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12673$fn__12674.invoke(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12673.invokeStatic(form-init13992679578890490492.clj:16)
+;   cljinvaders.hit_test$eval12673.invoke(form-init13992679578890490492.clj:16)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251$fn__1252.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate$fn__1251.invoke(interruptible_eval.clj:87)
+;   nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:84)
+;   nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:56)
+;   nrepl.middleware.interruptible_eval$interruptible_eval$fn__1284$fn__1288.invoke(interruptible_eval.clj:152)
+;   nrepl.middleware.session$session_exec$main_loop__1354$fn__1358.invoke(session.clj:218)
+;   nrepl.middleware.session$session_exec$main_loop__1354.invoke(session.clj:217)
+false
+clj꞉cljinvaders.hit-test꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'user/handle-mouse-pressed
+clj꞉user꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:46:37).
+; Unable to resolve symbol: draw-start-screen in this context
+clj꞉user꞉> 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:46:37).
+; Unable to resolve symbol: draw-start-screen in this context
+clj꞉user꞉> 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:46:37).
+; Unable to resolve symbol: draw-start-screen in this context
+clj꞉user꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/game-started
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:122:40).
+; Unable to resolve symbol: game-state in this context
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/game-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/handle-mouse-pressed
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:1:1432).
+; Unable to resolve symbol: state in this context
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:170:15).
+; Unable to resolve symbol: state in this context
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:170:15).
+; Unable to resolve symbol: state in this context
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:169:15).
+; Unable to resolve symbol: state in this context
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:169:15).
+; Unable to resolve symbol: state in this context
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:169:15).
+; Unable to resolve symbol: state in this context
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:170:15).
+; Unable to resolve symbol: state in this context
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/livesImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/update-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/screen
+clj꞉cljinvaders.core꞉> 
+; Execution error (ClassCastException) at cljinvaders.core/eval12828 (form-init13992679578890490492.clj:12).
+; class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉cljinvaders.core꞉> 
+; #object[clojure.lang.Atom 0x444e9a81 {:status :ready, :val start}]
+nil
+clj꞉cljinvaders.core꞉> 
+; #object[clojure.lang.Atom 0x444e9a81 {:status :ready, :val start}]
+nil
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  :via
+;  [{:type clojure.lang.ArityException
+;    :message Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;    :at [clojure.lang.AFn throwArity AFn.java 429]}]
+;  :trace
+;  [[clojure.lang.AFn throwArity AFn.java 429]
+;   [clojure.lang.AFn invoke AFn.java 32]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  at clojure.lang.AFn.throwArity (AFn.java:429)
+;     clojure.lang.AFn.invoke (AFn.java:32)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  :via
+;  [{:type clojure.lang.ArityException
+;    :message Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;    :at [clojure.lang.AFn throwArity AFn.java 429]}]
+;  :trace
+;  [[clojure.lang.AFn throwArity AFn.java 429]
+;   [clojure.lang.AFn invoke AFn.java 32]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  at clojure.lang.AFn.throwArity (AFn.java:429)
+;     clojure.lang.AFn.invoke (AFn.java:32)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  :via
+;  [{:type clojure.lang.ArityException
+;    :message Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;    :at [clojure.lang.AFn throwArity AFn.java 429]}]
+;  :trace
+;  [[clojure.lang.AFn throwArity AFn.java 429]
+;   [clojure.lang.AFn invoke AFn.java 32]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  at clojure.lang.AFn.throwArity (AFn.java:429)
+;     clojure.lang.AFn.invoke (AFn.java:32)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  :via
+;  [{:type clojure.lang.ArityException
+;    :message Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;    :at [clojure.lang.AFn throwArity AFn.java 429]}]
+;  :trace
+;  [[clojure.lang.AFn throwArity AFn.java 429]
+;   [clojure.lang.AFn invoke AFn.java 32]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  at clojure.lang.AFn.throwArity (AFn.java:429)
+;     clojure.lang.AFn.invoke (AFn.java:32)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  :via
+;  [{:type clojure.lang.ArityException
+;    :message Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;    :at [clojure.lang.AFn throwArity AFn.java 429]}]
+;  :trace
+;  [[clojure.lang.AFn throwArity AFn.java 429]
+;   [clojure.lang.AFn invoke AFn.java 32]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  at clojure.lang.AFn.throwArity (AFn.java:429)
+;     clojure.lang.AFn.invoke (AFn.java:32)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  :via
+;  [{:type clojure.lang.ArityException
+;    :message Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;    :at [clojure.lang.AFn throwArity AFn.java 429]}]
+;  :trace
+;  [[clojure.lang.AFn throwArity AFn.java 429]
+;   [clojure.lang.AFn invoke AFn.java 32]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  at clojure.lang.AFn.throwArity (AFn.java:429)
+;     clojure.lang.AFn.invoke (AFn.java:32)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  :via
+;  [{:type clojure.lang.ArityException
+;    :message Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;    :at [clojure.lang.AFn throwArity AFn.java 429]}]
+;  :trace
+;  [[clojure.lang.AFn throwArity AFn.java 429]
+;   [clojure.lang.AFn invoke AFn.java 32]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  at clojure.lang.AFn.throwArity (AFn.java:429)
+;     clojure.lang.AFn.invoke (AFn.java:32)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  :via
+;  [{:type clojure.lang.ArityException
+;    :message Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;    :at [clojure.lang.AFn throwArity AFn.java 429]}]
+;  :trace
+;  [[clojure.lang.AFn throwArity AFn.java 429]
+;   [clojure.lang.AFn invoke AFn.java 32]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  at clojure.lang.AFn.throwArity (AFn.java:429)
+;     clojure.lang.AFn.invoke (AFn.java:32)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  :via
+;  [{:type clojure.lang.ArityException
+;    :message Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;    :at [clojure.lang.AFn throwArity AFn.java 429]}]
+;  :trace
+;  [[clojure.lang.AFn throwArity AFn.java 429]
+;   [clojure.lang.AFn invoke AFn.java 32]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  at clojure.lang.AFn.throwArity (AFn.java:429)
+;     clojure.lang.AFn.invoke (AFn.java:32)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  :via
+;  [{:type clojure.lang.ArityException
+;    :message Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;    :at [clojure.lang.AFn throwArity AFn.java 429]}]
+;  :trace
+;  [[clojure.lang.AFn throwArity AFn.java 429]
+;   [clojure.lang.AFn invoke AFn.java 32]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  at clojure.lang.AFn.throwArity (AFn.java:429)
+;     clojure.lang.AFn.invoke (AFn.java:32)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :draw  function:  #error {
+;  :cause Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  :via
+;  [{:type clojure.lang.ArityException
+;    :message Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;    :at [clojure.lang.AFn throwArity AFn.java 429]}]
+;  :trace
+;  [[clojure.lang.AFn throwArity AFn.java 429]
+;   [clojure.lang.AFn invoke AFn.java 32]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  at clojure.lang.AFn.throwArity (AFn.java:429)
+;     clojure.lang.AFn.invoke (AFn.java:32)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  :via
+;  [{:type clojure.lang.ArityException
+;    :message Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;    :at [clojure.lang.AFn throwArity AFn.java 429]}]
+;  :trace
+;  [[clojure.lang.AFn throwArity AFn.java 429]
+;   [clojure.lang.AFn invoke AFn.java 32]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  clojure.lang.ArityException: Wrong number of args (1) passed to: cljinvaders.core/draw-start-screen
+;  at clojure.lang.AFn.throwArity (AFn.java:429)
+;     clojure.lang.AFn.invoke (AFn.java:32)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-state
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:89:26).
+; Unable to resolve symbol: player in this context
+clj꞉cljinvaders.core꞉> 
+; Syntax error compiling at (src/cljinvaders/core.clj:89:26).
+; Unable to resolve symbol: player in this context
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause class quil.core$screen_width cannot be cast to class java.lang.Number (quil.core$screen_width is in unnamed module of loader clojure.lang.DynamicClassLoader @5e0c6628; java.lang.Number is in module java.base of loader 'bootstrap')
+;  :via
+;  [{:type java.lang.ClassCastException
+;    :message class quil.core$screen_width cannot be cast to class java.lang.Number (quil.core$screen_width is in unnamed module of loader clojure.lang.DynamicClassLoader @5e0c6628; java.lang.Number is in module java.base of loader 'bootstrap')
+;    :at [clojure.lang.Numbers divide Numbers.java 191]}]
+;  :trace
+;  [[clojure.lang.Numbers divide Numbers.java 191]
+;   [clojure.lang.Numbers divide Numbers.java 3891]
+;   [cljinvaders.core$draw_start_screen invokeStatic form-init13992679578890490492.clj 89]
+;   [cljinvaders.core$draw_start_screen invoke form-init13992679578890490492.clj 84]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.ClassCastException: class quil.core$screen_width cannot be cast to class java.lang.Number (quil.core$screen_width is in unnamed module of loader clojure.lang.DynamicClassLoader @5e0c6628; java.lang.Number is in module java.base of loader 'bootstrap')
+;  at clojure.lang.Numbers.divide (Numbers.java:191)
+;     clojure.lang.Numbers.divide (Numbers.java:3891)
+;     cljinvaders.core$draw_start_screen.invokeStatic (form-init13992679578890490492.clj:89)
+;     cljinvaders.core$draw_start_screen.invoke (form-init13992679578890490492.clj:84)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Syntax error reading source at (REPL:91:51).
+; Unmatched delimiter: )
+clj꞉cljinvaders.core꞉> 
+; Syntax error reading source at (REPL:91:51).
+; Unmatched delimiter: )
+clj꞉cljinvaders.core꞉> 
+; Syntax error reading source at (REPL:91:51).
+; Unmatched delimiter: )
+clj꞉cljinvaders.core꞉> 
+; Syntax error reading source at (REPL:91:51).
+; Unmatched delimiter: )
+clj꞉cljinvaders.core꞉> 
+; Syntax error reading source at (REPL:91:51).
+; Unmatched delimiter: )
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :draw  function:  #error {
+;  :cause class quil.core$screen_width cannot be cast to class java.lang.Number (quil.core$screen_width is in unnamed module of loader clojure.lang.DynamicClassLoader @5e0c6628; java.lang.Number is in module java.base of loader 'bootstrap')
+;  :via
+;  [{:type java.lang.ClassCastException
+;    :message class quil.core$screen_width cannot be cast to class java.lang.Number (quil.core$screen_width is in unnamed module of loader clojure.lang.DynamicClassLoader @5e0c6628; java.lang.Number is in module java.base of loader 'bootstrap')
+;    :at [clojure.lang.Numbers divide Numbers.java 191]}]
+;  :trace
+;  [[clojure.lang.Numbers divide Numbers.java 191]
+;   [clojure.lang.Numbers divide Numbers.java 3891]
+;   [cljinvaders.core$draw_start_screen invokeStatic form-init13992679578890490492.clj 92]
+;   [cljinvaders.core$draw_start_screen invoke form-init13992679578890490492.clj 84]
+;   [clojure.lang.Var invoke Var.java 384]
+;   [quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664 invoke fun_mode.cljc 16]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_draw invokeStatic applet.clj 216]
+;   [quil.applet$_draw invoke applet.clj 214]
+;   [quil.Applet draw nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2094]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  java.lang.ClassCastException: class quil.core$screen_width cannot be cast to class java.lang.Number (quil.core$screen_width is in unnamed module of loader clojure.lang.DynamicClassLoader @5e0c6628; java.lang.Number is in module java.base of loader 'bootstrap')
+;  at clojure.lang.Numbers.divide (Numbers.java:191)
+;     clojure.lang.Numbers.divide (Numbers.java:3891)
+;     cljinvaders.core$draw_start_screen.invokeStatic (form-init13992679578890490492.clj:92)
+;     cljinvaders.core$draw_start_screen.invoke (form-init13992679578890490492.clj:84)
+;     clojure.lang.Var.invoke (Var.java:384)
+;     quil.middlewares.fun_mode$wrap_draw_update$quil_draw__10664.invoke (fun_mode.cljc:16)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_draw.invokeStatic (applet.clj:216)
+;     quil.applet$_draw.invoke (applet.clj:214)
+;     quil.Applet.draw (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2094)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/setup
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/mouse-pressed
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :mouse-pressed  function:  #error {
+;  :cause Wrong number of args (2) passed to: cljinvaders.core/mouse-pressed
+;  :via
+;  [{:type clojure.lang.ArityException
+;    :message Wrong number of args (2) passed to: cljinvaders.core/mouse-pressed
+;    :at [clojure.lang.AFn throwArity AFn.java 429]}]
+;  :trace
+;  [[clojure.lang.AFn throwArity AFn.java 429]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Var invoke Var.java 388]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__10670 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_mousePressed invokeStatic applet.clj 251]
+;   [quil.applet$_mousePressed invoke applet.clj 251]
+;   [quil.Applet mousePressed nil -1]
+;   [processing.core.PApplet mousePressed PApplet.java 2425]
+;   [quil.Applet mousePressedParent nil -1]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke0 NativeMethodAccessorImpl.java -2]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke NativeMethodAccessorImpl.java 77]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_mousePressed invokeStatic applet.clj 251]
+;   [quil.applet$_mousePressed invoke applet.clj 251]
+;   [quil.Applet mousePressed nil -1]
+;   [processing.core.PApplet handleMouseEvent PApplet.java 2371]
+;   [quil.Applet handleMouseEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2261]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  clojure.lang.ArityException: Wrong number of args (2) passed to: cljinvaders.core/mouse-pressed
+;  at clojure.lang.AFn.throwArity (AFn.java:429)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Var.invoke (Var.java:388)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__10670.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_mousePressed.invokeStatic (applet.clj:251)
+;     quil.applet$_mousePressed.invoke (applet.clj:251)
+;     quil.Applet.mousePressed (:-1)
+;     processing.core.PApplet.mousePressed (PApplet.java:2425)
+;     quil.Applet.mousePressedParent (:-1)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (NativeMethodAccessorImpl.java:-2)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_mousePressed.invokeStatic (applet.clj:251)
+;     quil.applet$_mousePressed.invoke (applet.clj:251)
+;     quil.Applet.mousePressed (:-1)
+;     processing.core.PApplet.handleMouseEvent (PApplet.java:2371)
+;     quil.Applet.handleMouseEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2261)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+; Exception in  :mouse-pressed  function:  #error {
+;  :cause Wrong number of args (2) passed to: cljinvaders.core/mouse-pressed
+;  :via
+;  [{:type clojure.lang.ArityException
+;    :message Wrong number of args (2) passed to: cljinvaders.core/mouse-pressed
+;    :at [clojure.lang.AFn throwArity AFn.java 429]}]
+;  :trace
+;  [[clojure.lang.AFn throwArity AFn.java 429]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Var invoke Var.java 388]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__10670 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_mousePressed invokeStatic applet.clj 251]
+;   [quil.applet$_mousePressed invoke applet.clj 251]
+;   [quil.Applet mousePressed nil -1]
+;   [processing.core.PApplet mousePressed PApplet.java 2425]
+;   [quil.Applet mousePressedParent nil -1]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke0 NativeMethodAccessorImpl.java -2]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke NativeMethodAccessorImpl.java 77]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_mousePressed invokeStatic applet.clj 251]
+;   [quil.applet$_mousePressed invoke applet.clj 251]
+;   [quil.Applet mousePressed nil -1]
+;   [processing.core.PApplet handleMouseEvent PApplet.java 2371]
+;   [quil.Applet handleMouseEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2261]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  clojure.lang.ArityException: Wrong number of args (2) passed to: cljinvaders.core/mouse-pressed
+;  at clojure.lang.AFn.throwArity (AFn.java:429)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Var.invoke (Var.java:388)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__10670.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_mousePressed.invokeStatic (applet.clj:251)
+;     quil.applet$_mousePressed.invoke (applet.clj:251)
+;     quil.Applet.mousePressed (:-1)
+;     processing.core.PApplet.mousePressed (PApplet.java:2425)
+;     quil.Applet.mousePressedParent (:-1)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (NativeMethodAccessorImpl.java:-2)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_mousePressed.invokeStatic (applet.clj:251)
+;     quil.applet$_mousePressed.invoke (applet.clj:251)
+;     quil.Applet.mousePressed (:-1)
+;     processing.core.PApplet.handleMouseEvent (PApplet.java:2371)
+;     quil.Applet.handleMouseEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2261)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :mouse-pressed  function:  #error {
+;  :cause Wrong number of args (2) passed to: cljinvaders.core/mouse-pressed
+;  :via
+;  [{:type clojure.lang.ArityException
+;    :message Wrong number of args (2) passed to: cljinvaders.core/mouse-pressed
+;    :at [clojure.lang.AFn throwArity AFn.java 429]}]
+;  :trace
+;  [[clojure.lang.AFn throwArity AFn.java 429]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Var invoke Var.java 388]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__10670 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_mousePressed invokeStatic applet.clj 251]
+;   [quil.applet$_mousePressed invoke applet.clj 251]
+;   [quil.Applet mousePressed nil -1]
+;   [processing.core.PApplet mousePressed PApplet.java 2425]
+;   [quil.Applet mousePressedParent nil -1]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke0 NativeMethodAccessorImpl.java -2]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke NativeMethodAccessorImpl.java 77]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_mousePressed invokeStatic applet.clj 251]
+;   [quil.applet$_mousePressed invoke applet.clj 251]
+;   [quil.Applet mousePressed nil -1]
+;   [processing.core.PApplet handleMouseEvent PApplet.java 2371]
+;   [quil.Applet handleMouseEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2261]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  clojure.lang.ArityException: Wrong number of args (2) passed to: cljinvaders.core/mouse-pressed
+;  at clojure.lang.AFn.throwArity (AFn.java:429)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Var.invoke (Var.java:388)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__10670.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_mousePressed.invokeStatic (applet.clj:251)
+;     quil.applet$_mousePressed.invoke (applet.clj:251)
+;     quil.Applet.mousePressed (:-1)
+;     processing.core.PApplet.mousePressed (PApplet.java:2425)
+;     quil.Applet.mousePressedParent (:-1)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (NativeMethodAccessorImpl.java:-2)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_mousePressed.invokeStatic (applet.clj:251)
+;     quil.applet$_mousePressed.invoke (applet.clj:251)
+;     quil.Applet.mousePressed (:-1)
+;     processing.core.PApplet.handleMouseEvent (PApplet.java:2371)
+;     quil.Applet.handleMouseEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2261)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :mouse-pressed  function:  #error {
+;  :cause Wrong number of args (2) passed to: cljinvaders.core/mouse-pressed
+;  :via
+;  [{:type clojure.lang.ArityException
+;    :message Wrong number of args (2) passed to: cljinvaders.core/mouse-pressed
+;    :at [clojure.lang.AFn throwArity AFn.java 429]}]
+;  :trace
+;  [[clojure.lang.AFn throwArity AFn.java 429]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Var invoke Var.java 388]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__10670 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_mousePressed invokeStatic applet.clj 251]
+;   [quil.applet$_mousePressed invoke applet.clj 251]
+;   [quil.Applet mousePressed nil -1]
+;   [processing.core.PApplet mousePressed PApplet.java 2425]
+;   [quil.Applet mousePressedParent nil -1]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke0 NativeMethodAccessorImpl.java -2]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke NativeMethodAccessorImpl.java 77]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_mousePressed invokeStatic applet.clj 251]
+;   [quil.applet$_mousePressed invoke applet.clj 251]
+;   [quil.Applet mousePressed nil -1]
+;   [processing.core.PApplet handleMouseEvent PApplet.java 2371]
+;   [quil.Applet handleMouseEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2261]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  clojure.lang.ArityException: Wrong number of args (2) passed to: cljinvaders.core/mouse-pressed
+;  at clojure.lang.AFn.throwArity (AFn.java:429)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Var.invoke (Var.java:388)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__10670.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_mousePressed.invokeStatic (applet.clj:251)
+;     quil.applet$_mousePressed.invoke (applet.clj:251)
+;     quil.Applet.mousePressed (:-1)
+;     processing.core.PApplet.mousePressed (PApplet.java:2425)
+;     quil.Applet.mousePressedParent (:-1)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (NativeMethodAccessorImpl.java:-2)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_mousePressed.invokeStatic (applet.clj:251)
+;     quil.applet$_mousePressed.invoke (applet.clj:251)
+;     quil.Applet.mousePressed (:-1)
+;     processing.core.PApplet.handleMouseEvent (PApplet.java:2371)
+;     quil.Applet.handleMouseEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2261)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :mouse-pressed  function:  #error {
+;  :cause Wrong number of args (2) passed to: cljinvaders.core/mouse-pressed
+;  :via
+;  [{:type clojure.lang.ArityException
+;    :message Wrong number of args (2) passed to: cljinvaders.core/mouse-pressed
+;    :at [clojure.lang.AFn throwArity AFn.java 429]}]
+;  :trace
+;  [[clojure.lang.AFn throwArity AFn.java 429]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Var invoke Var.java 388]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__10670 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_mousePressed invokeStatic applet.clj 251]
+;   [quil.applet$_mousePressed invoke applet.clj 251]
+;   [quil.Applet mousePressed nil -1]
+;   [processing.core.PApplet mousePressed PApplet.java 2425]
+;   [quil.Applet mousePressedParent nil -1]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke0 NativeMethodAccessorImpl.java -2]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke NativeMethodAccessorImpl.java 77]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_mousePressed invokeStatic applet.clj 251]
+;   [quil.applet$_mousePressed invoke applet.clj 251]
+;   [quil.Applet mousePressed nil -1]
+;   [processing.core.PApplet handleMouseEvent PApplet.java 2371]
+;   [quil.Applet handleMouseEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2261]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  clojure.lang.ArityException: Wrong number of args (2) passed to: cljinvaders.core/mouse-pressed
+;  at clojure.lang.AFn.throwArity (AFn.java:429)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Var.invoke (Var.java:388)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__10670.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_mousePressed.invokeStatic (applet.clj:251)
+;     quil.applet$_mousePressed.invoke (applet.clj:251)
+;     quil.Applet.mousePressed (:-1)
+;     processing.core.PApplet.mousePressed (PApplet.java:2425)
+;     quil.Applet.mousePressedParent (:-1)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (NativeMethodAccessorImpl.java:-2)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_mousePressed.invokeStatic (applet.clj:251)
+;     quil.applet$_mousePressed.invoke (applet.clj:251)
+;     quil.Applet.mousePressed (:-1)
+;     processing.core.PApplet.handleMouseEvent (PApplet.java:2371)
+;     quil.Applet.handleMouseEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2261)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :mouse-pressed  function:  #error {
+;  :cause Wrong number of args (2) passed to: cljinvaders.core/mouse-pressed
+;  :via
+;  [{:type clojure.lang.ArityException
+;    :message Wrong number of args (2) passed to: cljinvaders.core/mouse-pressed
+;    :at [clojure.lang.AFn throwArity AFn.java 429]}]
+;  :trace
+;  [[clojure.lang.AFn throwArity AFn.java 429]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Var invoke Var.java 388]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__10670 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_mousePressed invokeStatic applet.clj 251]
+;   [quil.applet$_mousePressed invoke applet.clj 251]
+;   [quil.Applet mousePressed nil -1]
+;   [processing.core.PApplet mousePressed PApplet.java 2425]
+;   [quil.Applet mousePressedParent nil -1]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke0 NativeMethodAccessorImpl.java -2]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke NativeMethodAccessorImpl.java 77]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_mousePressed invokeStatic applet.clj 251]
+;   [quil.applet$_mousePressed invoke applet.clj 251]
+;   [quil.Applet mousePressed nil -1]
+;   [processing.core.PApplet handleMouseEvent PApplet.java 2371]
+;   [quil.Applet handleMouseEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2261]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  clojure.lang.ArityException: Wrong number of args (2) passed to: cljinvaders.core/mouse-pressed
+;  at clojure.lang.AFn.throwArity (AFn.java:429)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Var.invoke (Var.java:388)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__10670.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_mousePressed.invokeStatic (applet.clj:251)
+;     quil.applet$_mousePressed.invoke (applet.clj:251)
+;     quil.Applet.mousePressed (:-1)
+;     processing.core.PApplet.mousePressed (PApplet.java:2425)
+;     quil.Applet.mousePressedParent (:-1)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (NativeMethodAccessorImpl.java:-2)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_mousePressed.invokeStatic (applet.clj:251)
+;     quil.applet$_mousePressed.invoke (applet.clj:251)
+;     quil.Applet.mousePressed (:-1)
+;     processing.core.PApplet.handleMouseEvent (PApplet.java:2371)
+;     quil.Applet.handleMouseEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2261)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+; Exception in  :mouse-pressed  function:  #error {
+;  :cause Wrong number of args (2) passed to: cljinvaders.core/mouse-pressed
+;  :via
+;  [{:type clojure.lang.ArityException
+;    :message Wrong number of args (2) passed to: cljinvaders.core/mouse-pressed
+;    :at [clojure.lang.AFn throwArity AFn.java 429]}]
+;  :trace
+;  [[clojure.lang.AFn throwArity AFn.java 429]
+;   [clojure.lang.AFn invoke AFn.java 36]
+;   [clojure.lang.Var invoke Var.java 388]
+;   [clojure.lang.Atom swap Atom.java 51]
+;   [clojure.core$swap_BANG_ invokeStatic core.clj 2370]
+;   [clojure.core$swap_BANG_ invoke core.clj 2362]
+;   [quil.middlewares.fun_mode$wrap_handler$fn__10670 invoke fun_mode.cljc 43]
+;   [quil.middlewares.safe_fns$wrap_fn$fn__229 invoke safe_fns.clj 8]
+;   [quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287 invoke bind_output.clj 21]
+;   [quil.applet$_mousePressed invokeStatic applet.clj 251]
+;   [quil.applet$_mousePressed invoke applet.clj 251]
+;   [quil.Applet mousePressed nil -1]
+;   [processing.core.PApplet mousePressed PApplet.java 2425]
+;   [quil.Applet mousePressedParent nil -1]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke0 NativeMethodAccessorImpl.java -2]
+;   [jdk.internal.reflect.NativeMethodAccessorImpl invoke NativeMethodAccessorImpl.java 77]
+;   [jdk.internal.reflect.DelegatingMethodAccessorImpl invoke DelegatingMethodAccessorImpl.java 43]
+;   [java.lang.reflect.Method invoke Method.java 569]
+;   [clojure.lang.Reflector invokeMatchingMethod Reflector.java 167]
+;   [clojure.lang.Reflector invokeInstanceMethod Reflector.java 102]
+;   [quil.applet$_mousePressed invokeStatic applet.clj 251]
+;   [quil.applet$_mousePressed invoke applet.clj 251]
+;   [quil.Applet mousePressed nil -1]
+;   [processing.core.PApplet handleMouseEvent PApplet.java 2371]
+;   [quil.Applet handleMouseEvent nil -1]
+;   [processing.core.PApplet dequeueEvents PApplet.java 2261]
+;   [quil.Applet dequeueEvents nil -1]
+;   [processing.core.PApplet handleDraw PApplet.java 2104]
+;   [quil.Applet handleDraw nil -1]
+;   [processing.awt.PSurfaceAWT$9 callDraw PSurfaceAWT.java 1386]
+;   [processing.core.PSurfaceNone$AnimationThread run PSurfaceNone.java 356]]} 
+; stacktrace:  clojure.lang.ArityException: Wrong number of args (2) passed to: cljinvaders.core/mouse-pressed
+;  at clojure.lang.AFn.throwArity (AFn.java:429)
+;     clojure.lang.AFn.invoke (AFn.java:36)
+;     clojure.lang.Var.invoke (Var.java:388)
+;     clojure.lang.Atom.swap (Atom.java:51)
+;     clojure.core$swap_BANG_.invokeStatic (core.clj:2370)
+;     clojure.core$swap_BANG_.invoke (core.clj:2362)
+;     quil.middlewares.fun_mode$wrap_handler$fn__10670.invoke (fun_mode.cljc:43)
+;     quil.middlewares.safe_fns$wrap_fn$fn__229.invoke (safe_fns.clj:8)
+;     quil.middlewares.bind_output$bind_output$iter__267__271$fn__272$fn__287.invoke (bind_output.clj:21)
+;     quil.applet$_mousePressed.invokeStatic (applet.clj:251)
+;     quil.applet$_mousePressed.invoke (applet.clj:251)
+;     quil.Applet.mousePressed (:-1)
+;     processing.core.PApplet.mousePressed (PApplet.java:2425)
+;     quil.Applet.mousePressedParent (:-1)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (NativeMethodAccessorImpl.java:-2)
+;     jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+;     jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+;     java.lang.reflect.Method.invoke (Method.java:569)
+;     clojure.lang.Reflector.invokeMatchingMethod (Reflector.java:167)
+;     clojure.lang.Reflector.invokeInstanceMethod (Reflector.java:102)
+;     quil.applet$_mousePressed.invokeStatic (applet.clj:251)
+;     quil.applet$_mousePressed.invoke (applet.clj:251)
+;     quil.Applet.mousePressed (:-1)
+;     processing.core.PApplet.handleMouseEvent (PApplet.java:2371)
+;     quil.Applet.handleMouseEvent (:-1)
+;     processing.core.PApplet.dequeueEvents (PApplet.java:2261)
+;     quil.Applet.dequeueEvents (:-1)
+;     processing.core.PApplet.handleDraw (PApplet.java:2104)
+;     quil.Applet.handleDraw (:-1)
+;     processing.awt.PSurfaceAWT$9.callDraw (PSurfaceAWT.java:1386)
+;     processing.core.PSurfaceNone$AnimationThread.run (PSurfaceNone.java:356)
+; 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/draw-start-screen
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/livesImg
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
