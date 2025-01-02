@@ -47492,3 +47492,42 @@ clj꞉cljinvaders.core꞉> 
 clj꞉cljinvaders.core꞉> 
 #'cljinvaders.core/draw-state
 clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+; Syntax error compiling at (src/cljinvaders/asteroids.clj:26:5).
+; Unable to resolve symbol: state in this context
+clj꞉cljinvaders.asteroids꞉> 
+#object[cljinvaders.asteroids$spawn_asteroids 0x77b80d2f "cljinvaders.asteroids$spawn_asteroids@77b80d2f"]
+clj꞉cljinvaders.asteroids꞉> 
+; Syntax error compiling at (src/cljinvaders/asteroids.clj:26:5).
+; Unable to resolve symbol: state in this context
+clj꞉cljinvaders.asteroids꞉> 
+; Syntax error compiling at (src/cljinvaders/asteroids.clj:26:5).
+; Unable to resolve symbol: state in this context
+clj꞉cljinvaders.asteroids꞉> 
+; Syntax error compiling at (src/cljinvaders/asteroids.clj:26:5).
+; Unable to resolve symbol: state in this context
+clj꞉cljinvaders.asteroids꞉> 
+; Syntax error compiling at (src/cljinvaders/asteroids.clj:26:5).
+; Unable to resolve symbol: state in this context
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.asteroids/spawn-asteroids
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
+#'cljinvaders.asteroids/create-asteroid
+clj꞉cljinvaders.asteroids꞉> 
