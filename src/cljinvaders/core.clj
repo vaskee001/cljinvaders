@@ -37,7 +37,8 @@
   (let [updated-state (-> state
                           (asteroids/spawn-asteroids)  ; Spawn asteroids with a 1% chance
                           (asteroids/update-asteroids) ; Move asteroids
-                          (hit/handle-hit hit/on-hit))] ; Hit controller
+                          (hit/handle-hit hit/on-hit)  ; Hit controller
+                          (hit/handle-player-hit hit/on-player-hit))] ; Hit player controller
     (assoc updated-state
            :color (mod (+ (:color updated-state) 0.7) 255)  ; Update color
            :player (-> updated-state :player player/update-player player/update-projectiles))))  ; Update player and projectiles
@@ -78,5 +79,4 @@
   ;; Function for handling key press (if needed in future).
   :features [:keep-on-top]
   :middleware [m/fun-mode])
-
 
