@@ -47430,3 +47430,7 @@ clj꞉cljinvaders.hit꞉> 
 clj꞉cljinvaders.hit꞉> 
 #'cljinvaders.core/cljinvaders
 clj꞉cljinvaders.core꞉> 
+#'cljinvaders.hit/handle-hit
+clj꞉cljinvaders.hit꞉> 
+#'cljinvaders.core/cljinvaders
+clj꞉cljinvaders.core꞉> 
