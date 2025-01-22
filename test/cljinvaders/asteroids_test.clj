@@ -4,20 +4,21 @@
 
 ;; This test can work only after starting game once because of initalisation of asteroid images
 (facts "Test create asteroid function"
-       (fact "the :x value should not be bigger than screen width"
-             (let [asteroid (asteroids/create-asteroid 1920 800)]
-               (and (< (:x asteroid) 0) (< (:x asteroid) 1920))) => false)
+       (fact "the :x value should not be bigger than screen width + 50"
+             (let [asteroid (asteroids/create-asteroid 1920 1080 800)]
+               (and (>= (:x asteroid) 0) (<= (:x asteroid) 1970))) => true)
+
        
-       (fact "the :y value should always be -50"
-             (let [asteroid (asteroids/create-asteroid 1920 800)]
-               (:y asteroid)) => -50)
+       (fact "the :y value should always be from -51 to 1131"
+             (let [asteroid (asteroids/create-asteroid 1920 1080 800)]
+               (and (> (:y asteroid) -51) (< (:y asteroid) 1131))) => true)
        
        (fact "the :size value should be between 30 and 130 (values may change later)"
-             (let [asteroid (asteroids/create-asteroid 1920 800)]
+             (let [asteroid (asteroids/create-asteroid 1920 1080 800)]
                (and (>= (:size asteroid) 30) (< (:size asteroid) 130))) => true)
        
        (fact "the :speed value should be between 3 and 6"
-             (let [asteroid (asteroids/create-asteroid 1920 800)]
+             (let [asteroid (asteroids/create-asteroid 1920 1080 0)]
                (and (>= (:speed asteroid) 3) (< (:speed asteroid) 6))) => true))
 
 (facts "Test spawn asteroid function"

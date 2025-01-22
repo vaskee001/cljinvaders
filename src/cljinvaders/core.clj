@@ -6,7 +6,8 @@
             [cljinvaders.hit :as hit]))
 
 (def backgroundImg (atom nil))
-
+(def livesImg (atom nil))
+(def screen-state (atom :game))
 
 (defn setup []
   ; Set frame rate to 60 frames per second.
@@ -24,7 +25,8 @@
                          (< screen-width 1921) "src/cljinvaders/img/background/background.png"
                          (< screen-width 2561 ) "src/cljinvaders/img/background/background2k.png"
                          :else "src/cljinvaders/img/background/background4k.png")]
-    (reset! backgroundImg (q/load-image background-img)))
+    (reset! backgroundImg (q/load-image background-img))
+    (reset! livesImg (q/load-image "src/cljinvaders/img/player/life.png")))
   (asteroids/setup-asteroid-images)
   {:color 0
    :player (player/init-player)
@@ -65,7 +67,35 @@
       (q/image (:image asteroid) (- (:x asteroid) (/ (:size asteroid) 2)) 
          (- (:y asteroid) (/ (:size asteroid) 2)) 
          (:size asteroid) 
-         (:size asteroid)))))
+         (:size asteroid)))
+    ; Draw score
+    (q/fill 255) ; White color
+    (q/text-size 32)
+    (q/text (str "Score: " (:score player)) 10 40)
+    ; Draw lives
+     (let [lives (:lives player)
+           x-pos (- (:screen-width state) 20 (* 50 (count lives)))
+           y-pos (- (:screen-height state) 20 50)]
+       (doseq [i (range (count lives))]
+         (q/image @livesImg (+ x-pos (* 50 i)) y-pos 50 50)))
+    ))
+
+;; Draw start screen
+(defn draw-start-screen [state]
+  (q/background 240)
+  (q/image @backgroundImg 0 0)
+  (let [screen-width (q/screen-width)
+        screen-height (q/screen-height)]
+    (q/fill 255) ; White color
+    (q/text-size 180)
+    (q/text-align :center :center)
+    (q/text "Click to start" (/ screen-width 2) (/ screen-height 2))))
+
+;; Choose what to draw
+(defn draw-function []
+  (if (= @screen-state :start)
+    draw-start-screen  
+    draw-state))       
 
 (q/defsketch cljinvaders
   :title "You shoot my asteroids right round"
@@ -75,8 +105,9 @@
   :key-pressed player/handle-key-pressed
   ; update-state is called on each iteration before draw-state.
   :update update-state
-  :draw draw-state
+  :draw (draw-function)
   ;; Function for handling key press (if needed in future).
   :features [:keep-on-top]
   :middleware [m/fun-mode])
+
 
