@@ -12,7 +12,13 @@
   (rand-nth @planeImg))
 
 (defn init-player []
-  {:x 500 :y 900 :image (random-plane-img) :last-shot-time 0 :shooting-cooldown 500 :lives [:life :life :life]}) 
+  {:x 500 
+   :y 900
+   :image (random-plane-img) 
+   :last-shot-time 0
+   :shooting-cooldown 500
+   :lives [:life :life :life]
+   :score 0}) 
 
 
 (defn update-player [player]
@@ -27,7 +33,7 @@
         shooting-cooldown (:shooting-cooldown player)]  
     (if (>= time-diff shooting-cooldown)  ; Check if cooldown has passed
       (let [new-player (assoc player
-                              :projectiles (conj (:projectiles player) {:x (:x player) :y (:y player) :speed 10})
+                              :projectiles (conj (:projectiles player) {:x (:x player) :y (- (:y player) 50) :speed 10})
                               :last-shot-time current-time)]  
         new-player)
       player)))

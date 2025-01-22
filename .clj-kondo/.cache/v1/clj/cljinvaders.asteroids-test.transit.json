@@ -1,0 +1,1 @@
+["^ ","~$update-asteroids",["^ ","~:row",31,"~:col",1,"~:fixed-arities",["~#set",[1]],"~:name","^0","~:ns","~$cljinvaders.asteroids-test","~:top-ns","^7","~:arities",["^ ","~i1",["^ ","~:ret","~:associative","~:arglist-str","[state]"]],"~:type","~:fn"],"~:filename","/home/vaske/Documents/ClojureProject/cljinvaders/test/cljinvaders/asteroids_test.clj"]
