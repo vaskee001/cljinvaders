@@ -7,7 +7,7 @@
 
 (def backgroundImg (atom nil))
 (def livesImg (atom nil))
-(def screen-state (atom :game))
+(def screen-state (atom :start))
 
 (defn setup []
   ; Set frame rate to 60 frames per second.
@@ -42,7 +42,7 @@
                           (asteroids/update-asteroids) ; Move asteroids
                           (hit/handle-hit hit/on-hit)  ; Hit controller
                           (hit/handle-player-hit hit/on-player-hit))] ; Hit player controller
-    (if (empty? (:lives (:player updated-state)))  ; Check if player's lives are empty
+    (if (and (= @screen-state :game) (empty? (:lives (:player updated-state))))  ; Check if player's lives are empty
       (do
         (reset! screen-state :end)  ; Change screen state to :end if lives are 0
         updated-state) 
@@ -79,7 +79,8 @@
     ; Draw score
     (q/fill 255) ; White color
     (q/text-size 32)
-    (q/text (str "Score: " (:score player)) 10 40)
+    (q/text-align :left :top)
+    (q/text (str "Score: " (:score player)) 10 10)
     ; Draw lives
      (let [lives (:lives player)
            x-pos (- (:screen-width state) 20 (* 50 (count lives)))
@@ -93,11 +94,14 @@
         (q/background 240)
         (q/image @backgroundImg 0 0)
         (let [screen-width (q/screen-width)
-              screen-height (q/screen-height)]
+              screen-height (q/screen-height)
+              player-score (:score (:player state))]
           (q/fill 255) ; White color
           (q/text-size 180)
           (q/text-align :center :center)
-          (q/text "GAME OVER" (/ screen-width 2) (/ screen-height 2))))
+          (q/text "GAME OVER" (/ screen-width 2) (/ screen-height 2))
+          (q/text-size 60)
+          (q/text (str "Score: " player-score) (/ screen-width 2) (+ (/ screen-height 2) 100))))
       ;; State at start
       (if (= @screen-state :start) 
       (do
@@ -110,15 +114,32 @@
           (q/text-align :center :center)
           (q/text "Click to start" (/ screen-width 2) (/ screen-height 2))))))))
 
+(defn handle-key-pressed [state event]
+  (if (= @screen-state :game) 
+    (player/handle-key-pressed state event)
+      (if (= @screen-state :end)
+        (do 
+          (reset! screen-state :start) 
+          state) 
+        (if (= @screen-state :start)
+          (do
+            (reset! screen-state :game)
+            (assoc state 
+                   :player (player/init-player)
+                   :asteroids []))
+          state))))
+
 (q/defsketch cljinvaders
   :title "You shoot my asteroids right round"
   :size :fullscreen
   ; setup function called only once, during sketch initialization.
   :setup setup
-  :key-pressed player/handle-key-pressed
+  :key-pressed handle-key-pressed
   ; update-state is called on each iteration  before draw-state.
   :update update-state
   :draw draw-state
   ;; Function for handling key press (if needed in future).
   :features [:keep-on-top]
   :middleware [m/fun-mode])
+
+

@@ -40,7 +40,7 @@
 
 (defn handle-key-pressed [state event]
   (let [key (:key event)]
-    (= key :s) (update state :player shoot)))
+    (if (= key :s) (update state :player shoot) state)))
 
 (defn move-projectile [projectile]
   (update projectile :y #(- % (:speed projectile))))

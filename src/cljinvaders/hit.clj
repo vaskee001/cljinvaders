@@ -19,18 +19,22 @@
         ;; Check if any is hit and return not hit. 
         ;; Events added to allow points
         asteroids (:asteroids state)
-        results (reduce (fn [[remaining-projectiles remaining-asteroids events] proj]
+        results (reduce (fn [[remaining-projectiles remaining-asteroids events score] proj]
                           (if-let [hit (some #(when (hit? proj %) %) remaining-asteroids)]
                             [(remove #{proj} remaining-projectiles)
                              (remove #{hit} remaining-asteroids)
-                             (conj events (on-hit proj hit))]
-                            [remaining-projectiles remaining-asteroids events]))
-                        [projectiles asteroids []]
-                        projectiles)]
+                             (conj events (on-hit proj hit))
+                             (+ score (- 150 (Math/round (:size hit))))] ;Making score round number 
+                            [remaining-projectiles remaining-asteroids events score]))
+                        [projectiles asteroids [] 0]
+                        projectiles)
+        updated-score (+ (:score (:player state)) (nth results 3))]
     (-> state
         (assoc-in [:player :projectiles] (first results))
         (assoc :asteroids (second results))
-        (assoc :events (nth results 2)))))
+        (assoc :events (nth results 2))
+        (assoc-in [:player :score] updated-score) )))
+
 
 (defn on-hit [projectile asteroid]
   {:type :add-points
