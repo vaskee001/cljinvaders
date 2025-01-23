@@ -28,6 +28,8 @@
     (reset! backgroundImg (q/load-image background-img))
     (reset! livesImg (q/load-image "src/cljinvaders/img/player/life.png")))
   (asteroids/setup-asteroid-images)
+  ;; For now it starts as game
+  (reset! screen-state :game)
   {:color 0
    :player (player/init-player)
    :screen-width (q/screen-width)
@@ -35,18 +37,26 @@
 
 
 (defn update-state [state]
-  ; Update the game state.
   (let [updated-state (-> state
                           (asteroids/spawn-asteroids)  ; Spawn asteroids with a 1% chance
                           (asteroids/update-asteroids) ; Move asteroids
                           (hit/handle-hit hit/on-hit)  ; Hit controller
                           (hit/handle-player-hit hit/on-player-hit))] ; Hit player controller
-    (assoc updated-state
-           :color (mod (+ (:color updated-state) 0.7) 255)  ; Update color
-           :player (-> updated-state :player player/update-player player/update-projectiles))))  ; Update player and projectiles
+    (if (empty? (:lives (:player updated-state)))  ; Check if player's lives are empty
+      (do
+        (reset! screen-state :end)  ; Change screen state to :end if lives are 0
+        updated-state) 
+      (assoc updated-state
+             :color (mod (+ (:color updated-state) 0.7) 255)  ; Update color
+             :player (-> updated-state :player player/update-player player/update-projectiles)))))  ; Update player and projectiles
+
+
 
 
 (defn draw-state [state]
+;; State when playing game
+  (if (= @screen-state :game)
+   (do
   ; Clear the sketch by filling it with light-grey color.
   (q/background 240)
   (q/image @backgroundImg 0 0)
@@ -56,11 +66,9 @@
   (let [player (:player state)]
     ; Draw the plane at the specified coordinates based on player position.
     (q/image (:image player) (- (:x player) 76) (- (:y player) 75))
-    ; Draw testing circle
-    (q/ellipse (:x player) (:y player) 10 10)
     (q/fill 0 0 255)
     (doseq [proj (:projectiles (:player state))]
-      (q/ellipse (:x proj) (- (:y proj) 60) 5 10))
+      (q/ellipse (:x proj) (- (:y proj) 0) 5 10))
     ; Draw asteriuds
     (q/fill 255 0 0)  ; Color
     (doseq [asteroid (:asteroids state)]  
@@ -77,25 +85,30 @@
            x-pos (- (:screen-width state) 20 (* 50 (count lives)))
            y-pos (- (:screen-height state) 20 50)]
        (doseq [i (range (count lives))]
-         (q/image @livesImg (+ x-pos (* 50 i)) y-pos 50 50)))
-    ))
-
-;; Draw start screen
-(defn draw-start-screen [state]
-  (q/background 240)
-  (q/image @backgroundImg 0 0)
-  (let [screen-width (q/screen-width)
-        screen-height (q/screen-height)]
-    (q/fill 255) ; White color
-    (q/text-size 180)
-    (q/text-align :center :center)
-    (q/text "Click to start" (/ screen-width 2) (/ screen-height 2))))
-
-;; Choose what to draw
-(defn draw-function []
-  (if (= @screen-state :start)
-    draw-start-screen  
-    draw-state))       
+         (q/image @livesImg (+ x-pos (* 50 i)) y-pos 50 50)))))
+    
+    ;; State when game over
+    (if (= @screen-state :end) 
+      (do
+        (q/background 240)
+        (q/image @backgroundImg 0 0)
+        (let [screen-width (q/screen-width)
+              screen-height (q/screen-height)]
+          (q/fill 255) ; White color
+          (q/text-size 180)
+          (q/text-align :center :center)
+          (q/text "GAME OVER" (/ screen-width 2) (/ screen-height 2))))
+      ;; State at start
+      (if (= @screen-state :start) 
+      (do
+        (q/background 240)
+        (q/image @backgroundImg 0 0)
+        (let [screen-width (q/screen-width)
+              screen-height (q/screen-height)]
+          (q/fill 255) ; White color
+          (q/text-size 180)
+          (q/text-align :center :center)
+          (q/text "Click to start" (/ screen-width 2) (/ screen-height 2))))))))
 
 (q/defsketch cljinvaders
   :title "You shoot my asteroids right round"
@@ -103,11 +116,9 @@
   ; setup function called only once, during sketch initialization.
   :setup setup
   :key-pressed player/handle-key-pressed
-  ; update-state is called on each iteration before draw-state.
+  ; update-state is called on each iteration  before draw-state.
   :update update-state
-  :draw (draw-function)
+  :draw draw-state
   ;; Function for handling key press (if needed in future).
   :features [:keep-on-top]
   :middleware [m/fun-mode])
-
-
