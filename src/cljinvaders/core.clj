@@ -15,19 +15,6 @@
 
 
 
-;; Draw a button with text
-(defn draw-button [button]
-  (q/fill  0 150 255) ; Blue button background
-  (q/stroke 255)
-  (q/stroke-weight 3)
-  (q/rect (:x button) (:y button) (:width button) (:height button))
-  (q/fill 255) ; White text
-  (q/text-size 32)
-  (q/text-align :center :center)
-  (q/text (:text button)
-          (+ (:x button) (/ (:width button) 2))
-          (+ (:y button) (/ (:height button) 2))))
-
 
 (defn setup []
   ; Set frame rate to 60 frames per second.
@@ -49,11 +36,51 @@
     (reset! livesImg (q/load-image "src/cljinvaders/img/player/life.png")))
   (asteroids/setup-asteroid-images)
   ;; For now it starts as game
-  (reset! screen-state :game)
+  (reset! screen-state :start)
   {:color 0
    :player (player/init-player)
    :screen-width (q/screen-width)
    :screen-height (q/screen-height)})
+
+;; Draw a button with text
+(defn draw-button [button]
+  (q/fill  0 150 255) ; Blue button background
+  (q/stroke 255)
+  (q/stroke-weight 3)
+  (q/rect (:x button) (:y button) (:width button) (:height button))
+  (q/fill 255) ; White text
+  (q/text-size 32)
+  (q/text-align :center :center)
+  (q/text (:text button)
+          (+ (:x button) (/ (:width button) 2))
+          (+ (:y button) (/ (:height button) 2))))
+
+;; Draw start screen with buttons
+(defn draw-start-screen [state]
+  (q/cursor) ; Show cursor on start screen
+  (q/background 240)
+  (q/image @backgroundImg 0 0)
+  (let [screen-width (:screen-width state)
+        screen-height (:screen-height state)
+        center-x (/ screen-width 2)
+        center-y (/ screen-height 2)
+        ;; Position buttons centered on screen
+        new-game-btn (assoc new-game-button
+                            :x (- center-x 150)
+                            :y (+ center-y 50))
+        scoreboard-btn (assoc scoreboard-button
+                              :x (- center-x 150)
+                              :y (+ center-y 150))]
+    (q/fill 255)
+    (q/text-size 120)
+    (q/text-align :center :center)
+    (q/text "SPACE INVADERS" center-x (- center-y 100))
+    ;; Draw buttons
+    (draw-button new-game-btn)
+    (draw-button scoreboard-btn)
+    ;; Return button positions for click detection
+    {:new-game-button new-game-btn
+     :scoreboard-button scoreboard-btn}))
 
 
 (defn update-state [state]
@@ -124,30 +151,18 @@
           (q/text (str "Score: " player-score) (/ screen-width 2) (+ (/ screen-height 2) 100))))
       ;; State at start
       (if (= @screen-state :start) 
-      (do
-        (q/background 240)
-        (q/image @backgroundImg 0 0)
-        (let [screen-width (q/screen-width)
-              screen-height (q/screen-height)]
-          (q/fill 255) ; White color
-          (q/text-size 180)
-          (q/text-align :center :center)
-          (q/text "Click to start" (/ screen-width 2) (/ screen-height 2))))))))
+      (draw-start-screen state) ))))
 
 (defn handle-key-pressed [state event]
-  (if (= @screen-state :game) 
+  (if (= @screen-state :game)
     (player/handle-key-pressed state event)
-      (if (= @screen-state :end)
-        (do 
-          (reset! screen-state :start) 
-          state) 
-        (if (= @screen-state :start)
-          (do
-            (reset! screen-state :game)
-            (assoc state 
-                   :player (player/init-player)
-                   :asteroids []))
-          state))))
+    (if (= @screen-state :end)
+      (do
+        (reset! screen-state :start)
+        state)
+      state)))
+
+
 
 (q/defsketch cljinvaders
   :title "You shoot my asteroids right round"
