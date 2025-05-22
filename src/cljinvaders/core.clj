@@ -9,6 +9,26 @@
 (def livesImg (atom nil))
 (def screen-state (atom :start))
 
+;; Button definitions for start screen
+(def new-game-button {:x 0 :y 0 :width 300 :height 80 :text "NEW GAME"})
+(def scoreboard-button {:x 0 :y 0 :width 300 :height 80 :text "SCOREBOARD"})
+
+
+
+;; Draw a button with text
+(defn draw-button [button]
+  (q/fill  0 150 255) ; Blue button background
+  (q/stroke 255)
+  (q/stroke-weight 3)
+  (q/rect (:x button) (:y button) (:width button) (:height button))
+  (q/fill 255) ; White text
+  (q/text-size 32)
+  (q/text-align :center :center)
+  (q/text (:text button)
+          (+ (:x button) (/ (:width button) 2))
+          (+ (:y button) (/ (:height button) 2))))
+
+
 (defn setup []
   ; Set frame rate to 60 frames per second.
   (q/frame-rate 60)
