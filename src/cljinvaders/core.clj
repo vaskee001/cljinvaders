@@ -104,6 +104,7 @@
 ;; State when playing game
   (if (= @screen-state :game)
    (do
+   (q/no-cursor)  
   ; Clear the sketch by filling it with light-grey color.
   (q/background 240)
   (q/image @backgroundImg 0 0)
@@ -163,6 +164,63 @@
       state)))
 
 
+;; Check if mouse click is within button bounds
+(defn point-in-button? [x y button]
+  (and (>= x (:x button))
+       (<= x (+ (:x button) (:width button)))
+       (>= y (:y button))
+       (<= y (+ (:y button) (:height button)))))
+
+
+;; Handle mouse clicks for start screen buttons
+(defn handle-mouse-pressed [state event]
+  (cond
+    ;; Handle start screen clicks
+    (= @screen-state :start)
+    (let [screen-width (:screen-width state)
+          screen-height (:screen-height state)
+          center-x (/ screen-width 2)
+          center-y (/ screen-height 2)
+          ;; Recreate button positions (same as in draw-start-screen)
+          new-game-btn (assoc new-game-button
+                              :x (- center-x 150)
+                              :y (+ center-y 50))
+          scoreboard-btn (assoc scoreboard-button
+                                :x (- center-x 150)
+                                :y (+ center-y 150))
+          mouse-x (:x event)
+          mouse-y (:y event)]
+      (cond
+        ;; Check if New Game button was clicked
+        (point-in-button? mouse-x mouse-y new-game-btn)
+        (do
+          (println "New Game clicked!") ; Debug message
+          (reset! screen-state :game)
+          (assoc state
+                 :player (player/init-player)
+                 :asteroids []))
+        ;; Check if Scoreboard button was clicked
+        (point-in-button? mouse-x mouse-y scoreboard-btn)
+        (do
+          ;; For now, just print message - implement scoreboard later
+          (println "Scoreboard clicked - not implemented yet")
+          state)
+        :else
+        (do
+          (println (str "Mouse clicked at: " mouse-x "," mouse-y)) ; Debug message
+          state)))
+
+    ;; Handle game over screen clicks - any click returns to start
+    (= @screen-state :end)
+    (do
+      (println "Game over screen clicked - returning to start")
+      (reset! screen-state :start)
+      state)
+
+    ;; For any other state, do nothing
+    :else state))
+
+
 
 (q/defsketch cljinvaders
   :title "You shoot my asteroids right round"
@@ -170,11 +228,12 @@
   ; setup function called only once, during sketch initialization.
   :setup setup
   :key-pressed handle-key-pressed
+  :mouse-pressed handle-mouse-pressed
   ; update-state is called on each iteration  before draw-state.
   :update update-state
   :draw draw-state
   ;; Function for handling key press (if needed in future).
-  :features [:keep-on-top]
+  :features [:keep-on-top] 
   :middleware [m/fun-mode])
 
 
