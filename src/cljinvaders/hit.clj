@@ -38,8 +38,8 @@
 
 (defn on-hit [projectile asteroid]
   {:type :add-points
-   :projectile projectile
-   :asteroid asteroid})
+   :asteroid asteroid
+   :projectile projectile})
 
 
 ;; I SHOULD MERGE THIS FUNCTIONS WITH LOGIC OF ASTEROID-PROJECTILE HIT
