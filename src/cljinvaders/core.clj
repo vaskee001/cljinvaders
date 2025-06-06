@@ -458,5 +458,8 @@
   :features [:keep-on-top] 
   :middleware [m/fun-mode])
 
-
-
+(defn -main [& args]
+  ;; start game
+  (println "Starting CljInvaders!")
+  ;; maybe call setup/init from other namespaces
+  )

@@ -6,5 +6,7 @@
                  [org.clojure/java.jdbc "0.7.12"]
                  [mysql/mysql-connector-java "8.0.33"]]
   :plugins [[lein-midje "3.2"]]
-  :test-paths ["test"])
+  :test-paths ["test"]
+  :main cljinvaders.core
+  )
 
