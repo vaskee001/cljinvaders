@@ -7,6 +7,6 @@
                  [mysql/mysql-connector-java "8.0.33"]]
   :plugins [[lein-midje "3.2"]]
   :test-paths ["test"]
-  :main cljinvaders.core
+  ;; :main cljinvaders.core
   )
 
