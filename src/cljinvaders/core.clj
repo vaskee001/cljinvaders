@@ -270,8 +270,6 @@
 
 
 (defn handle-key-pressed [state event]
-  (println "Key pressed event:" event) ; Debug all key events
-  (println "Current screen state:" @screen-state "Input active:" @input-active) ; Debug state
   (cond
     ;; Handle game input
     (= @screen-state :game)
@@ -282,27 +280,23 @@
     (let [key (:key event)
           raw-key (:raw-key event)
           key-code (:key-code event)]
-      (println "Key details - key:" key "raw-key:" raw-key "key-code:" key-code)
       (cond
         ;; Handle backspace - try multiple ways
         (or (= key :backspace) (= raw-key 8) (= key-code 8))
         (do
           (swap! player-name #(if (empty? %) % (subs % 0 (dec (count %)))))
-          (println "Backspace - current name:" @player-name)
           state)
 
         ;; Handle enter key (deactivate input)
         (or (= key :enter) (= raw-key 10) (= key-code 10))
         (do
           (reset! input-active false)
-          (println "Enter pressed - input deactivated")
           state)
 
         ;; Handle escape (deactivate input)
         (or (= key :esc) (= raw-key 27) (= key-code 27))
         (do
           (reset! input-active false)
-          (println "Escape pressed - input deactivated")
           state)
 
         ;; Handle regular character input - convert keyword to character
@@ -312,7 +306,6 @@
           (if (= (count key-str) 1) ; Single character keys only
             (do
               (swap! player-name str key-str)
-              (println "Character added:" key-str "Current name:" @player-name)
               state)
             (do
               (println "Multi-character key ignored:" key-str)
@@ -325,14 +318,12 @@
              (< (count @player-name) 20))
         (do
           (swap! player-name str raw-key)
-          (println "Character from raw-key:" raw-key "Current name:" @player-name)
           state)
 
         ;; Handle space key specifically
         (= key :space)
         (do
           (swap! player-name str " ")
-          (println "Space added - current name:" @player-name)
           state)
 
         :else
@@ -346,7 +337,6 @@
         (reset! screen-state :start)
         (reset! player-name "")
         (reset! input-active false))
-      (println "Key pressed but not handled, screen-state:" @screen-state)
       state)))
 
 
@@ -383,7 +373,6 @@
         ;; Check if input field was clicked
         (point-in-button? mouse-x mouse-y input-field)
         (do
-          (println "Input field clicked")
           (reset! input-active true)
           state)
 
@@ -391,7 +380,6 @@
         (and (not (empty? @player-name))
              (point-in-button? mouse-x mouse-y new-game-btn))
         (do
-          (println "New Game clicked!")
           (reset! screen-state :game)
           (reset! input-active false)
           (assoc state
@@ -401,7 +389,6 @@
         ;; Check if Scoreboard button was clicked
         (point-in-button? mouse-x mouse-y scoreboard-btn)
         (do
-          (println "Scoreboard clicked")
           (reset! screen-state :scoreboard)
           (reset! input-active false)
           (assoc state :scoreboard (db/get-scoreboard)))
@@ -410,7 +397,6 @@
         (do
           ;; Clicked elsewhere, deactivate input
           (reset! input-active false)
-          (println (str "Mouse clicked at: " mouse-x "," mouse-y))
           state)))
 
     ;; Handle scoreboard screen clicks
@@ -424,7 +410,6 @@
           mouse-y (:y event)]
       (if (point-in-button? mouse-x mouse-y back-btn)
         (do
-          (println "Back button clicked")
           (reset! screen-state :start)
           state)
         state))
@@ -432,7 +417,6 @@
     ;; Handle game over screen clicks - any click returns to start
     (= @screen-state :end)
     (do
-      (println "Game over screen clicked - returning to start")
       (reset! screen-state :start)
       (reset! player-name "") ; Reset name for new game
       (reset! input-active false)
@@ -459,7 +443,5 @@
   :middleware [m/fun-mode])
 
 (defn -main [& args]
-  ;; start game
   (println "Starting CljInvaders!")
-  ;; maybe call setup/init from other namespaces
   )
