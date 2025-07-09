@@ -1,6 +1,22 @@
 (ns cljinvaders.player-test
   (:require [midje.sweet :refer :all]
-            [cljinvaders.player :as player]))
+            [cljinvaders.player :as player]
+            [quil.core :as q]))
+
+(facts "init-player returns correct state"
+       (fact "Player has three lives and zero score at start"
+             (let [p (player/init-player)]
+               (:lives p) => [:life :life :life]
+               (:score p) => 0)))
+
+(facts "Player shooting cooldown logic"
+       (fact "Player can't shoot again before cooldown"
+             (with-redefs [q/millis (fn [] 1000)]
+               (let [player-state {:x 10 :y 10 :last-shot-time 950 :shooting-cooldown 100 :projectiles []}]
+                 ;; Only 50ms passed since last shot, and cooldown is 100 so player can't shoot
+                 (player/shoot player-state) => player-state))))
+
+
 
 (facts "Test move-projectile function"
        (fact ":y is updated with speed"
