@@ -2,7 +2,7 @@
   (:require [midje.sweet :refer :all]
             [cljinvaders.asteroids :as asteroids]))
 
-;; This test can work only after starting game once because of initalisation of asteroid images
+(with-redefs [cljinvaders.asteroids/asteroidImgs (atom ["dummy-img"])]
 (facts "Test create asteroid function"
        (fact "the :x value should not be bigger than screen width + 50"
              (let [asteroid (asteroids/create-asteroid 1920 1080 800)]
@@ -42,5 +42,4 @@
                      ; Speed added by 5 so 1081 is bigger than 1080 and asteroid is removed
                      :asteroids [{:x 100 :y 1076 :speed 5 :angle (/ Math/PI 2)}]}
               new-state (asteroids/update-asteroids state)]
-          (count (:asteroids new-state))) => 0 ))
-
+          (count (:asteroids new-state))) => 0 )))
